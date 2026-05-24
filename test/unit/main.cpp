@@ -1,3 +1,8 @@
+/**
+ * @file test/unit/main.cpp
+ * @brief Entry point to run unit tests.
+ */
+
 #ifndef MAIN_UNIT_TESTS
 #define MAIN_UNIT_TESTS
 

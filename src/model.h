@@ -1,3 +1,8 @@
+/**
+ * @file src/model.h
+ * @brief Model class that holds Systems and Flows and runs simulations.
+ */
+
 #ifndef MODEL_H
 #define MODEL_H
 

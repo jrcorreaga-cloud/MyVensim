@@ -1,3 +1,8 @@
+/**
+ * @file test/unit/unit_tests.cpp
+ * @brief Unit tests for basic classes: System, Flow, Model.
+ */
+
 #include "unit_tests.h"
 #include "../../src/system.h"
 #include "../../src/flow.h"

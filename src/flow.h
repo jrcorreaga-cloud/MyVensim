@@ -1,3 +1,8 @@
+/**
+ * @file src/flow.h
+ * @brief Abstract Flow class definition used to transfer values between Systems.
+ */
+
 #ifndef FLOW_H
 #define FLOW_H
 
