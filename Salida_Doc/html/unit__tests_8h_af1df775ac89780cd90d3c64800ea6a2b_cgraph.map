@@ -1,0 +1,11 @@
+<map id="model_unit_tests" name="model_unit_tests">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,126,57"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a302d4ed93c6e6f9a0f728e021a91f821" title=" " alt="" coords="186,5,272,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,32,173,26,168,29,127,37"/>
+<area shape="rect" id="Node000003" href="$class_model.html#af987d08ccec7405d80a069b6ecf99e2c" title=" " alt="" coords="174,56,284,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,51,161,58,156,59,126,56"/>
+<area shape="rect" id="Node000004" href="$class_system.html#aa7d17369d1034e7d8643a63f69d1901d" title=" " alt="" coords="332,31,456,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="284,58,319,55,314,56,285,64"/>
+<area shape="rect" id="Node000005" href="$class_system.html#a5343de0a45485edd88bc87f338fe9a19" title=" " alt="" coords="332,81,456,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="284,75,319,83,314,83,284,80"/>
+</map>

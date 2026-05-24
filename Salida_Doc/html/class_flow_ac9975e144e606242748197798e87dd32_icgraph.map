@@ -1,0 +1,15 @@
+<map id="Flow::Flow" name="Flow::Flow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="275,132,360,159"/>
+<area shape="rect" id="Node000002" href="$class_complex_flow.html#aa43fdfeec7d72061de32ce19cd53024c" title=" " alt="" coords="21,5,211,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,119,267,82,247,62,225,46,202,35,201,30,228,42,251,58,271,78,302,119"/>
+<area shape="rect" id="Node000003" href="$class_dummy_flow.html#a38cb5397cfd1a70f320c26be5d264124" title=" " alt="" coords="27,56,205,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="280,124,226,97,191,86,190,81,228,92,285,123"/>
+<area shape="rect" id="Node000004" href="$class_exponential_flow.html#ac0599b955afd5d4c4fc4dc7ef4b29c7f" title=" " alt="" coords="5,107,227,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="257,139,227,137,226,131,262,137"/>
+<area shape="rect" id="Node000005" href="$class_flow.html#aa9a50d7ede896bf6a0740a6d1330ae21" title=" " alt="" coords="73,157,159,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="257,154,160,168,159,163,262,151"/>
+<area shape="rect" id="Node000006" href="$class_logistical_flow.html#a55be914cf9436ebe7859ee1530051294" title=" " alt="" coords="18,208,214,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="285,166,228,198,191,210,190,205,226,194,280,168"/>
+<area shape="rect" id="Node000007" href="$class_flow.html#a21f26edbbb55b1c8312d0836153c08a9" title=" " alt="" coords="60,259,172,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="302,170,271,213,251,232,228,249,201,261,173,269,172,263,199,256,225,244,247,228,267,209,297,173"/>
+</map>

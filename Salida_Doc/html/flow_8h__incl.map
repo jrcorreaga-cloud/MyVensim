@@ -1,0 +1,8 @@
+<map id="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/src/flow.h" name="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/src/flow.h">
+<area shape="rect" id="Node000001" title="Abstract Flow class definition used to transfer values between Systems." alt="" coords="5,5,253,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="102,187,156,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,62,120,100,120,138,125,172,120,171,114,139,115,100,121,67"/>
+<area shape="rect" id="Node000003" href="$system_8h.html" title="Simple System class representing a stock with a name and numeric value." alt="" coords="129,112,204,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,62,158,98,152,97,140,67"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="162,138,144,175,140,171,158,141"/>
+</map>

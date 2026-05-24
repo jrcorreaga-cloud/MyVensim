@@ -1,0 +1,18 @@
+<map id="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/src/flow.h" name="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/src/flow.h">
+<area shape="rect" id="Node000001" title="Abstract Flow class definition used to transfer values between Systems." alt="" coords="388,5,635,64"/>
+<area shape="rect" id="Node000002" href="$flow_8cpp.html" title="Implementation of the Flow base class." alt="" coords="65,112,313,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="407,70,278,114,276,109,411,68"/>
+<area shape="rect" id="Node000003" href="$model_8h.html" title="Model class that holds Systems and Flows and runs simulations." alt="" coords="388,112,635,171"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="513,78,514,113,509,110,510,82"/>
+<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html" title="Functional test implementations for common flow behaviors." alt="" coords="5,219,253,293"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="439,70,377,114,362,129,353,143,343,158,327,173,284,199,240,221,237,216,282,194,323,169,339,154,349,140,358,126,374,110,434,73"/>
+<area shape="rect" id="Node000006" href="$funcional_2main_8cpp.html" title="Entry point for running functional tests." alt="" coords="549,219,797,293"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="603,70,629,88,650,110,664,136,672,165,677,220,673,217,667,166,659,138,645,114,626,92,603,75"/>
+<area shape="rect" id="Node000007" href="$unit__tests_8cpp.html" title="Unit tests for basic classes: System, Flow, Model." alt="" coords="821,219,1069,293"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="591,68,680,110,882,218,877,218,677,114,590,73"/>
+<area shape="rect" id="Node000004" href="$model_8cpp.html" title="Implementation of the Model class." alt="" coords="277,227,525,285"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="476,181,431,228,428,224,471,183"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="397,176,254,221,252,216,402,175"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="566,177,623,219,618,218,565,182"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="640,172,810,216,824,222,818,222,808,221,639,178"/>
+</map>

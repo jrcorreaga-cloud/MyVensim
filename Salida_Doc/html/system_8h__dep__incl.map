@@ -1,0 +1,26 @@
+<map id="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/src/system.h" name="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/src/system.h">
+<area shape="rect" id="Node000001" title="Simple System class representing a stock with a name and numeric value." alt="" coords="684,5,931,64"/>
+<area shape="rect" id="Node000002" href="$flow_8h.html" title="Abstract Flow class definition used to transfer values between Systems." alt="" coords="497,112,745,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="746,71,673,114,671,109,741,73"/>
+<area shape="rect" id="Node000004" href="$model_8h.html" title="Model class that holds Systems and Flows and runs simulations." alt="" coords="256,219,503,277"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="666,49,575,73,529,91,486,114,458,137,433,165,396,220,392,216,428,162,454,134,484,110,527,86,574,68,671,47"/>
+<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html" title="Functional test implementations for common flow behaviors." alt="" coords="5,325,253,400"/>
+<area shape="poly" id="edge13_Node000001_Node000006" title=" " alt="" coords="666,57,547,82,420,115,346,134,287,148,260,158,234,173,207,193,179,220,162,245,149,272,135,326,131,324,144,270,157,242,175,217,204,189,231,168,258,154,285,143,345,129,419,109,546,76,671,55"/>
+<area shape="rect" id="Node000007" href="$funcional_2main_8cpp.html" title="Entry point for running functional tests." alt="" coords="821,325,1069,400"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="844,74,869,111,894,167,914,225,940,326,935,323,909,227,889,169,864,113,842,79"/>
+<area shape="rect" id="Node000008" href="$unit__tests_8cpp.html" title="Unit tests for basic classes: System, Flow, Model." alt="" coords="549,325,797,400"/>
+<area shape="poly" id="edge15_Node000001_Node000008" title=" " alt="" coords="830,76,847,122,858,174,858,228,852,254,841,279,817,306,787,327,785,322,814,302,836,276,847,252,853,227,853,174,842,123,827,81"/>
+<area shape="rect" id="Node000009" href="$system_8cpp.html" title="Implementation of the System class." alt="" coords="1003,112,1250,171"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="910,67,1042,111,1036,112,909,72"/>
+<area shape="rect" id="Node000003" href="$flow_8cpp.html" title="Implementation of the Flow base class." alt="" coords="579,219,826,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="653,180,683,219,678,218,652,185"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="544,176,447,221,445,216,539,178"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="479,149,423,159,362,173,301,193,245,221,215,243,190,271,150,327,146,323,185,267,212,239,242,216,299,188,361,168,422,154,484,147"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="757,174,801,193,840,217,868,241,892,269,928,326,924,324,888,272,864,245,837,221,798,197,757,179"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="587,182,569,220,562,248,569,276,586,302,610,326,605,324,582,305,564,278,556,249,564,218,583,185"/>
+<area shape="rect" id="Node000005" href="$model_8cpp.html" title="Implementation of the Model class." alt="" coords="277,333,525,392"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="389,290,398,334,393,331,386,294"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="304,283,212,327,210,322,299,285"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="519,268,660,293,810,323,824,328,818,328,808,328,659,298,519,274"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="469,281,580,325,575,325,468,286"/>
+</map>
