@@ -1,0 +1,8 @@
+# Ignorar carpetas de compilación y binarios
+build/
+bin/
+
+# Ignorar archivos ocultos del sistema o del editor
+.vscode/
+.idea/
+*.swp
