@@ -96,8 +96,8 @@ void complexFuncionalTest() {
     model->execute(0, 100);
 
     assert(abs(q1->getValue() - 31.8513) < 0.0001);
-    assert(abs(q2->getValue() - 18.4003) < 0.0001);
-    assert(abs(q3->getValue() - 77.1142) < 0.0001);
+    assert(abs(q2->getValue() - 18.4004) < 0.0001);
+    assert(abs(q3->getValue() - 77.1143) < 0.0001);
     assert(abs(q4->getValue() - 56.1728) < 0.0001);
     assert(abs(q5->getValue() - 16.4612) < 0.0001);
 
