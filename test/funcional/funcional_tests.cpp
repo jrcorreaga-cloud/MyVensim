@@ -1,3 +1,11 @@
+/**
+ * @file test/funcional/funcional_tests.cpp
+ * @brief Implementation of functional tests for the simulation model.
+ * 
+ * Includes tests for Exponential, Logistical, and Complex simulation behaviors
+ * utilizing specific concrete Flow classes.
+ */
+
 #include "funcional_tests.h"
 #include "../../src/model.h"
 #include "../../src/system.h"
@@ -8,33 +16,74 @@
 
 using namespace std;
 
+/**
+ * @brief Utility function to check if a value is close enough to the expected result.
+ * @param real The actual computed value.
+ * @param awk The expected result.
+ * @return true if they are deemed equal within a precision of 4 decimal places.
+ */
+inline bool rounded(double real, double awk) {
+    double real_trunc = round(real * 10000.0) / 10000.0;
+    return real_trunc == awk;
+}
+
 // Concrete Flows
+
+/**
+ * @class ExponentialFlow
+ * @brief A flow that operates based on an exponential equation.
+ */
 class ExponentialFlow : public Flow {
 public:
     ExponentialFlow(string name = "") : Flow(name) {}
+    /**
+     * @brief Computes the execution value for exponential behavior.
+     * @return Transferred value corresponding to 1% of the source system's value.
+     */
     double execute() override {
         return 0.01 * getSource()->getValue();
     }
 };
 
+/**
+ * @class LogisticalFlow
+ * @brief A flow that operates based on a logistical growth equation.
+ */
 class LogisticalFlow : public Flow {
 public:
     LogisticalFlow(string name = "") : Flow(name) {}
+    /**
+     * @brief Computes the execution value for logistical behavior.
+     * @return Transferred value considering maximum population capacity.
+     */
     double execute() override {
         double pMax = 70.0;
         return 0.01 * getTarget()->getValue() * (1 - getTarget()->getValue() / pMax);
     }
 };
 
+/**
+ * @class ComplexFlow
+ * @brief A generic flow used in a multiple-system complex scenario.
+ */
 class ComplexFlow : public Flow {
 public:
     ComplexFlow(string name = "") : Flow(name) {}
+    /**
+     * @brief Computes a standard transfer value.
+     * @return Transferred value corresponding to 1% of the source system's value.
+     */
     double execute() override {
         return 0.01 * getSource()->getValue();
     }
 };
 
 // Tests
+
+/**
+ * @brief Performs an exponential transfer test.
+ * Expects the system to iteratively approach correct resulting population values.
+ */
 void exponentialFuncionalTest() {
     Model* model = new Model();
     System* pop1 = new System("pop1", 100.0);
@@ -48,13 +97,17 @@ void exponentialFuncionalTest() {
 
     model->execute(0, 100);
 
-    assert(fabs(pop1->getValue() - 36.6032) < 0.0001);
-    assert(fabs(pop2->getValue() - 63.3968) < 0.0001);
-
+    assert(rounded(pop1->getValue(), 36.6032));
+    assert(rounded(pop2->getValue(), 63.3968));
+    
     delete model; delete pop1; delete pop2; delete expFlow;
     cout << "Exponential functional test passed!" << endl;
 }
 
+/**
+ * @brief Performs a logistical transfer test.
+ * Evaluates the non-linear execution flow logic tied to a capacity ceiling.
+ */
 void logisticalFuncionalTest() {
     Model* model = new Model();
     System* p1 = new System("p1", 100.0);
@@ -68,9 +121,14 @@ void logisticalFuncionalTest() {
 
     model->execute(0, 100);
 
-    assert(fabs(p1->getValue() - 88.2167) < 0.0001);
-    assert(fabs(p2->getValue() - 21.7833) < 0.0001);
+    assert(rounded(p1->getValue(), 88.2167));
+    assert(rounded(p2->getValue(), 21.7833));
 
+/**
+ * @brief Performs a complex system interconnection test.
+ * Simulates a large network of 5 systems and 6 flows. Asserts their final states
+ * match expected calculated approximations after 100 time ticks.
+ */
     delete model; delete p1; delete p2; delete logFlow;
     cout << "Logistical functional test passed!" << endl;
 }
@@ -94,12 +152,11 @@ void complexFuncionalTest() {
     model->add(f); model->add(g); model->add(u); model->add(v); model->add(t); model->add(r);
 
     model->execute(0, 100);
-
-    assert(fabs(q1->getValue() - 31.8513) < 0.0001);
-    assert(fabs(q2->getValue() - 18.4003) < 0.0001);
-    assert(fabs(q3->getValue() - 77.1143) < 0.0001);
-    assert(fabs(q4->getValue() - 56.1728) < 0.0001);
-    assert(fabs(q5->getValue() - 16.4612) < 0.0001);
+    assert(rounded(q1->getValue(), 31.8513));
+    assert(rounded(q2->getValue(), 18.4003));
+    assert(rounded(q3->getValue(), 77.1143));
+    assert(rounded(q4->getValue(), 56.1728));
+    assert(rounded(q5->getValue(), 16.4612));
 
     delete model; delete q1; delete q2; delete q3; delete q4; delete q5;
     delete f; delete g; delete u; delete v; delete t; delete r;
