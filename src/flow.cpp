@@ -1,3 +1,8 @@
+/**
+ * @file src/flow.cpp
+ * @brief Implementation of the Flow base class.
+ */
+
 #include "flow.h"
 
 Flow::Flow() : name(""), source(nullptr), target(nullptr) {}

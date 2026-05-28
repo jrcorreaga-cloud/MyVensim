@@ -1,0 +1,7 @@
+<map id="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/test/funcional/funcional_tests.h" name="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/test/funcional/funcional_tests.h">
+<area shape="rect" id="Node000001" title="Functional test declarations." alt="" coords="141,5,389,80"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html" title="Functional test implementations for common flow behaviors." alt="" coords="5,128,253,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,89,172,130,169,125,210,92"/>
+<area shape="rect" id="Node000003" href="$funcional_2main_8cpp.html" title="Entry point for running functional tests." alt="" coords="277,128,525,203"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="319,88,362,128,357,127,317,93"/>
+</map>

@@ -1,3 +1,8 @@
+/**
+ * @file src/model.cpp
+ * @brief Implementation of the Model class.
+ */
+
 #include "model.h"
 
 Model::Model() {}

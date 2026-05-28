@@ -1,0 +1,25 @@
+<map id="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/test/funcional/funcional_tests.cpp" name="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/test/funcional/funcional_tests.cpp">
+<area shape="rect" id="Node000001" title="Functional test implementations for common flow behaviors." alt="" coords="234,5,481,80"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8h.html" title="Functional test declarations." alt="" coords="5,128,126,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,83,119,125,117,120,248,78"/>
+<area shape="rect" id="Node000003" href="$model_8h.html" title="Model class that holds Systems and Flows and runs simulations." alt="" coords="206,128,320,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,78,288,119,284,115,320,82"/>
+<area shape="rect" id="Node000005" href="$system_8h.html" title="Simple System class representing a stock with a name and numeric value." alt="" coords="253,277,328,304"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="247,82,221,103,197,130,183,155,177,178,180,202,192,228,213,252,242,271,237,272,210,256,187,231,175,203,172,178,178,153,193,126,217,99,251,79"/>
+<area shape="rect" id="Node000007" href="$flow_8h.html" title="Abstract Flow class definition used to transfer values between Systems." alt="" coords="334,203,389,229"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="360,79,363,188,358,186,357,83"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="395,128,466,155"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="386,78,415,115,409,115,385,83"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="491,128,555,155"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="421,78,491,119,485,120,420,83"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="580,128,637,155"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="453,78,567,123,562,124,453,83"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="201,203,258,229"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="259,153,244,190,239,187,255,157"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="267,153,288,262,283,261,264,157"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="280,153,335,193,330,194,280,158"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="302,352,355,379"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="299,302,317,339,312,337,296,307"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="351,229,315,268,312,264,347,231"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="361,228,337,338,332,335,356,231"/>
+</map>

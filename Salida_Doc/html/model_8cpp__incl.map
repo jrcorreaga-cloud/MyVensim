@@ -1,0 +1,15 @@
+<map id="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/src/model.cpp" name="C:/Users/Tommy/OneDrive/Documentos/UFOP/ING SOFTWARE 1/Sprint 2/MyVensim/src/model.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the Model class." alt="" coords="5,5,253,64"/>
+<area shape="rect" id="Node000002" href="$model_8h.html" title="Model class that holds Systems and Flows and runs simulations." alt="" coords="95,112,163,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,62,132,97,126,96,128,67"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="34,187,91,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,142,86,177,82,174,119,137"/>
+<area shape="rect" id="Node000004" href="$system_8h.html" title="Simple System class representing a stock with a name and numeric value." alt="" coords="91,261,167,288"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="131,137,132,246,126,245,127,141"/>
+<area shape="rect" id="Node000006" href="$flow_8h.html" title="Abstract Flow class definition used to transfer values between Systems." alt="" coords="167,187,222,213"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="141,137,176,175,170,176,140,142"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="140,336,193,363"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,286,156,323,150,322,134,291"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="185,212,152,252,148,248,181,216"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="194,212,181,289,174,322,170,319,176,287,190,215"/>
+</map>

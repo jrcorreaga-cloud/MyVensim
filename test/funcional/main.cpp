@@ -1,3 +1,8 @@
+/**
+ * @file test/funcional/main.cpp
+ * @brief Entry point for running functional tests.
+ */
+
 #ifndef MAIN_FUNCIONAL_TESTS
 #define MAIN_FUNCIONAL_TESTS
 

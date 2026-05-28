@@ -48,8 +48,8 @@ void exponentialFuncionalTest() {
 
     model->execute(0, 100);
 
-    assert(abs(pop1->getValue() - 36.6032) < 0.0001);
-    assert(abs(pop2->getValue() - 63.3968) < 0.0001);
+    assert(fabs(pop1->getValue() - 36.6032) < 0.0001);
+    assert(fabs(pop2->getValue() - 63.3968) < 0.0001);
 
     delete model; delete pop1; delete pop2; delete expFlow;
     cout << "Exponential functional test passed!" << endl;
@@ -68,8 +68,8 @@ void logisticalFuncionalTest() {
 
     model->execute(0, 100);
 
-    assert(abs(p1->getValue() - 88.2167) < 0.0001);
-    assert(abs(p2->getValue() - 21.7833) < 0.0001);
+    assert(fabs(p1->getValue() - 88.2167) < 0.0001);
+    assert(fabs(p2->getValue() - 21.7833) < 0.0001);
 
     delete model; delete p1; delete p2; delete logFlow;
     cout << "Logistical functional test passed!" << endl;
@@ -95,11 +95,11 @@ void complexFuncionalTest() {
 
     model->execute(0, 100);
 
-    assert(abs(q1->getValue() - 31.8513) < 0.0001);
-    assert(abs(q2->getValue() - 18.4004) < 0.0001);
-    assert(abs(q3->getValue() - 77.1143) < 0.0001);
-    assert(abs(q4->getValue() - 56.1728) < 0.0001);
-    assert(abs(q5->getValue() - 16.4612) < 0.0001);
+    assert(fabs(q1->getValue() - 31.8513) < 0.0001);
+    assert(fabs(q2->getValue() - 18.4003) < 0.0001);
+    assert(fabs(q3->getValue() - 77.1143) < 0.0001);
+    assert(fabs(q4->getValue() - 56.1728) < 0.0001);
+    assert(fabs(q5->getValue() - 16.4612) < 0.0001);
 
     delete model; delete q1; delete q2; delete q3; delete q4; delete q5;
     delete f; delete g; delete u; delete v; delete t; delete r;

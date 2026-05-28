@@ -1,3 +1,8 @@
+/**
+ * @file src/system.cpp
+ * @brief Implementation of the System class.
+ */
+
 #include "system.h"
 
 System::System() : name(""), value(0.0) {}

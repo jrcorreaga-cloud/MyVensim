@@ -1,3 +1,8 @@
+/**
+ * @file src/system.h
+ * @brief Simple System class representing a stock with a name and numeric value.
+ */
+
 #ifndef SYSTEM_H
 #define SYSTEM_H
 

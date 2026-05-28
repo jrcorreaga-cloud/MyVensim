@@ -1,0 +1,5 @@
+<map id="LogisticalFlow::LogisticalFlow" name="LogisticalFlow::LogisticalFlow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,201,32"/>
+<area shape="rect" id="Node000002" href="$class_flow.html#ac9975e144e606242748197798e87dd32" title=" " alt="" coords="249,5,334,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,16,235,19,230,19,201,21"/>
+</map>

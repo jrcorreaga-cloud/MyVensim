@@ -1,3 +1,8 @@
+/**
+ * @file test/unit/unit_tests.h
+ * @brief Unit test declarations for System, Flow and Model.
+ */
+
 #ifndef UNIT_TESTS_H
 #define UNIT_TESTS_H
 
