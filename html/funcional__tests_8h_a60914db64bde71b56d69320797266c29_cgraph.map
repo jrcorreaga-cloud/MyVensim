@@ -1,0 +1,16 @@
+<map id="logisticalFuncionalTest" name="logisticalFuncionalTest">
+<area shape="rect" id="Node000001" title="Performs a logistical transfer test. Evaluates the non&#45;linear execution flow logic tied to a capacity..." alt="" coords="5,105,175,131"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a302d4ed93c6e6f9a0f728e021a91f821" title="Adds a System to the simulation." alt="" coords="236,5,331,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,103,160,73,221,40,234,34,236,39,224,44,163,77,113,108"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a47f7a0b4b34a8bab2c38b323e588f2ec" title="Helper method to set both source and target Systems." alt="" coords="228,55,339,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,103,220,81,222,86,140,108"/>
+<area shape="rect" id="Node000004" href="$classModel.html#af987d08ccec7405d80a069b6ecf99e2c" title="Executes the simulation. Over the given time period, it iterates on the simulation step by step,..." alt="" coords="223,156,344,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,128,222,150,220,155,139,133"/>
+<area shape="rect" id="Node000005" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the current value of the system." alt="" coords="392,107,528,132"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="175,116,378,116,378,122,175,121"/>
+<area shape="rect" id="Node000007" href="$funcional__tests_8cpp.html#a819c3d7b57ae65abe71bf5b7254e6b11" title="Utility function to check if a value is close enough to the expected result." alt="" coords="246,205,321,231"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="113,128,163,159,224,192,236,197,234,202,221,196,160,163,110,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="329,153,399,133,401,138,330,159"/>
+<area shape="rect" id="Node000006" href="$classSystem.html#a5343de0a45485edd88bc87f338fe9a19" title="Sets the current value of the system." alt="" coords="393,156,527,181"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="344,166,379,166,379,171,344,171"/>
+</map>

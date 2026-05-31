@@ -1,14 +1,10 @@
-/**
- * @file test/unit/unit_tests.h
- * @brief Unit test declarations for System, Flow and Model.
- */
-
 #ifndef UNIT_TESTS_H
 #define UNIT_TESTS_H
 
-void system_unit_tests();
-void flow_unit_tests();
-void model_unit_tests();
+// Declaration of global scoped function tests (if there were any in the future)
+// void unit_minhaFuncao1();
+
+// General grouping function for global methods
 void run_unit_tests_globals();
 
-#endif
+#endif // UNIT_TESTS_H

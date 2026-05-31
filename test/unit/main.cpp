@@ -1,16 +1,21 @@
-/**
- * @file test/unit/main.cpp
- * @brief Entry point to run unit tests.
- */
-
-#ifndef MAIN_UNIT_TESTS
-#define MAIN_UNIT_TESTS
-
 #include "unit_tests.h"
+#include "unit_System.h"
+#include "unit_Flow.h"
+#include "unit_Model.h"
+#include <iostream>
+using namespace std;
 
 int main() {
+    cout << "Starting unit testing suite (Sprint 4)..." << endl;
+
     run_unit_tests_globals();
+    
+
+    run_unit_tests_System();
+    run_unit_tests_Flow();
+    run_unit_tests_Model();
+
+    cout << "All unit tests executed successfully. (OK)" << endl;
+    
     return 0;
 }
-
-#endif

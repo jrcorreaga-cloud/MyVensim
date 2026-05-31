@@ -1,0 +1,7 @@
+<map id="DummyFlow" name="DummyFlow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,696,127,781"/>
+<area shape="rect" id="Node000002" href="$classFlow.html" title="Abstract base class representing a transfer of values between two Systems." alt="" coords="13,341,119,647"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,660,69,696,63,696,63,660"/>
+<area shape="rect" id="Node000003" href="$classSystem.html" title="Represents a stock/system entity in the simulation." alt="" coords="13,5,119,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="69,251,69,325,63,325,63,251"/>
+</map>

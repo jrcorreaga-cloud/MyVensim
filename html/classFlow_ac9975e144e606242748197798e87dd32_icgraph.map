@@ -1,0 +1,15 @@
+<map id="Flow::Flow" name="Flow::Flow">
+<area shape="rect" id="Node000001" title="Default constructor. Initializes the flow with no name and null Systems." alt="" coords="299,129,389,155"/>
+<area shape="rect" id="Node000002" href="$classComplexFlow.html#aa43fdfeec7d72061de32ce19cd53024c" title=" " alt="" coords="25,5,231,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,119,293,80,272,60,249,44,224,33,226,28,252,40,276,56,297,76,329,116"/>
+<area shape="rect" id="Node000003" href="$classDummyFlow.html#a38cb5397cfd1a70f320c26be5d264124" title=" " alt="" coords="31,55,225,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,124,250,94,211,83,213,78,252,89,313,120"/>
+<area shape="rect" id="Node000004" href="$classExponentialFlow.html#ac0599b955afd5d4c4fc4dc7ef4b29c7f" title=" " alt="" coords="5,104,251,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="285,138,236,132,237,127,285,133"/>
+<area shape="rect" id="Node000005" href="$classFlow.html#aa9a50d7ede896bf6a0740a6d1330ae21" title="Copy constructor for Flow." alt="" coords="83,153,173,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="285,151,174,164,173,158,285,146"/>
+<area shape="rect" id="Node000006" href="$classLogisticalFlow.html#a55be914cf9436ebe7859ee1530051294" title=" " alt="" coords="21,203,235,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="312,164,252,192,207,205,206,200,250,188,309,159"/>
+<area shape="rect" id="Node000007" href="$classFlow.html#a21f26edbbb55b1c8312d0836153c08a9" title="Copy assignment operator." alt="" coords="65,252,191,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="329,168,296,206,275,226,252,242,223,254,192,262,191,256,221,249,249,237,272,221,293,203,325,164"/>
+</map>

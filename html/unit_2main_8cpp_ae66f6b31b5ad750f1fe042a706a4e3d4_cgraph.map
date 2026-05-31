@@ -1,0 +1,33 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,215,60,240"/>
+<area shape="rect" id="Node000002" href="$unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a" title=" " alt="" coords="108,215,276,240"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,225,94,225,94,230,60,230"/>
+<area shape="rect" id="Node000003" href="$unit__tests_8cpp.html#ac384962033e7f73e8f485f0641a8ef63" title=" " alt="" coords="331,104,451,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,212,354,134,356,139,217,217"/>
+<area shape="rect" id="Node000008" href="$unit__tests_8cpp.html#af1df775ac89780cd90d3c64800ea6a2b" title=" " alt="" coords="324,215,459,240"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="276,225,310,225,310,230,276,230"/>
+<area shape="rect" id="Node000013" href="$unit__tests_8cpp.html#a3035df29786dcc3f776e39cb33f324ee" title=" " alt="" coords="507,301,648,327"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="250,237,507,296,506,301,249,243"/>
+<area shape="rect" id="Node000004" href="$classFlow.html#a47f7a0b4b34a8bab2c38b323e588f2ec" title="Helper method to set both source and target Systems." alt="" coords="522,55,633,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="439,101,514,81,516,86,441,107"/>
+<area shape="rect" id="Node000005" href="$classFlow.html#a62bbc54ff95eeb0795511519edf32077" title="Gets the name of the flow." alt="" coords="517,104,637,129"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="452,114,504,114,504,119,452,119"/>
+<area shape="rect" id="Node000006" href="$classFlow.html#a1f3858f90d141807377c2640fb5dd0fc" title="Gets the source System." alt="" coords="515,153,640,179"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="441,127,516,147,514,152,439,132"/>
+<area shape="rect" id="Node000007" href="$classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5" title="Gets the target System." alt="" coords="517,5,638,31"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="408,102,451,71,505,40,520,33,522,38,508,44,454,76,411,106"/>
+<area shape="rect" id="Node000009" href="$classModel.html#a302d4ed93c6e6f9a0f728e021a91f821" title="Adds a System to the simulation." alt="" coords="530,252,625,277"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="456,237,517,250,516,255,455,243"/>
+<area shape="rect" id="Node000010" href="$classModel.html#af987d08ccec7405d80a069b6ecf99e2c" title="Executes the simulation. Over the given time period, it iterates on the simulation step by step,..." alt="" coords="517,203,638,228"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="459,220,503,217,503,223,459,226"/>
+<area shape="rect" id="Node000011" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the current value of the system." alt="" coords="697,203,833,228"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="638,213,683,213,683,218,638,218"/>
+<area shape="rect" id="Node000012" href="$classSystem.html#a5343de0a45485edd88bc87f338fe9a19" title="Sets the current value of the system." alt="" coords="698,252,833,277"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="627,225,703,246,702,251,626,231"/>
+<area shape="poly" id="edge14_Node000013_Node000011" title=" " alt="" coords="624,299,647,288,661,276,670,264,679,251,694,238,707,231,710,236,698,243,683,255,674,267,665,280,649,292,626,304"/>
+<area shape="poly" id="edge16_Node000013_Node000012" title=" " alt="" coords="626,299,702,278,703,284,627,304"/>
+<area shape="rect" id="Node000014" href="$classSystem.html#a47ece132a04247cd74aea11537830bd4" title="Gets the name of the system." alt="" coords="696,301,835,327"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="648,311,682,311,682,317,648,317"/>
+<area shape="rect" id="Node000015" href="$classSystem.html#a8ca115c44d52a5bee53cfb7c6990d49e" title="Sets the name of the system." alt="" coords="696,351,835,376"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="627,324,703,344,702,350,626,329"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="src/flow.h" name="src/flow.h">
+<area shape="rect" id="Node000001" title="Abstract Flow class definition used to transfer values between Systems." alt="" coords="301,5,383,31"/>
+<area shape="rect" id="Node000002" href="$flow_8cpp.html" title="Implementation of the Flow base class." alt="" coords="119,79,218,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,38,198,81,196,76,301,33"/>
+<area shape="rect" id="Node000003" href="$model_8h.html" title="Model class that holds Systems and Flows and runs simulations." alt="" coords="293,79,391,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="345,44,345,79,339,79,339,44"/>
+<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for the simulation model." alt="" coords="5,152,180,192"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="320,42,279,73,231,106,138,154,136,149,229,102,276,69,316,37"/>
+<area shape="rect" id="Node000006" href="$funcional_2main_8cpp.html" title="Entry point for running functional tests." alt="" coords="341,159,516,185"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="370,37,389,56,406,77,423,121,430,159,425,160,418,123,401,80,385,59,367,41"/>
+<area shape="rect" id="Node000007" href="$unit__tests_8cpp.html" title="Unit tests for basic classes: System, Flow, Model." alt="" coords="541,159,711,185"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="377,35,606,157,603,162,374,39"/>
+<area shape="rect" id="Node000004" href="$model_8cpp.html" title="Implementation of the Model class." alt="" coords="204,159,317,185"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="322,115,275,161,271,157,318,112"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="294,111,153,154,152,149,292,106"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="367,111,418,157,414,161,363,115"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="397,105,585,157,584,162,396,110"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="Node000001" title="Abstract base class representing a transfer of values between two Systems." alt="" coords="245,5,350,351"/>
+<area shape="rect" id="Node000002" href="$classComplexFlow.html" title="A generic flow used in a multiple&#45;system complex scenario." alt="" coords="5,399,133,484"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,252,108,400,104,397,233,249"/>
+<area shape="rect" id="Node000003" href="$classDummyFlow.html" title=" " alt="" coords="158,399,279,484"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,365,234,399,229,398,239,363"/>
+<area shape="rect" id="Node000004" href="$classExponentialFlow.html" title="A flow that operates based on an exponential equation." alt="" coords="304,399,451,484"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="356,363,367,398,362,399,351,365"/>
+<area shape="rect" id="Node000005" href="$classLogisticalFlow.html" title="A flow that operates based on a logistical growth equation." alt="" coords="475,399,607,484"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="362,244,504,397,501,400,358,248"/>
+</map>

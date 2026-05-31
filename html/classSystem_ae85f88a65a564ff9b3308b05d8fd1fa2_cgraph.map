@@ -1,0 +1,5 @@
+<map id="System::System" name="System::System">
+<area shape="rect" id="Node000001" title="Copy constructor for System." alt="" coords="5,5,133,31"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#ae317936c9bcf1374d61745572e0f2f8a" title="Default constructor for System. Initializes the system with an empty name and a value of 0...." alt="" coords="181,5,309,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,15,168,15,168,21,134,21"/>
+</map>

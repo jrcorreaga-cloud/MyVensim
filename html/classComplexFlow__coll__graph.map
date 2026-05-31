@@ -1,0 +1,7 @@
+<map id="ComplexFlow" name="ComplexFlow">
+<area shape="rect" id="Node000001" title="A generic flow used in a multiple&#45;system complex scenario." alt="" coords="5,696,133,781"/>
+<area shape="rect" id="Node000002" href="$classFlow.html" title="Abstract base class representing a transfer of values between two Systems." alt="" coords="17,341,122,647"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,660,72,696,67,696,67,660"/>
+<area shape="rect" id="Node000003" href="$classSystem.html" title="Represents a stock/system entity in the simulation." alt="" coords="17,5,122,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,251,72,325,67,325,67,251"/>
+</map>

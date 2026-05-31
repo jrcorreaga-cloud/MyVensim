@@ -1,0 +1,26 @@
+<map id="src/system.h" name="src/system.h">
+<area shape="rect" id="Node000001" title="Simple System class representing a stock with a name and numeric value." alt="" coords="451,5,556,31"/>
+<area shape="rect" id="Node000002" href="$flow_8h.html" title="Abstract Flow class definition used to transfer values between Systems." alt="" coords="350,79,433,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="475,40,411,81,408,76,472,36"/>
+<area shape="rect" id="Node000004" href="$model_8h.html" title="Model class that holds Systems and Flows and runs simulations." alt="" coords="213,152,311,177"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="440,37,389,55,339,81,318,98,299,118,272,153,267,150,295,114,314,94,337,76,387,50,438,32"/>
+<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html" title="Implementation of functional tests for the simulation model." alt="" coords="5,225,180,265"/>
+<area shape="poly" id="edge13_Node000001_Node000006" title=" " alt="" coords="438,34,374,50,302,75,229,109,194,130,162,154,129,190,105,227,101,224,125,187,159,150,191,126,226,104,300,70,373,45,436,29"/>
+<area shape="rect" id="Node000007" href="$funcional_2main_8cpp.html" title="Entry point for running functional tests." alt="" coords="537,233,712,258"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="519,42,621,231,616,234,514,44"/>
+<area shape="rect" id="Node000008" href="$unit__tests_8cpp.html" title="Unit tests for basic classes: System, Flow, Model." alt="" coords="342,233,513,258"/>
+<area shape="poly" id="edge15_Node000001_Node000008" title=" " alt="" coords="510,44,514,106,510,143,499,179,475,211,448,234,444,230,472,208,494,176,505,142,509,106,505,44"/>
+<area shape="rect" id="Node000009" href="$system_8cpp.html" title="Implementation of the System class." alt="" coords="661,79,781,104"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="552,32,686,76,685,81,550,37"/>
+<area shape="rect" id="Node000003" href="$flow_8cpp.html" title="Implementation of the Flow base class." alt="" coords="386,152,485,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,114,430,150,426,153,404,117"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="360,113,284,154,282,149,357,108"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="337,106,271,125,202,154,151,190,112,227,108,223,148,186,199,150,269,120,336,101"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="427,108,498,150,611,230,608,235,495,154,424,113"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="382,117,374,146,374,162,376,176,394,207,416,231,412,234,390,210,372,178,368,162,369,146,377,116"/>
+<area shape="rect" id="Node000005" href="$model_8cpp.html" title="Implementation of the Model class." alt="" coords="204,233,317,258"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="264,191,264,232,258,232,259,191"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="226,185,135,228,133,223,224,181"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="326,177,572,230,571,235,324,182"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="300,181,404,230,402,235,297,186"/>
+</map>

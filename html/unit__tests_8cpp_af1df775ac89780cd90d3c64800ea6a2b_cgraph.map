@@ -1,0 +1,11 @@
+<map id="model_unit_tests" name="model_unit_tests">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a302d4ed93c6e6f9a0f728e021a91f821" title="Adds a System to the simulation." alt="" coords="201,5,296,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,31,187,24,188,29,140,36"/>
+<area shape="rect" id="Node000003" href="$classModel.html#af987d08ccec7405d80a069b6ecf99e2c" title="Executes the simulation. Over the given time period, it iterates on the simulation step by step,..." alt="" coords="188,55,309,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,50,175,55,174,60,140,55"/>
+<area shape="rect" id="Node000004" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the current value of the system." alt="" coords="357,29,493,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,56,343,51,344,56,310,61"/>
+<area shape="rect" id="Node000005" href="$classSystem.html#a5343de0a45485edd88bc87f338fe9a19" title="Sets the current value of the system." alt="" coords="358,79,493,104"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="310,73,344,78,344,83,309,78"/>
+</map>

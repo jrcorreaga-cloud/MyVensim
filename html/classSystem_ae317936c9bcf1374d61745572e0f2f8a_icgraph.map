@@ -1,0 +1,7 @@
+<map id="System::System" name="System::System">
+<area shape="rect" id="Node000001" title="Default constructor for System. Initializes the system with an empty name and a value of 0...." alt="" coords="199,31,327,56"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#a93f350faa6efd0b1eca2bfc2c73c8cd6" title="Copy assignment operator." alt="" coords="5,5,151,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,35,151,31,151,25,185,30"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#ae85f88a65a564ff9b3308b05d8fd1fa2" title="Copy constructor for System." alt="" coords="14,55,142,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,56,143,62,142,56,184,51"/>
+</map>

@@ -1,0 +1,264 @@
+\doxysection{Model Class Reference}
+\hypertarget{classModel}{}\label{classModel}\index{Model@{Model}}
+
+
+Manages the execution of the simulation.  
+
+
+
+
+{\ttfamily \+\#include $<$model.\+h$>$}
+
+
+
+Collaboration diagram for Model:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classModel_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classModel_ac00568179c3d466977eb67c0993cbbcf}{Model}} (const \doxymbox{\hyperlink{classModel}{Model}} \&obj)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{classModel_ad6ebd2062a0b823db841a0b88baac4c0}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classModel}{Model}} \& \doxymbox{\hyperlink{classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0}{operator=}} (const \doxymbox{\hyperlink{classModel}{Model}} \&obj)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classModel_a302d4ed93c6e6f9a0f728e021a91f821}{add}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system)
+\begin{DoxyCompactList}\small\item\em Adds a \doxylink{classSystem}{System} to the simulation. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classModel_ab69613bde0ace81c92bbf519660ccb2c}{add}} (\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}flow)
+\begin{DoxyCompactList}\small\item\em Adds a \doxylink{classFlow}{Flow} to the simulation. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classModel_af987d08ccec7405d80a069b6ecf99e2c}{execute}} (int initial\+Time, int final\+Time)
+\begin{DoxyCompactList}\small\item\em Executes the simulation. Over the given time period, it iterates on the simulation step by step, recalculating and transferring flow values among the connected Systems. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{classModel_ac7dea8829149e597d2671dbc0a538bf7}{systems}}
+\item 
+vector$<$ \doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{classModel_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the execution of the simulation. 
+
+The \doxylink{classModel}{Model} class aggregates Systems and Flows, acting as a container for the simulation components and providing the means to execute the simulation over a given timeframe. 
+
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00023}{23}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+
+
+
+\label{classModel_doc-constructors}
+\Hypertarget{classModel_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classModel_ae3b375de5f6df4faf74a95d64748e048}\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classModel_ae3b375de5f6df4faf74a95d64748e048} 
+Model::\+\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{classModel}{Model}. 
+
+
+
+Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00008}{8}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classModel_ae3b375de5f6df4faf74a95d64748e048_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_ac00568179c3d466977eb67c0993cbbcf}\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classModel_ac00568179c3d466977eb67c0993cbbcf} 
+Model::\+\+Model (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classModel}{Model}} \&}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Copy constructor for \doxylink{classModel}{Model}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The \doxylink{classModel}{Model} object to copy. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00010}{10}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classModel_ac00568179c3d466977eb67c0993cbbcf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_ad6ebd2062a0b823db841a0b88baac4c0}\index{Model@{Model}!````~Model@{\texorpdfstring{$\sim$}{\string~}Model}}
+\index{````~Model@{\texorpdfstring{$\sim$}{\string~}Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Model()}{\string~Model()}}
+{\footnotesize\ttfamily \label{classModel_ad6ebd2062a0b823db841a0b88baac4c0} 
+Model::\+\texorpdfstring{$\sim$}{\string~}\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual destructor for \doxylink{classModel}{Model}. 
+
+
+
+Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00012}{12}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+
+
+\label{classModel_doc-func-members}
+\Hypertarget{classModel_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classModel_ab69613bde0ace81c92bbf519660ccb2c}\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classModel_ab69613bde0ace81c92bbf519660ccb2c} 
+void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow}{}\end{DoxyParamCaption})}
+
+
+
+Adds a \doxylink{classFlow}{Flow} to the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow} & Pointer to the \doxylink{classFlow}{Flow} to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00026}{26}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+\Hypertarget{classModel_a302d4ed93c6e6f9a0f728e021a91f821}\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classModel_a302d4ed93c6e6f9a0f728e021a91f821} 
+void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system}{}\end{DoxyParamCaption})}
+
+
+
+Adds a \doxylink{classSystem}{System} to the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & Pointer to the \doxylink{classSystem}{System} to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00022}{22}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_af987d08ccec7405d80a069b6ecf99e2c}\index{Model@{Model}!execute@{execute}}
+\index{execute@{execute}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{classModel_af987d08ccec7405d80a069b6ecf99e2c} 
+void Model::\+execute (\begin{DoxyParamCaption}\item[{int}]{initial\+Time}{, }\item[{int}]{final\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Executes the simulation. Over the given time period, it iterates on the simulation step by step, recalculating and transferring flow values among the connected Systems. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Time} & The starting point of the simulation. \\
+\hline
+{\em final\+Time} & The endpoint of the simulation. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00030}{30}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classModel_af987d08ccec7405d80a069b6ecf99e2c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_af987d08ccec7405d80a069b6ecf99e2c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0}\index{Model@{Model}!operator=@{operator=}}
+\index{operator=@{operator=}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0} 
+\doxymbox{\hyperlink{classModel}{Model}} \& Model::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classModel}{Model}} \&}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The \doxylink{classModel}{Model} reference to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classModel}{Model}\& A reference to the assigned object. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00014}{14}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{classModel_doc-variable-members}
+\Hypertarget{classModel_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classModel_aa76c9411f1cf6da6f4c696b2feadcb1a}\index{Model@{Model}!flows@{flows}}
+\index{flows@{flows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily \label{classModel_aa76c9411f1cf6da6f4c696b2feadcb1a} 
+vector$<$\doxymbox{\hyperlink{classFlow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model::\+flows\hspace{0.3cm}{\ttfamily [private]}}
+
+Collection of flows connecting the systems 
+
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00026}{26}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+
+\Hypertarget{classModel_ac7dea8829149e597d2671dbc0a538bf7}\index{Model@{Model}!systems@{systems}}
+\index{systems@{systems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily \label{classModel_ac7dea8829149e597d2671dbc0a538bf7} 
+vector$<$\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*}$>$ Model::\+systems\hspace{0.3cm}{\ttfamily [private]}}
+
+Collection of subsystems in the simulation 
+
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00025}{25}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{model_8h}{model.\+h}}\item 
+src/\+\doxymbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}

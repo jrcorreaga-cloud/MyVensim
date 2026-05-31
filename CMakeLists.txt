@@ -1,30 +1,39 @@
 cmake_minimum_required(VERSION 3.10)
 project(MyVensim)
 
-# Set the C++ standard to C++11
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+# Configure C++ standard and strict debugging flags
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -g")
 
-# Place all runtime executables in the `bin` directory
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+# Output binaries to the bin/ directory
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 
-# Build the core static library from source files
-add_library(vensim_core
-    src/system.cpp
-    src/flow.cpp
-    src/model.cpp
+# Core simulator source files
+set(CORE_SRC
+    src/systemImpl.cpp
+    src/flowImpl.cpp
+    src/modelImpl.cpp
 )
 
-# Build the functional tests executable and link the core library
-add_executable(funcional_tests
-    test/funcional/main.cpp
-    test/funcional/funcional_tests.cpp
+# Main product executable
+add_executable(simulador 
+    src/main.cpp 
+    ${CORE_SRC}
 )
-target_link_libraries(funcional_tests vensim_core)
 
-# Build the unit tests executable and link the core library
-add_executable(unit_tests
-    test/unit/main.cpp
-    test/unit/unit_tests.cpp
+# Functional tests executable
+add_executable(test_funcional 
+    test/funcional/main.cpp 
+    test/funcional/funcional_tests.cpp 
+    ${CORE_SRC}
 )
-target_link_libraries(unit_tests vensim_core)
+
+# Unit tests executable
+add_executable(test_unit 
+    test/unit/main.cpp 
+    test/unit/unit_tests.cpp 
+    test/unit/unit_System.cpp 
+    test/unit/unit_Flow.cpp 
+    test/unit/unit_Model.cpp 
+    ${CORE_SRC}
+)
