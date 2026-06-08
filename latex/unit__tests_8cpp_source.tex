@@ -2,74 +2,14 @@
 \hypertarget{unit__tests_8cpp_source}{}\label{unit__tests_8cpp_source}\index{test/unit/unit\_tests.cpp@{test/unit/unit\_tests.cpp}}
 \doxymbox{\hyperlink{unit__tests_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{unit__tests_8h}{unit\_tests.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00003}00003\ \textcolor{comment}{//\ If\ in\ the\ future\ you\ create\ loose\ mathematical\ functions\ (e.g.\ double\ calculateMean(vector)),\ }}
+\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00004}00004\ \textcolor{comment}{//\ their\ unit\ tests\ (unit\_calculateMean)\ would\ be\ implemented\ here.}}
 \DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00005}00005\ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{unit__tests_8h}{unit\_tests.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{system_8h}{../../src/system.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{flow_8h}{../../src/flow.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{model_8h}{../../src/model.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <cassert>}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00012}00012\ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00013}00013\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00014}00014\ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00015}00015\ \textcolor{comment}{//\ Concrete\ Dummy\ Flow\ just\ to\ test\ the\ base\ Flow\ methods}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00016}\doxymbox{\hyperlink{classDummyFlow}{00016}}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classDummyFlow_a38cb5397cfd1a70f320c26be5d264124}{DummyFlow}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}}\ \{}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00017}00017\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00018}\doxymbox{\hyperlink{classDummyFlow_a38cb5397cfd1a70f320c26be5d264124}{00018}}\ \ \ \ \ \doxymbox{\hyperlink{classDummyFlow_a38cb5397cfd1a70f320c26be5d264124}{DummyFlow}}(\textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}}\ =\ \textcolor{stringliteral}{"{}"{}})\ :\ \doxymbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}}(\doxymbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}})\ \{\}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00019}\doxymbox{\hyperlink{classDummyFlow_a760be0dafdbc304cacd6c8353c9abf06}{00019}}\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classDummyFlow_a760be0dafdbc304cacd6c8353c9abf06}{execute}}()\textcolor{keyword}{\ override\ }\{}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0;\ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00021}00021\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00022}00022\ \};}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00023}00023\ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00024}\doxymbox{\hyperlink{unit__tests_8cpp_a3035df29786dcc3f776e39cb33f324ee}{00024}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__tests_8cpp_a3035df29786dcc3f776e39cb33f324ee}{system\_unit\_tests}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00025}00025\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}\ s(\textcolor{stringliteral}{"{}TestSystem"{}},\ 15.5);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00026}00026\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00027}00027\ \ \ \ \ assert(s.\doxymbox{\hyperlink{classSystem_a47ece132a04247cd74aea11537830bd4}{getName}}()\ ==\ \textcolor{stringliteral}{"{}TestSystem"{}});}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00028}00028\ \ \ \ \ assert(s.\doxymbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ ==\ 15.5);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00029}00029\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00030}00030\ \ \ \ \ s.\doxymbox{\hyperlink{classSystem_a8ca115c44d52a5bee53cfb7c6990d49e}{setName}}(\textcolor{stringliteral}{"{}NewName"{}});}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00031}00031\ \ \ \ \ s.\doxymbox{\hyperlink{classSystem_a5343de0a45485edd88bc87f338fe9a19}{setValue}}(20.0);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00032}00032\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00033}00033\ \ \ \ \ assert(s.\doxymbox{\hyperlink{classSystem_a47ece132a04247cd74aea11537830bd4}{getName}}()\ ==\ \textcolor{stringliteral}{"{}NewName"{}});}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00034}00034\ \ \ \ \ assert(s.\doxymbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ ==\ 20.0);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00035}00035\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00036}00036\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}System\ unit\ tests\ passed!"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00037}00037\ \}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00038}00038\ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00039}\doxymbox{\hyperlink{unit__tests_8cpp_ac384962033e7f73e8f485f0641a8ef63}{00039}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__tests_8cpp_ac384962033e7f73e8f485f0641a8ef63}{flow\_unit\_tests}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00040}00040\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}\ src(\textcolor{stringliteral}{"{}Source"{}},\ 10.0);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00041}00041\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}\ tgt(\textcolor{stringliteral}{"{}Target"{}},\ 20.0);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00042}00042\ \ \ \ \ \doxymbox{\hyperlink{classDummyFlow}{DummyFlow}}\ f(\textcolor{stringliteral}{"{}TestFlow"{}});}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00043}00043\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00044}00044\ \ \ \ \ assert(f.\doxymbox{\hyperlink{classFlow_a62bbc54ff95eeb0795511519edf32077}{getName}}()\ ==\ \textcolor{stringliteral}{"{}TestFlow"{}});}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00045}00045\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00046}00046\ \ \ \ \ f.\doxymbox{\hyperlink{classFlow_a47f7a0b4b34a8bab2c38b323e588f2ec}{connect}}(\&src,\ \&tgt);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00047}00047\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00048}00048\ \ \ \ \ assert(f.\doxymbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{getSource}}()\ ==\ \&src);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00049}00049\ \ \ \ \ assert(f.\doxymbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{getTarget}}()\ ==\ \&tgt);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00050}00050\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00051}00051\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Flow\ unit\ tests\ passed!"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00052}00052\ \}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00053}00053\ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00054}\doxymbox{\hyperlink{unit__tests_8cpp_af1df775ac89780cd90d3c64800ea6a2b}{00054}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__tests_8cpp_af1df775ac89780cd90d3c64800ea6a2b}{model\_unit\_tests}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00055}00055\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}\ m;}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00056}00056\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}\ s1(\textcolor{stringliteral}{"{}Sys1"{}},\ 10.0);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00057}00057\ \ \ \ \ \doxymbox{\hyperlink{classDummyFlow}{DummyFlow}}\ f1(\textcolor{stringliteral}{"{}Flow1"{}});}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00058}00058\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00059}00059\ \ \ \ \ m.\doxymbox{\hyperlink{classModel_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&s1);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00060}00060\ \ \ \ \ m.\doxymbox{\hyperlink{classModel_a302d4ed93c6e6f9a0f728e021a91f821}{add}}(\&f1);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00061}00061\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00062}00062\ \ \ \ \ \textcolor{comment}{//\ Test\ that\ the\ model\ can\ run\ without\ crashing}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00063}00063\ \ \ \ \ m.\doxymbox{\hyperlink{classModel_af987d08ccec7405d80a069b6ecf99e2c}{execute}}(0,\ 1);}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00064}00064\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00065}00065\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Model\ unit\ tests\ passed!"{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00066}00066\ \}}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00067}00067\ }
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00068}\doxymbox{\hyperlink{unit__tests_8cpp_aaef0e580ac1123f30a7c742b9b73e51a}{00068}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__tests_8cpp_aaef0e580ac1123f30a7c742b9b73e51a}{run\_unit\_tests\_globals}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00069}00069\ \ \ \ \ \doxymbox{\hyperlink{unit__tests_8cpp_a3035df29786dcc3f776e39cb33f324ee}{system\_unit\_tests}}();}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00070}00070\ \ \ \ \ \doxymbox{\hyperlink{unit__tests_8cpp_ac384962033e7f73e8f485f0641a8ef63}{flow\_unit\_tests}}();}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00071}00071\ \ \ \ \ \doxymbox{\hyperlink{unit__tests_8cpp_af1df775ac89780cd90d3c64800ea6a2b}{model\_unit\_tests}}();}
-\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00006}\doxymbox{\hyperlink{unit__tests_8cpp_aaef0e580ac1123f30a7c742b9b73e51a}{00006}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__tests_8cpp_aaef0e580ac1123f30a7c742b9b73e51a}{run\_unit\_tests\_globals}}()\ \{}
+\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00007}00007\ \ \ \ \ \textcolor{comment}{//\ For\ now,\ the\ framework\ has\ no\ loose\ global\ scoped\ functions.}}
+\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00008}00008\ \ \ \ \ \textcolor{comment}{//\ This\ function\ is\ maintained\ to\ satisfy\ the\ Sprint\ 4\ standard.}}
+\DoxyCodeLine{\Hypertarget{unit__tests_8cpp_source_l00009}00009\ \}}
 
 \end{DoxyCode}

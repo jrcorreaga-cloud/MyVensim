@@ -118,112 +118,19 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__tests_8c
   <div class="headertitle"><div class="title">unit_tests.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="unit__tests_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<a href="unit__tests_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="unit__tests_8h.html">unit_tests.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// If in the future you create loose mathematical functions (e.g. double calculateMean(vector)), </span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// their unit tests (unit_calculateMean) would be implemented here.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="unit__tests_8h.html">unit_tests.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="system_8h.html">../../src/system.h</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="flow_8h.html">../../src/flow.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="model_8h.html">../../src/model.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Concrete Dummy Flow just to test the base Flow methods</span></div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classDummyFlow.html">   16</a></span><span class="keyword">class </span><a class="code hl_function" href="classDummyFlow.html#a38cb5397cfd1a70f320c26be5d264124">DummyFlow</a> : <span class="keyword">public</span> <a class="code hl_function" href="classFlow.html#ac9975e144e606242748197798e87dd32">Flow</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classDummyFlow.html#a38cb5397cfd1a70f320c26be5d264124">   18</a></span>    <a class="code hl_function" href="classDummyFlow.html#a38cb5397cfd1a70f320c26be5d264124">DummyFlow</a>(<span class="keywordtype">string</span> <a class="code hl_variable" href="classFlow.html#a8801d2ed91a9d96003d4bc8024451551">name</a> = <span class="stringliteral">&quot;&quot;</span>) : <a class="code hl_function" href="classFlow.html#ac9975e144e606242748197798e87dd32">Flow</a>(<a class="code hl_variable" href="classFlow.html#a8801d2ed91a9d96003d4bc8024451551">name</a>) {}</div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classDummyFlow.html#a760be0dafdbc304cacd6c8353c9abf06">   19</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classDummyFlow.html#a760be0dafdbc304cacd6c8353c9abf06">execute</a>()<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> 0.0; </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a">    6</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a">run_unit_tests_globals</a>() {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">// For now, the framework has no loose global scoped functions.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="comment">// This function is maintained to satisfy the Sprint 4 standard.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
-</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="unit__tests_8cpp.html#a3035df29786dcc3f776e39cb33f324ee">   24</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8cpp.html#a3035df29786dcc3f776e39cb33f324ee">system_unit_tests</a>() {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classSystem.html">System</a> s(<span class="stringliteral">&quot;TestSystem&quot;</span>, 15.5);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    assert(s.<a class="code hl_function" href="classSystem.html#a47ece132a04247cd74aea11537830bd4">getName</a>() == <span class="stringliteral">&quot;TestSystem&quot;</span>);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    assert(s.<a class="code hl_function" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d">getValue</a>() == 15.5);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    s.<a class="code hl_function" href="classSystem.html#a8ca115c44d52a5bee53cfb7c6990d49e">setName</a>(<span class="stringliteral">&quot;NewName&quot;</span>);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    s.<a class="code hl_function" href="classSystem.html#a5343de0a45485edd88bc87f338fe9a19">setValue</a>(20.0);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    assert(s.<a class="code hl_function" href="classSystem.html#a47ece132a04247cd74aea11537830bd4">getName</a>() == <span class="stringliteral">&quot;NewName&quot;</span>);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    assert(s.<a class="code hl_function" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d">getValue</a>() == 20.0);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    cout &lt;&lt; <span class="stringliteral">&quot;System unit tests passed!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
-</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="unit__tests_8cpp.html#ac384962033e7f73e8f485f0641a8ef63">   39</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8cpp.html#ac384962033e7f73e8f485f0641a8ef63">flow_unit_tests</a>() {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_class" href="classSystem.html">System</a> src(<span class="stringliteral">&quot;Source&quot;</span>, 10.0);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="classSystem.html">System</a> tgt(<span class="stringliteral">&quot;Target&quot;</span>, 20.0);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="classDummyFlow.html">DummyFlow</a> f(<span class="stringliteral">&quot;TestFlow&quot;</span>);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    assert(f.<a class="code hl_function" href="classFlow.html#a62bbc54ff95eeb0795511519edf32077">getName</a>() == <span class="stringliteral">&quot;TestFlow&quot;</span>);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    f.<a class="code hl_function" href="classFlow.html#a47f7a0b4b34a8bab2c38b323e588f2ec">connect</a>(&amp;src, &amp;tgt);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    assert(f.<a class="code hl_function" href="classFlow.html#a1f3858f90d141807377c2640fb5dd0fc">getSource</a>() == &amp;src);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    assert(f.<a class="code hl_function" href="classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5">getTarget</a>() == &amp;tgt);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    cout &lt;&lt; <span class="stringliteral">&quot;Flow unit tests passed!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
-</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="unit__tests_8cpp.html#af1df775ac89780cd90d3c64800ea6a2b">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8cpp.html#af1df775ac89780cd90d3c64800ea6a2b">model_unit_tests</a>() {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_class" href="classModel.html">Model</a> m;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_class" href="classSystem.html">System</a> s1(<span class="stringliteral">&quot;Sys1&quot;</span>, 10.0);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="classDummyFlow.html">DummyFlow</a> f1(<span class="stringliteral">&quot;Flow1&quot;</span>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    m.<a class="code hl_function" href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821">add</a>(&amp;s1);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    m.<a class="code hl_function" href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821">add</a>(&amp;f1);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Test that the model can run without crashing</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    m.<a class="code hl_function" href="classModel.html#af987d08ccec7405d80a069b6ecf99e2c">execute</a>(0, 1);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    cout &lt;&lt; <span class="stringliteral">&quot;Model unit tests passed!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
-</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a">   68</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a">run_unit_tests_globals</a>() {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_function" href="unit__tests_8cpp.html#a3035df29786dcc3f776e39cb33f324ee">system_unit_tests</a>();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_function" href="unit__tests_8cpp.html#ac384962033e7f73e8f485f0641a8ef63">flow_unit_tests</a>();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_function" href="unit__tests_8cpp.html#af1df775ac89780cd90d3c64800ea6a2b">model_unit_tests</a>();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
-</div>
-<div class="ttc" id="aclassDummyFlow_html"><div class="ttname"><a href="classDummyFlow.html">DummyFlow</a></div><div class="ttdef"><b>Definition</b> <a href="#l00016">unit_tests.cpp:16</a></div></div>
-<div class="ttc" id="aclassDummyFlow_html_a38cb5397cfd1a70f320c26be5d264124"><div class="ttname"><a href="classDummyFlow.html#a38cb5397cfd1a70f320c26be5d264124">DummyFlow::DummyFlow</a></div><div class="ttdeci">DummyFlow(string name=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00018">unit_tests.cpp:18</a></div></div>
-<div class="ttc" id="aclassDummyFlow_html_a760be0dafdbc304cacd6c8353c9abf06"><div class="ttname"><a href="classDummyFlow.html#a760be0dafdbc304cacd6c8353c9abf06">DummyFlow::execute</a></div><div class="ttdeci">double execute() override</div><div class="ttdoc">Pure virtual method for flow execution. Computes the amount of value transferred from source to targe...</div><div class="ttdef"><b>Definition</b> <a href="#l00019">unit_tests.cpp:19</a></div></div>
-<div class="ttc" id="aclassFlow_html_a1f3858f90d141807377c2640fb5dd0fc"><div class="ttname"><a href="classFlow.html#a1f3858f90d141807377c2640fb5dd0fc">Flow::getSource</a></div><div class="ttdeci">System * getSource() const</div><div class="ttdoc">Gets the source System.</div><div class="ttdef"><b>Definition</b> <a href="flow_8cpp_source.html#l00029">flow.cpp:29</a></div></div>
-<div class="ttc" id="aclassFlow_html_a47f7a0b4b34a8bab2c38b323e588f2ec"><div class="ttname"><a href="classFlow.html#a47f7a0b4b34a8bab2c38b323e588f2ec">Flow::connect</a></div><div class="ttdeci">void connect(System *source, System *target)</div><div class="ttdoc">Helper method to set both source and target Systems.</div><div class="ttdef"><b>Definition</b> <a href="flow_8cpp_source.html#l00034">flow.cpp:34</a></div></div>
-<div class="ttc" id="aclassFlow_html_a62bbc54ff95eeb0795511519edf32077"><div class="ttname"><a href="classFlow.html#a62bbc54ff95eeb0795511519edf32077">Flow::getName</a></div><div class="ttdeci">string getName() const</div><div class="ttdoc">Gets the name of the flow.</div><div class="ttdef"><b>Definition</b> <a href="flow_8cpp_source.html#l00026">flow.cpp:26</a></div></div>
-<div class="ttc" id="aclassFlow_html_a8801d2ed91a9d96003d4bc8024451551"><div class="ttname"><a href="classFlow.html#a8801d2ed91a9d96003d4bc8024451551">Flow::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition</b> <a href="flow_8h_source.html#l00023">flow.h:23</a></div></div>
-<div class="ttc" id="aclassFlow_html_ac9975e144e606242748197798e87dd32"><div class="ttname"><a href="classFlow.html#ac9975e144e606242748197798e87dd32">Flow::Flow</a></div><div class="ttdeci">Flow()</div><div class="ttdoc">Default constructor. Initializes the flow with no name and null Systems.</div><div class="ttdef"><b>Definition</b> <a href="flow_8cpp_source.html#l00008">flow.cpp:8</a></div></div>
-<div class="ttc" id="aclassFlow_html_aff8a0f8ca8dc50d37c92ab7556e172b5"><div class="ttname"><a href="classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5">Flow::getTarget</a></div><div class="ttdeci">System * getTarget() const</div><div class="ttdoc">Gets the target System.</div><div class="ttdef"><b>Definition</b> <a href="flow_8cpp_source.html#l00032">flow.cpp:32</a></div></div>
-<div class="ttc" id="aclassModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdoc">Manages the execution of the simulation.</div><div class="ttdef"><b>Definition</b> <a href="model_8h_source.html#l00023">model.h:23</a></div></div>
-<div class="ttc" id="aclassModel_html_a302d4ed93c6e6f9a0f728e021a91f821"><div class="ttname"><a href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821">Model::add</a></div><div class="ttdeci">void add(System *system)</div><div class="ttdoc">Adds a System to the simulation.</div><div class="ttdef"><b>Definition</b> <a href="model_8cpp_source.html#l00022">model.cpp:22</a></div></div>
-<div class="ttc" id="aclassModel_html_af987d08ccec7405d80a069b6ecf99e2c"><div class="ttname"><a href="classModel.html#af987d08ccec7405d80a069b6ecf99e2c">Model::execute</a></div><div class="ttdeci">void execute(int initialTime, int finalTime)</div><div class="ttdoc">Executes the simulation. Over the given time period, it iterates on the simulation step by step,...</div><div class="ttdef"><b>Definition</b> <a href="model_8cpp_source.html#l00030">model.cpp:30</a></div></div>
-<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">Represents a stock/system entity in the simulation.</div><div class="ttdef"><b>Definition</b> <a href="system_8h_source.html#l00020">system.h:20</a></div></div>
-<div class="ttc" id="aclassSystem_html_a47ece132a04247cd74aea11537830bd4"><div class="ttname"><a href="classSystem.html#a47ece132a04247cd74aea11537830bd4">System::getName</a></div><div class="ttdeci">string getName() const</div><div class="ttdoc">Gets the name of the system.</div><div class="ttdef"><b>Definition</b> <a href="system_8cpp_source.html#l00025">system.cpp:25</a></div></div>
-<div class="ttc" id="aclassSystem_html_a5343de0a45485edd88bc87f338fe9a19"><div class="ttname"><a href="classSystem.html#a5343de0a45485edd88bc87f338fe9a19">System::setValue</a></div><div class="ttdeci">void setValue(double value)</div><div class="ttdoc">Sets the current value of the system.</div><div class="ttdef"><b>Definition</b> <a href="system_8cpp_source.html#l00027">system.cpp:27</a></div></div>
-<div class="ttc" id="aclassSystem_html_a8ca115c44d52a5bee53cfb7c6990d49e"><div class="ttname"><a href="classSystem.html#a8ca115c44d52a5bee53cfb7c6990d49e">System::setName</a></div><div class="ttdeci">void setName(string name)</div><div class="ttdoc">Sets the name of the system.</div><div class="ttdef"><b>Definition</b> <a href="system_8cpp_source.html#l00024">system.cpp:24</a></div></div>
-<div class="ttc" id="aclassSystem_html_aa7d17369d1034e7d8643a63f69d1901d"><div class="ttname"><a href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d">System::getValue</a></div><div class="ttdeci">double getValue() const</div><div class="ttdoc">Gets the current value of the system.</div><div class="ttdef"><b>Definition</b> <a href="system_8cpp_source.html#l00028">system.cpp:28</a></div></div>
-<div class="ttc" id="aflow_8h_html"><div class="ttname"><a href="flow_8h.html">flow.h</a></div><div class="ttdoc">Abstract Flow class definition used to transfer values between Systems.</div></div>
-<div class="ttc" id="amodel_8h_html"><div class="ttname"><a href="model_8h.html">model.h</a></div><div class="ttdoc">Model class that holds Systems and Flows and runs simulations.</div></div>
-<div class="ttc" id="asystem_8h_html"><div class="ttname"><a href="system_8h.html">system.h</a></div><div class="ttdoc">Simple System class representing a stock with a name and numeric value.</div></div>
-<div class="ttc" id="aunit__tests_8cpp_html_a3035df29786dcc3f776e39cb33f324ee"><div class="ttname"><a href="unit__tests_8cpp.html#a3035df29786dcc3f776e39cb33f324ee">system_unit_tests</a></div><div class="ttdeci">void system_unit_tests()</div><div class="ttdef"><b>Definition</b> <a href="#l00024">unit_tests.cpp:24</a></div></div>
-<div class="ttc" id="aunit__tests_8cpp_html_aaef0e580ac1123f30a7c742b9b73e51a"><div class="ttname"><a href="unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a">run_unit_tests_globals</a></div><div class="ttdeci">void run_unit_tests_globals()</div><div class="ttdef"><b>Definition</b> <a href="#l00068">unit_tests.cpp:68</a></div></div>
-<div class="ttc" id="aunit__tests_8cpp_html_ac384962033e7f73e8f485f0641a8ef63"><div class="ttname"><a href="unit__tests_8cpp.html#ac384962033e7f73e8f485f0641a8ef63">flow_unit_tests</a></div><div class="ttdeci">void flow_unit_tests()</div><div class="ttdef"><b>Definition</b> <a href="#l00039">unit_tests.cpp:39</a></div></div>
-<div class="ttc" id="aunit__tests_8cpp_html_af1df775ac89780cd90d3c64800ea6a2b"><div class="ttname"><a href="unit__tests_8cpp.html#af1df775ac89780cd90d3c64800ea6a2b">model_unit_tests</a></div><div class="ttdeci">void model_unit_tests()</div><div class="ttdef"><b>Definition</b> <a href="#l00054">unit_tests.cpp:54</a></div></div>
-<div class="ttc" id="aunit__tests_8h_html"><div class="ttname"><a href="unit__tests_8h.html">unit_tests.h</a></div><div class="ttdoc">Unit test declarations for System, Flow and Model.</div></div>
+<div class="ttc" id="aunit__tests_8cpp_html_aaef0e580ac1123f30a7c742b9b73e51a"><div class="ttname"><a href="unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a">run_unit_tests_globals</a></div><div class="ttdeci">void run_unit_tests_globals()</div><div class="ttdef"><b>Definition</b> <a href="#l00006">unit_tests.cpp:6</a></div></div>
+<div class="ttc" id="aunit__tests_8h_html"><div class="ttname"><a href="unit__tests_8h.html">unit_tests.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

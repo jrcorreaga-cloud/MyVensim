@@ -32,7 +32,8 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -49,7 +50,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"CMakeCCompilerId_8c.html"
+"3_828_83_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp.html",
+"test__funcional_8dir_2src_2modelImpl_8cpp_8o_8d.html"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

@@ -2,263 +2,346 @@
 \hypertarget{classModel}{}\label{classModel}\index{Model@{Model}}
 
 
-Manages the execution of the simulation.  
-
-
-
-
 {\ttfamily \+\#include $<$model.\+h$>$}
 
 
 
-Collaboration diagram for Model:\+\nopagebreak
+Inheritance diagram for Model:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=159pt]{classModel__coll__graph}
+\includegraphics[height=550pt]{classModel__inherit__graph}
 \end{center}
 \end{figure}
+
+
+Collaboration diagram for Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::\+vector$<$ \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$::\+iterator \doxymbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Exposes iterators without revealing the underlying data structures, ensuring encapsulation according to the Information Hiding principles. \end{DoxyCompactList}\item 
+typedef std::\+vector$<$ \doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$::\+iterator \doxymbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flow\+Iterator}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{classModel_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
-\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classModel_ac00568179c3d466977eb67c0993cbbcf}{Model}} (const \doxymbox{\hyperlink{classModel}{Model}} \&obj)
-\begin{DoxyCompactList}\small\item\em Copy constructor for \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
-virtual \doxymbox{\hyperlink{classModel_ad6ebd2062a0b823db841a0b88baac4c0}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
-\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classModel}{Model}} \& \doxymbox{\hyperlink{classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0}{operator=}} (const \doxymbox{\hyperlink{classModel}{Model}} \&obj)
-\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classModel_a302d4ed93c6e6f9a0f728e021a91f821}{add}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system)
-\begin{DoxyCompactList}\small\item\em Adds a \doxylink{classSystem}{System} to the simulation. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classModel_ab69613bde0ace81c92bbf519660ccb2c}{add}} (\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}flow)
-\begin{DoxyCompactList}\small\item\em Adds a \doxylink{classFlow}{Flow} to the simulation. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classModel_af987d08ccec7405d80a069b6ecf99e2c}{execute}} (int initial\+Time, int final\+Time)
-\begin{DoxyCompactList}\small\item\em Executes the simulation. Over the given time period, it iterates on the simulation step by step, recalculating and transferring flow values among the connected Systems. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
+virtual \doxymbox{\hyperlink{classModel_af032d8433c87a0a3a431faf6563a1f03}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
 \item 
-vector$<$ \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{classModel_ac7dea8829149e597d2671dbc0a538bf7}{systems}}
+virtual void \doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system)=0
+\begin{DoxyCompactList}\small\item\em Contract for managing \doxylink{classSystem}{System} entities inside the simulation model. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} \doxymbox{\hyperlink{classModel_ae87a460b5f8bc4e01c2c4c2413f4df47}{system\+Begin}} ()=0
 \item 
-vector$<$ \doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{classModel_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}
+virtual \doxymbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} \doxymbox{\hyperlink{classModel_ac381f929e44c3a1f04ed8d393a0c7bbc}{system\+End}} ()=0
+\item 
+virtual void \doxymbox{\hyperlink{classModel_ab7df81041f62f049cfc6e4d50dcaf721}{add}} (\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}flow)=0
+\begin{DoxyCompactList}\small\item\em Contract for managing \doxylink{classFlow}{Flow} entities inside the simulation model. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} \doxymbox{\hyperlink{classModel_ac3cbad7c7be9a1176b71f689590f5e13}{flow\+Begin}} ()=0
+\item 
+virtual \doxymbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} \doxymbox{\hyperlink{classModel_a3bd1101deb3f40e189036b363288cdf9}{flow\+End}} ()=0
+\item 
+virtual void \doxymbox{\hyperlink{classModel_a299939795a2d298025372ab5173020c6}{run}} (double start\+Time, double end\+Time, double step)=0
+\begin{DoxyCompactList}\small\item\em Core simulation lifecycle manager. Executes the operational loop. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{classModel_ad9e8e4d0a942396c74932a8c57b03b57}{set\+Name}} (const std::\+string \&name)=0
+\begin{DoxyCompactList}\small\item\em Metadata tracking methods. \end{DoxyCompactList}\item 
+virtual std::\+string \doxymbox{\hyperlink{classModel_a17e89ca8d15af46d074423a47d3c6802}{get\+Name}} () const =0
+\item 
+virtual void \doxymbox{\hyperlink{classModel_ab89eff21392ee4e7f58da939238acc7c}{set\+Time}} (double time)=0
+\item 
+virtual double \doxymbox{\hyperlink{classModel_a41569269c162962571a791c0fe737bca}{get\+Time}} () const =0
+\item 
+virtual void \doxymbox{\hyperlink{classModel_a27981fdb221eef87b2d441a576ca6747}{increment\+Time}} (double step)=0
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Manages the execution of the simulation. 
 
-The \doxylink{classModel}{Model} class aggregates Systems and Flows, acting as a container for the simulation components and providing the means to execute the simulation over a given timeframe. 
 
-Definition at line \doxymbox{\hyperlink{model_8h_source_l00023}{23}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00009}{9}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+
+
+
+\label{classModel_doc-typedef-members}
+\Hypertarget{classModel_doc-typedef-members}
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classModel_af19b499569caa4d43b69914002e04271}\index{Model@{Model}!flowIterator@{flowIterator}}
+\index{flowIterator@{flowIterator}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flowIterator}{flowIterator}}
+{\footnotesize\ttfamily \label{classModel_af19b499569caa4d43b69914002e04271} 
+typedef std::\+vector$<$\doxymbox{\hyperlink{classFlow}{Flow}}\texorpdfstring{$\ast$}{*}$>$::\+iterator \doxymbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{Model::\+flow\+Iterator}}}
+
+
+
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00016}{16}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+
+\Hypertarget{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}\index{Model@{Model}!systemIterator@{systemIterator}}
+\index{systemIterator@{systemIterator}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systemIterator}{systemIterator}}
+{\footnotesize\ttfamily \label{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16} 
+typedef std::\+vector$<$\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*}$>$::\+iterator \doxymbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{Model::\+system\+Iterator}}}
+
+
+
+Exposes iterators without revealing the underlying data structures, ensuring encapsulation according to the Information Hiding principles. 
+
+
+
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00015}{15}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
 
 
 
 \label{classModel_doc-constructors}
 \Hypertarget{classModel_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classModel_ae3b375de5f6df4faf74a95d64748e048}\index{Model@{Model}!Model@{Model}}
-\index{Model@{Model}!Model@{Model}}
-\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{classModel_ae3b375de5f6df4faf74a95d64748e048} 
-Model::\+\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Default constructor for \doxylink{classModel}{Model}. 
-
-
-
-Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00008}{8}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
-
-Here is the caller graph for this function:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=301pt]{classModel_ae3b375de5f6df4faf74a95d64748e048_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classModel_ac00568179c3d466977eb67c0993cbbcf}\index{Model@{Model}!Model@{Model}}
-\index{Model@{Model}!Model@{Model}}
-\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{classModel_ac00568179c3d466977eb67c0993cbbcf} 
-Model::\+\+Model (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classModel}{Model}} \&}]{obj}{}\end{DoxyParamCaption})}
-
-
-
-Copy constructor for \doxylink{classModel}{Model}. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em obj} & The \doxylink{classModel}{Model} object to copy. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00010}{10}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
-
-Here is the call graph for this function:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=282pt]{classModel_ac00568179c3d466977eb67c0993cbbcf_cgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classModel_ad6ebd2062a0b823db841a0b88baac4c0}\index{Model@{Model}!````~Model@{\texorpdfstring{$\sim$}{\string~}Model}}
+\Hypertarget{classModel_af032d8433c87a0a3a431faf6563a1f03}\index{Model@{Model}!````~Model@{\texorpdfstring{$\sim$}{\string~}Model}}
 \index{````~Model@{\texorpdfstring{$\sim$}{\string~}Model}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Model()}{\string~Model()}}
-{\footnotesize\ttfamily \label{classModel_ad6ebd2062a0b823db841a0b88baac4c0} 
-Model::\+\texorpdfstring{$\sim$}{\string~}\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classModel_af032d8433c87a0a3a431faf6563a1f03} 
+virtual Model::\+\texorpdfstring{$\sim$}{\string~}\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
-Virtual destructor for \doxylink{classModel}{Model}. 
-
-
-
-Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00012}{12}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00018}{18}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
 
 
 
 \label{classModel_doc-func-members}
 \Hypertarget{classModel_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classModel_ab69613bde0ace81c92bbf519660ccb2c}\index{Model@{Model}!add@{add}}
+\Hypertarget{classModel_ab7df81041f62f049cfc6e4d50dcaf721}\index{Model@{Model}!add@{add}}
 \index{add@{add}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{classModel_ab69613bde0ace81c92bbf519660ccb2c} 
-void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classModel_ab7df81041f62f049cfc6e4d50dcaf721} 
+virtual void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Adds a \doxylink{classFlow}{Flow} to the simulation. 
+Contract for managing \doxylink{classFlow}{Flow} entities inside the simulation model. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em flow} & Pointer to the \doxylink{classFlow}{Flow} to be added. \\
-\hline
-\end{DoxyParams}
 
+Implemented in \doxymbox{\hyperlink{classModelImpl_a3e8843e5353f40ab30afcf19b4f13a67}{Model\+Impl}}.
 
-Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00026}{26}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
-
-\Hypertarget{classModel_a302d4ed93c6e6f9a0f728e021a91f821}\index{Model@{Model}!add@{add}}
+\Hypertarget{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}\index{Model@{Model}!add@{add}}
 \index{add@{add}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{classModel_a302d4ed93c6e6f9a0f728e021a91f821} 
-void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classModel_afde6c25ab942f2eec7aedeaf8eec53fd} 
+virtual void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Adds a \doxylink{classSystem}{System} to the simulation. 
+Contract for managing \doxylink{classSystem}{System} entities inside the simulation model. 
 
 
-\begin{DoxyParams}{Parameters}
-{\em system} & Pointer to the \doxylink{classSystem}{System} to be added. \\
-\hline
-\end{DoxyParams}
 
+Implemented in \doxymbox{\hyperlink{classModelImpl_a24e46f6ee90908c0ed4e882094573800}{Model\+Impl}}.
 
-Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00022}{22}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
-
-Here is the caller graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph}
+\includegraphics[width=350pt]{classModel_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classModel_af987d08ccec7405d80a069b6ecf99e2c}\index{Model@{Model}!execute@{execute}}
-\index{execute@{execute}!Model@{Model}}
-\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
-{\footnotesize\ttfamily \label{classModel_af987d08ccec7405d80a069b6ecf99e2c} 
-void Model::\+execute (\begin{DoxyParamCaption}\item[{int}]{initial\+Time}{, }\item[{int}]{final\+Time}{}\end{DoxyParamCaption})}
+\Hypertarget{classModel_ac3cbad7c7be9a1176b71f689590f5e13}\index{Model@{Model}!flowBegin@{flowBegin}}
+\index{flowBegin@{flowBegin}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flowBegin()}{flowBegin()}}
+{\footnotesize\ttfamily \label{classModel_ac3cbad7c7be9a1176b71f689590f5e13} 
+virtual \doxymbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} Model::\+flow\+Begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Executes the simulation. Over the given time period, it iterates on the simulation step by step, recalculating and transferring flow values among the connected Systems. 
+Implemented in \doxymbox{\hyperlink{classModelImpl_a47b7434a49e79c2b648b5db575a23d35}{Model\+Impl}}.
 
-
-\begin{DoxyParams}{Parameters}
-{\em initial\+Time} & The starting point of the simulation. \\
-\hline
-{\em final\+Time} & The endpoint of the simulation. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00030}{30}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
-
-Here is the call graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=309pt]{classModel_af987d08ccec7405d80a069b6ecf99e2c_cgraph}
+\includegraphics[width=350pt]{classModel_ac3cbad7c7be9a1176b71f689590f5e13_icgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+\nopagebreak
+\Hypertarget{classModel_a3bd1101deb3f40e189036b363288cdf9}\index{Model@{Model}!flowEnd@{flowEnd}}
+\index{flowEnd@{flowEnd}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flowEnd()}{flowEnd()}}
+{\footnotesize\ttfamily \label{classModel_a3bd1101deb3f40e189036b363288cdf9} 
+virtual \doxymbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flow\+Iterator}} Model::\+flow\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_acc758ca09a6781e6fb204166365dabbb}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classModel_af987d08ccec7405d80a069b6ecf99e2c_icgraph}
+\includegraphics[width=350pt]{classModel_a3bd1101deb3f40e189036b363288cdf9_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0}\index{Model@{Model}!operator=@{operator=}}
-\index{operator=@{operator=}!Model@{Model}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \label{classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0} 
-\doxymbox{\hyperlink{classModel}{Model}} \& Model::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classModel}{Model}} \&}]{obj}{}\end{DoxyParamCaption})}
+\Hypertarget{classModel_a17e89ca8d15af46d074423a47d3c6802}\index{Model@{Model}!getName@{getName}}
+\index{getName@{getName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{classModel_a17e89ca8d15af46d074423a47d3c6802} 
+virtual std::\+string Model::\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Copy assignment operator. 
+Implemented in \doxymbox{\hyperlink{classModelImpl_a6d6ef8f72413650749d9ca9850226a6b}{Model\+Impl}}.
 
-
-\begin{DoxyParams}{Parameters}
-{\em obj} & The \doxylink{classModel}{Model} reference to assign from. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-\doxylink{classModel}{Model}\& A reference to the assigned object. 
-\end{DoxyReturn}
-
-
-Definition at line \doxymbox{\hyperlink{model_8cpp_source_l00014}{14}} of file \doxymbox{\hyperlink{model_8cpp_source}{model.\+cpp}}.
-
-Here is the call graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=301pt]{classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0_cgraph}
+\includegraphics[width=350pt]{classModel_a17e89ca8d15af46d074423a47d3c6802_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_a41569269c162962571a791c0fe737bca}\index{Model@{Model}!getTime@{getTime}}
+\index{getTime@{getTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily \label{classModel_a41569269c162962571a791c0fe737bca} 
+virtual double Model::\+get\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_a9233d23b2fa19917f314cf286749a924}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_a41569269c162962571a791c0fe737bca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_a27981fdb221eef87b2d441a576ca6747}\index{Model@{Model}!incrementTime@{incrementTime}}
+\index{incrementTime@{incrementTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{incrementTime()}{incrementTime()}}
+{\footnotesize\ttfamily \label{classModel_a27981fdb221eef87b2d441a576ca6747} 
+virtual void Model::\+increment\+Time (\begin{DoxyParamCaption}\item[{double}]{step}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_ac35b905745e42c2623bf431609b9f09c}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_a27981fdb221eef87b2d441a576ca6747_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_a299939795a2d298025372ab5173020c6}\index{Model@{Model}!run@{run}}
+\index{run@{run}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classModel_a299939795a2d298025372ab5173020c6} 
+virtual void Model::\+run (\begin{DoxyParamCaption}\item[{double}]{start\+Time}{, }\item[{double}]{end\+Time}{, }\item[{double}]{step}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Core simulation lifecycle manager. Executes the operational loop. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_aea9f737fee60153508e6bd734022b3e0}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_a299939795a2d298025372ab5173020c6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_ad9e8e4d0a942396c74932a8c57b03b57}\index{Model@{Model}!setName@{setName}}
+\index{setName@{setName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{classModel_ad9e8e4d0a942396c74932a8c57b03b57} 
+virtual void Model::\+set\+Name (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Metadata tracking methods. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_a0d4dc3b77ac3007091760dda1a1dfa8b}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_ad9e8e4d0a942396c74932a8c57b03b57_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_ab89eff21392ee4e7f58da939238acc7c}\index{Model@{Model}!setTime@{setTime}}
+\index{setTime@{setTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily \label{classModel_ab89eff21392ee4e7f58da939238acc7c} 
+virtual void Model::\+set\+Time (\begin{DoxyParamCaption}\item[{double}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_a1071f515e45c86e9295b193b7d28cc98}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_ab89eff21392ee4e7f58da939238acc7c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_ae87a460b5f8bc4e01c2c4c2413f4df47}\index{Model@{Model}!systemBegin@{systemBegin}}
+\index{systemBegin@{systemBegin}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systemBegin()}{systemBegin()}}
+{\footnotesize\ttfamily \label{classModel_ae87a460b5f8bc4e01c2c4c2413f4df47} 
+virtual \doxymbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} Model::\+system\+Begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_ae133e78b100032b9aaf28d6a0cf0fadc}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_ae87a460b5f8bc4e01c2c4c2413f4df47_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_ac381f929e44c3a1f04ed8d393a0c7bbc}\index{Model@{Model}!systemEnd@{systemEnd}}
+\index{systemEnd@{systemEnd}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systemEnd()}{systemEnd()}}
+{\footnotesize\ttfamily \label{classModel_ac381f929e44c3a1f04ed8d393a0c7bbc} 
+virtual \doxymbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}} Model::\+system\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_aa502f29742a6c1390f44d899720b4454}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_ac381f929e44c3a1f04ed8d393a0c7bbc_icgraph}
 \end{center}
 \end{figure}
 
 
-\label{classModel_doc-variable-members}
-\Hypertarget{classModel_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{classModel_aa76c9411f1cf6da6f4c696b2feadcb1a}\index{Model@{Model}!flows@{flows}}
-\index{flows@{flows}!Model@{Model}}
-\doxysubsubsection{\texorpdfstring{flows}{flows}}
-{\footnotesize\ttfamily \label{classModel_aa76c9411f1cf6da6f4c696b2feadcb1a} 
-vector$<$\doxymbox{\hyperlink{classFlow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model::\+flows\hspace{0.3cm}{\ttfamily [private]}}
-
-Collection of flows connecting the systems 
-
-Definition at line \doxymbox{\hyperlink{model_8h_source_l00026}{26}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
-
-\Hypertarget{classModel_ac7dea8829149e597d2671dbc0a538bf7}\index{Model@{Model}!systems@{systems}}
-\index{systems@{systems}!Model@{Model}}
-\doxysubsubsection{\texorpdfstring{systems}{systems}}
-{\footnotesize\ttfamily \label{classModel_ac7dea8829149e597d2671dbc0a538bf7} 
-vector$<$\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*}$>$ Model::\+systems\hspace{0.3cm}{\ttfamily [private]}}
-
-Collection of subsystems in the simulation 
-
-Definition at line \doxymbox{\hyperlink{model_8h_source_l00025}{25}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
-
-
-
-The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-src/\+\doxymbox{\hyperlink{model_8h}{model.\+h}}\item 
-src/\+\doxymbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}
+src/\+\doxymbox{\hyperlink{model_8h}{model.\+h}}\end{DoxyCompactItemize}

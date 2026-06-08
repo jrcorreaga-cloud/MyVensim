@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flows_0',['flows',['../classModel.html#aa76c9411f1cf6da6f4c696b2feadcb1a',1,'Model']]]
+  ['flows_0',['flows',['../classModelImpl.html#a8b029de6dc420bd98213c51997dd18ea',1,'ModelImpl']]]
 ];

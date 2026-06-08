@@ -1,0 +1,21 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,60,80"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="118,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,55,107,39,134,32,136,37,109,45,61,60"/>
+<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="108,55,295,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="60,65,94,65,94,70,60,70"/>
+<area shape="rect" id="Node000007" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="117,104,286,129"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="61,74,109,89,140,98,138,103,107,94,59,79"/>
+<area shape="rect" id="Node000003" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Contract for managing System entities inside the simulation model." alt="" coords="363,5,458,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,15,350,15,350,21,285,21"/>
+<area shape="rect" id="Node000004" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title=" " alt="" coords="343,55,479,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,28,344,49,342,54,255,33"/>
+<area shape="rect" id="Node000005" href="$classModel.html#a299939795a2d298025372ab5173020c6" title="Core simulation lifecycle manager. Executes the operational loop." alt="" coords="365,104,456,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="270,28,296,40,312,52,321,65,330,77,344,89,356,96,354,101,341,94,326,81,317,68,308,56,293,44,268,33"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="255,52,350,30,351,35,257,57"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="295,65,329,65,329,70,295,70"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="257,77,352,100,351,106,255,83"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="265,101,293,89,308,78,317,65,326,53,341,40,351,34,354,39,344,44,330,56,321,69,312,81,296,94,267,106"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="255,101,342,81,344,86,257,107"/>
+<area shape="poly" id="edge12_Node000007_Node000005" title=" " alt="" coords="286,114,352,114,352,119,286,119"/>
+</map>

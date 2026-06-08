@@ -119,16 +119,17 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classExponenti
 </div><!--header-->
 <div class="contents">
 
-<p>A flow that operates based on an exponential equation.  
- <a href="#details">More...</a></p>
+<p><code>#include &lt;<a class="el" href="funcional__tests_8h_source.html">funcional_tests.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ExponentialFlow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classExponentialFlow__inherit__graph.png" border="0" usemap="#aExponentialFlow_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="aExponentialFlow_inherit__map" id="aExponentialFlow_inherit__map">
-<area shape="rect" title="A flow that operates based on an exponential equation." alt="" coords="5,399,152,484"/>
-<area shape="rect" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems." alt="" coords="26,5,131,351"/>
-<area shape="poly" title=" " alt="" coords="81,365,81,398,76,398,76,365"/>
+<area shape="rect" title=" " alt="" coords="5,552,152,637"/>
+<area shape="rect" href="classFlowImpl.html" title=" " alt="" coords="21,259,136,504"/>
+<area shape="poly" title=" " alt="" coords="81,518,81,552,76,552,76,518"/>
+<area shape="rect" href="classFlow.html" title=" " alt="" coords="21,5,136,211"/>
+<area shape="poly" title=" " alt="" coords="81,224,81,258,76,258,76,224"/>
 </map>
 </div>
 <div class="dynheader">
@@ -136,59 +137,48 @@ Collaboration diagram for ExponentialFlow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classExponentialFlow__coll__graph.png" border="0" usemap="#aExponentialFlow_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aExponentialFlow_coll__map" id="aExponentialFlow_coll__map">
-<area shape="rect" title="A flow that operates based on an exponential equation." alt="" coords="5,696,152,781"/>
-<area shape="rect" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems." alt="" coords="26,341,131,647"/>
-<area shape="poly" title=" " alt="" coords="81,660,81,696,76,696,76,660"/>
-<area shape="rect" href="classSystem.html" title="Represents a stock/system entity in the simulation." alt="" coords="26,5,131,251"/>
-<area shape="poly" title=" " alt="" coords="81,251,81,325,76,325,76,251"/>
+<area shape="rect" title=" " alt="" coords="55,576,201,661"/>
+<area shape="rect" href="classFlowImpl.html" title=" " alt="" coords="71,301,185,527"/>
+<area shape="poly" title=" " alt="" coords="131,541,131,576,125,576,125,541"/>
+<area shape="rect" href="classFlow.html" title=" " alt="" coords="5,5,120,211"/>
+<area shape="poly" title=" " alt="" coords="90,223,107,300,101,301,85,224"/>
+<area shape="rect" href="classSystem.html" title=" " alt="" coords="144,35,243,181"/>
+<area shape="poly" title=" " alt="" coords="181,181,158,286,153,285,175,180"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0599b955afd5d4c4fc4dc7ef4b29c7f" id="r_ac0599b955afd5d4c4fc4dc7ef4b29c7f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac0599b955afd5d4c4fc4dc7ef4b29c7f">ExponentialFlow</a> (string name=&quot;&quot;)</td></tr>
+<tr class="memitem:ad298be6a81718d8a27ac45c42ca28eea" id="r_ad298be6a81718d8a27ac45c42ca28eea"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad298be6a81718d8a27ac45c42ca28eea">ExponentialFlow</a> (<a class="el" href="classSystem.html">System</a> *source=nullptr, <a class="el" href="classSystem.html">System</a> *target=nullptr)</td></tr>
 <tr class="memitem:aafb074830c5c18138913cb10da3b8782" id="r_aafb074830c5c18138913cb10da3b8782"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aafb074830c5c18138913cb10da3b8782">execute</a> () override</td></tr>
-<tr class="memdesc:aafb074830c5c18138913cb10da3b8782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the execution value for exponential behavior.  <br /></td></tr>
+<tr class="memdesc:aafb074830c5c18138913cb10da3b8782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here.  <br /></td></tr>
+<tr class="inherit_header pub_methods_classFlowImpl"><td colspan="2">Public Member Functions inherited from <a class="el" href="classFlowImpl.html">FlowImpl</a></td></tr>
+<tr class="memitem:a4a88f4376cdaf1c0e62a900f507d4295 pub_methods_classFlowImpl" id="r_a4a88f4376cdaf1c0e62a900f507d4295"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#a4a88f4376cdaf1c0e62a900f507d4295">FlowImpl</a> (<a class="el" href="classSystem.html">System</a> *source=nullptr, <a class="el" href="classSystem.html">System</a> *target=nullptr)</td></tr>
+<tr class="memitem:a2d91539593b336aee4a19048f8a82e8c pub_methods_classFlowImpl" id="r_a2d91539593b336aee4a19048f8a82e8c"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#a2d91539593b336aee4a19048f8a82e8c">~FlowImpl</a> ()</td></tr>
+<tr class="memitem:aa48ab1dd4effd57c55c1434ccfce3ac3 pub_methods_classFlowImpl" id="r_aa48ab1dd4effd57c55c1434ccfce3ac3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#aa48ab1dd4effd57c55c1434ccfce3ac3">setSource</a> (<a class="el" href="classSystem.html">System</a> *source) override</td></tr>
+<tr class="memdesc:aa48ab1dd4effd57c55c1434ccfce3ac3 pub_methods_classFlowImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the connection to the flow's origin system. Follows the Single Responsibility Principle by confining source operations.  <br /></td></tr>
+<tr class="memitem:a06c8ffdcfd36b04ddad091d2c043f5d0 pub_methods_classFlowImpl" id="r_a06c8ffdcfd36b04ddad091d2c043f5d0"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#a06c8ffdcfd36b04ddad091d2c043f5d0">getSource</a> () const override</td></tr>
+<tr class="memitem:acf4fc570ead9b0421638d428f44305c1 pub_methods_classFlowImpl" id="r_acf4fc570ead9b0421638d428f44305c1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#acf4fc570ead9b0421638d428f44305c1">clearSource</a> () override</td></tr>
+<tr class="memitem:a48b3e6939aec2694d412760149164622 pub_methods_classFlowImpl" id="r_a48b3e6939aec2694d412760149164622"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#a48b3e6939aec2694d412760149164622">setTarget</a> (<a class="el" href="classSystem.html">System</a> *target) override</td></tr>
+<tr class="memdesc:a48b3e6939aec2694d412760149164622 pub_methods_classFlowImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the connection to the flow's destination system.  <br /></td></tr>
+<tr class="memitem:adb35e3574470e91207c631fda3cdc9bd pub_methods_classFlowImpl" id="r_adb35e3574470e91207c631fda3cdc9bd"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#adb35e3574470e91207c631fda3cdc9bd">getTarget</a> () const override</td></tr>
+<tr class="memitem:acf255f5bb33cdc0a09f486f2bab20d99 pub_methods_classFlowImpl" id="r_acf255f5bb33cdc0a09f486f2bab20d99"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#acf255f5bb33cdc0a09f486f2bab20d99">clearTarget</a> () override</td></tr>
 <tr class="inherit_header pub_methods_classFlow"><td colspan="2">Public Member Functions inherited from <a class="el" href="classFlow.html">Flow</a></td></tr>
-<tr class="memitem:ac9975e144e606242748197798e87dd32 pub_methods_classFlow" id="r_ac9975e144e606242748197798e87dd32"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#ac9975e144e606242748197798e87dd32">Flow</a> ()</td></tr>
-<tr class="memdesc:ac9975e144e606242748197798e87dd32 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Initializes the flow with no name and null Systems.  <br /></td></tr>
-<tr class="memitem:a65e83df864f9de223cdf020d9290f35a pub_methods_classFlow" id="r_a65e83df864f9de223cdf020d9290f35a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a65e83df864f9de223cdf020d9290f35a">Flow</a> (string name, <a class="el" href="classSystem.html">System</a> *source=nullptr, <a class="el" href="classSystem.html">System</a> *target=nullptr)</td></tr>
-<tr class="memdesc:a65e83df864f9de223cdf020d9290f35a pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor.  <br /></td></tr>
-<tr class="memitem:aa9a50d7ede896bf6a0740a6d1330ae21 pub_methods_classFlow" id="r_aa9a50d7ede896bf6a0740a6d1330ae21"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#aa9a50d7ede896bf6a0740a6d1330ae21">Flow</a> (const <a class="el" href="classFlow.html">Flow</a> &amp;obj)</td></tr>
-<tr class="memdesc:aa9a50d7ede896bf6a0740a6d1330ae21 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems.">Flow</a>.  <br /></td></tr>
-<tr class="memitem:a5991efa6e8cf88c4ef2125cc727db333 pub_methods_classFlow" id="r_a5991efa6e8cf88c4ef2125cc727db333"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a5991efa6e8cf88c4ef2125cc727db333">~Flow</a> ()</td></tr>
-<tr class="memdesc:a5991efa6e8cf88c4ef2125cc727db333 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
-<tr class="memitem:a21f26edbbb55b1c8312d0836153c08a9 pub_methods_classFlow" id="r_a21f26edbbb55b1c8312d0836153c08a9"><td class="memItemLeft"><a class="el" href="classFlow.html">Flow</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a21f26edbbb55b1c8312d0836153c08a9">operator=</a> (const <a class="el" href="classFlow.html">Flow</a> &amp;obj)</td></tr>
-<tr class="memdesc:a21f26edbbb55b1c8312d0836153c08a9 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator.  <br /></td></tr>
-<tr class="memitem:ac829599a96f9ae03979d762771a4fea0 pub_methods_classFlow" id="r_ac829599a96f9ae03979d762771a4fea0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#ac829599a96f9ae03979d762771a4fea0">setName</a> (string name)</td></tr>
-<tr class="memdesc:ac829599a96f9ae03979d762771a4fea0 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the flow.  <br /></td></tr>
-<tr class="memitem:a62bbc54ff95eeb0795511519edf32077 pub_methods_classFlow" id="r_a62bbc54ff95eeb0795511519edf32077"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a62bbc54ff95eeb0795511519edf32077">getName</a> () const</td></tr>
-<tr class="memdesc:a62bbc54ff95eeb0795511519edf32077 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the flow.  <br /></td></tr>
-<tr class="memitem:a250fc53158862fc0db77b323a33e48a3 pub_methods_classFlow" id="r_a250fc53158862fc0db77b323a33e48a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a250fc53158862fc0db77b323a33e48a3">setSource</a> (<a class="el" href="classSystem.html">System</a> *source)</td></tr>
-<tr class="memdesc:a250fc53158862fc0db77b323a33e48a3 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the source <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a>.  <br /></td></tr>
-<tr class="memitem:a1f3858f90d141807377c2640fb5dd0fc pub_methods_classFlow" id="r_a1f3858f90d141807377c2640fb5dd0fc"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a1f3858f90d141807377c2640fb5dd0fc">getSource</a> () const</td></tr>
-<tr class="memdesc:a1f3858f90d141807377c2640fb5dd0fc pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the source <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a>.  <br /></td></tr>
-<tr class="memitem:ab69903880174e5bcdc0d815b5de7b3e0 pub_methods_classFlow" id="r_ab69903880174e5bcdc0d815b5de7b3e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#ab69903880174e5bcdc0d815b5de7b3e0">setTarget</a> (<a class="el" href="classSystem.html">System</a> *target)</td></tr>
-<tr class="memdesc:ab69903880174e5bcdc0d815b5de7b3e0 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the target <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a>.  <br /></td></tr>
-<tr class="memitem:aff8a0f8ca8dc50d37c92ab7556e172b5 pub_methods_classFlow" id="r_aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5">getTarget</a> () const</td></tr>
-<tr class="memdesc:aff8a0f8ca8dc50d37c92ab7556e172b5 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the target <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a>.  <br /></td></tr>
-<tr class="memitem:a47f7a0b4b34a8bab2c38b323e588f2ec pub_methods_classFlow" id="r_a47f7a0b4b34a8bab2c38b323e588f2ec"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a47f7a0b4b34a8bab2c38b323e588f2ec">connect</a> (<a class="el" href="classSystem.html">System</a> *source, <a class="el" href="classSystem.html">System</a> *target)</td></tr>
-<tr class="memdesc:a47f7a0b4b34a8bab2c38b323e588f2ec pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to set both source and target Systems.  <br /></td></tr>
+<tr class="memitem:a325d284a50ca3274b126b21f5c39b9af pub_methods_classFlow" id="r_a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
+<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for polymorphic resolution.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classFlow"><td colspan="2">Protected Attributes inherited from <a class="el" href="classFlow.html">Flow</a></td></tr>
-<tr class="memitem:a8801d2ed91a9d96003d4bc8024451551 pro_attribs_classFlow" id="r_a8801d2ed91a9d96003d4bc8024451551"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a8801d2ed91a9d96003d4bc8024451551">name</a></td></tr>
-<tr class="memitem:a963ca162995d112f0f30322e2bb9de63 pro_attribs_classFlow" id="r_a963ca162995d112f0f30322e2bb9de63"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a963ca162995d112f0f30322e2bb9de63">source</a></td></tr>
-<tr class="memitem:a87be88d9bae4e927b29205faabeaf387 pro_attribs_classFlow" id="r_a87be88d9bae4e927b29205faabeaf387"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a87be88d9bae4e927b29205faabeaf387">target</a></td></tr>
+<tr class="inherit_header pro_attribs_classFlowImpl"><td colspan="2">Protected Attributes inherited from <a class="el" href="classFlowImpl.html">FlowImpl</a></td></tr>
+<tr class="memitem:a950987351656a518a1057b64c5f85af8 pro_attribs_classFlowImpl" id="r_a950987351656a518a1057b64c5f85af8"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#a950987351656a518a1057b64c5f85af8">source</a></td></tr>
+<tr class="memitem:af97039b649da65573e5582edbeb287b5 pro_attribs_classFlowImpl" id="r_af97039b649da65573e5582edbeb287b5"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlowImpl.html#af97039b649da65573e5582edbeb287b5">target</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A flow that operates based on an exponential equation. </p>
-
-<p class="definition">Definition at line <a class="el" href="funcional__tests_8cpp_source.html#l00036">36</a> of file <a class="el" href="funcional__tests_8cpp_source.html">funcional_tests.cpp</a>.</p>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="funcional__tests_8h_source.html#l00006">6</a> of file <a class="el" href="funcional__tests_8h_source.html">funcional_tests.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac0599b955afd5d4c4fc4dc7ef4b29c7f" name="ac0599b955afd5d4c4fc4dc7ef4b29c7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0599b955afd5d4c4fc4dc7ef4b29c7f">&#9670;&#160;</a></span>ExponentialFlow()</h2>
+<a id="ad298be6a81718d8a27ac45c42ca28eea" name="ad298be6a81718d8a27ac45c42ca28eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad298be6a81718d8a27ac45c42ca28eea">&#9670;&#160;</a></span>ExponentialFlow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,8 +189,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">ExponentialFlow::ExponentialFlow </td>
           <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>source</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -210,14 +204,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="funcional__tests_8cpp_source.html#l00038">38</a> of file <a class="el" href="funcional__tests_8cpp_source.html">funcional_tests.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="funcional__tests_8h_source.html#l00008">8</a> of file <a class="el" href="funcional__tests_8h_source.html">funcional_tests.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f_cgraph.png" border="0" usemap="#aclassExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f_cgraph" id="aclassExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f_cgraph">
+<div class="center"><img src="classExponentialFlow_ad298be6a81718d8a27ac45c42ca28eea_cgraph.png" border="0" usemap="#aclassExponentialFlow_ad298be6a81718d8a27ac45c42ca28eea_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassExponentialFlow_ad298be6a81718d8a27ac45c42ca28eea_cgraph" id="aclassExponentialFlow_ad298be6a81718d8a27ac45c42ca28eea_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,251,31"/>
-<area shape="rect" href="classFlow.html#ac9975e144e606242748197798e87dd32" title="Default constructor. Initializes the flow with no name and null Systems." alt="" coords="299,5,389,31"/>
+<area shape="rect" href="classFlowImpl.html#a4a88f4376cdaf1c0e62a900f507d4295" title=" " alt="" coords="299,5,449,31"/>
 <area shape="poly" title=" " alt="" coords="251,15,285,15,285,21,251,21"/>
 </map>
 </div>
@@ -243,33 +237,33 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the execution value for exponential behavior. </p>
-<dl class="section return"><dt>Returns</dt><dd>Transferred value corresponding to 1% of the source system's value. </dd></dl>
+<p>Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. </p>
 
-<p>Implements <a class="el" href="classFlow.html#a619be0b590c78202127bc6ac7fb04029">Flow</a>.</p>
+<p>Implements <a class="el" href="classFlowImpl.html#a88d14f759988f1dcf393b83a93aea1f1">FlowImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="funcional__tests_8cpp_source.html#l00043">43</a> of file <a class="el" href="funcional__tests_8cpp_source.html">funcional_tests.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="funcional__tests_8cpp_source.html#l00011">11</a> of file <a class="el" href="funcional__tests_8cpp_source.html">funcional_tests.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classExponentialFlow_aafb074830c5c18138913cb10da3b8782_cgraph.png" border="0" usemap="#aclassExponentialFlow_aafb074830c5c18138913cb10da3b8782_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassExponentialFlow_aafb074830c5c18138913cb10da3b8782_cgraph" id="aclassExponentialFlow_aafb074830c5c18138913cb10da3b8782_cgraph">
-<area shape="rect" title="Computes the execution value for exponential behavior." alt="" coords="5,31,193,56"/>
-<area shape="rect" href="classFlow.html#a1f3858f90d141807377c2640fb5dd0fc" title="Gets the source System." alt="" coords="247,5,372,31"/>
-<area shape="poly" title=" " alt="" coords="193,29,232,25,233,30,194,35"/>
-<area shape="rect" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the current value of the system." alt="" coords="241,55,377,80"/>
-<area shape="poly" title=" " alt="" coords="194,51,228,55,227,61,193,57"/>
+<area shape="rect" title="Executes the numerical simulation operation for this specific flow. Subclasses must implement their s..." alt="" coords="5,31,193,56"/>
+<area shape="rect" href="classFlowImpl.html#a06c8ffdcfd36b04ddad091d2c043f5d0" title=" " alt="" coords="241,5,396,31"/>
+<area shape="poly" title=" " alt="" coords="194,30,227,26,228,31,194,35"/>
+<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title=" " alt="" coords="251,55,387,80"/>
+<area shape="poly" title=" " alt="" coords="194,51,237,56,237,61,194,56"/>
 </map>
 </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>test/funcional/<a class="el" href="funcional__tests_8h_source.html">funcional_tests.h</a></li>
 <li>test/funcional/<a class="el" href="funcional__tests_8cpp_source.html">funcional_tests.cpp</a></li>
 </ul>
 </div><!-- contents -->

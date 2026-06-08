@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['add_0',['add',['../classModel.html#a302d4ed93c6e6f9a0f728e021a91f821',1,'Model::add(System *system)'],['../classModel.html#ab69613bde0ace81c92bbf519660ccb2c',1,'Model::add(Flow *flow)']]],
-  ['architecture_5fid_1',['ARCHITECTURE_ID',['../CMakeCCompilerId_8c.html#aba35d0d200deaeb06aee95ca297acb28',1,'ARCHITECTURE_ID:&#160;CMakeCCompilerId.c'],['../CMakeCXXCompilerId_8cpp.html#aba35d0d200deaeb06aee95ca297acb28',1,'ARCHITECTURE_ID:&#160;CMakeCXXCompilerId.cpp']]]
+  ['add_0',['add',['../classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd',1,'Model::add(System *system)=0'],['../classModel.html#ab7df81041f62f049cfc6e4d50dcaf721',1,'Model::add(Flow *flow)=0'],['../classModelImpl.html#a24e46f6ee90908c0ed4e882094573800',1,'ModelImpl::add(System *system) override'],['../classModelImpl.html#a3e8843e5353f40ab30afcf19b4f13a67',1,'ModelImpl::add(Flow *flow) override']]],
+  ['architecture_5fid_1',['ARCHITECTURE_ID',['../3_828_83_2CompilerIdC_2CMakeCCompilerId_8c.html#aba35d0d200deaeb06aee95ca297acb28',1,'ARCHITECTURE_ID:&#160;CMakeCCompilerId.c'],['../3_828_83_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp.html#aba35d0d200deaeb06aee95ca297acb28',1,'ARCHITECTURE_ID:&#160;CMakeCXXCompilerId.cpp'],['../4_83_81_2CompilerIdC_2CMakeCCompilerId_8c.html#aba35d0d200deaeb06aee95ca297acb28',1,'ARCHITECTURE_ID:&#160;CMakeCCompilerId.c'],['../4_83_81_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp.html#aba35d0d200deaeb06aee95ca297acb28',1,'ARCHITECTURE_ID:&#160;CMakeCXXCompilerId.cpp']]]
 ];

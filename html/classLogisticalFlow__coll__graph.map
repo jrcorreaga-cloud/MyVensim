@@ -1,7 +1,9 @@
 <map id="LogisticalFlow" name="LogisticalFlow">
-<area shape="rect" id="Node000001" title="A flow that operates based on a logistical growth equation." alt="" coords="5,696,137,781"/>
-<area shape="rect" id="Node000002" href="$classFlow.html" title="Abstract base class representing a transfer of values between two Systems." alt="" coords="19,341,124,647"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,660,74,696,69,696,69,660"/>
-<area shape="rect" id="Node000003" href="$classSystem.html" title="Represents a stock/system entity in the simulation." alt="" coords="19,5,124,251"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="74,251,74,325,69,325,69,251"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="62,576,194,661"/>
+<area shape="rect" id="Node000002" href="$classFlowImpl.html" title=" " alt="" coords="71,301,185,527"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,541,131,576,125,576,125,541"/>
+<area shape="rect" id="Node000003" href="$classFlow.html" title=" " alt="" coords="5,5,120,211"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,223,107,300,101,301,85,224"/>
+<area shape="rect" id="Node000004" href="$classSystem.html" title=" " alt="" coords="144,35,243,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="181,181,158,286,153,285,175,180"/>
 </map>

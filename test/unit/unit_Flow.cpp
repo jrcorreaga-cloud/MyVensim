@@ -1,27 +1,25 @@
 #include "unit_Flow.h"
 #include <cassert>
+#include <cmath>
 #include "../../src/flow.h"
 #include "../../src/flowImpl.h"
 #include "../../src/system.h"
 #include "../../src/systemImpl.h"
 
 // As FlowImpl is abstract (execute() is pure), we create a concrete test flow.
-class TestFlow : public FlowImpl {
+class DummyFlow : public FlowImpl {
 public:
-    TestFlow(System* source = nullptr, System* target = nullptr) : FlowImpl(source, target) {}
+    DummyFlow(System* source = nullptr, System* target = nullptr) : FlowImpl(source, target) {}
     
-    // We implement the pure method so the class can be instantiated
+    // We implement the pure method returning a constant to isolate tests
     double execute() override {
-        if (getSource() != nullptr) {
-            return getSource()->getValue() * 0.1; 
-        }
-        return 0.0;
+        return 10.0;
     }
 };
 
 void unit_Flow_constructor() {
     // Default constructor
-    Flow* f1 = new TestFlow();
+    Flow* f1 = new DummyFlow();
     assert(f1->getSource() == nullptr);
     assert(f1->getTarget() == nullptr);
     delete f1;
@@ -29,7 +27,7 @@ void unit_Flow_constructor() {
     // Parameterized constructor
     System* s1 = new SystemImpl("S1", 10.0);
     System* s2 = new SystemImpl("S2", 20.0);
-    Flow* f2 = new TestFlow(s1, s2);
+    Flow* f2 = new DummyFlow(s1, s2);
     assert(f2->getSource() == s1);
     assert(f2->getTarget() == s2);
     
@@ -39,13 +37,13 @@ void unit_Flow_constructor() {
 }
 
 void unit_Flow_destructor() {
-    Flow* f1 = new TestFlow();
+    Flow* f1 = new DummyFlow();
     delete f1; 
     // We verify that there are no leaks when destroying the polymorphic interface
 }
 
 void unit_Flow_setSource() {
-    Flow* f1 = new TestFlow();
+    Flow* f1 = new DummyFlow();
     System* s1 = new SystemImpl("Src", 5.0);
     
     f1->setSource(s1);
@@ -57,7 +55,7 @@ void unit_Flow_setSource() {
 
 void unit_Flow_getSource() {
     System* s1 = new SystemImpl("Src", 5.0);
-    Flow* f1 = new TestFlow(s1, nullptr);
+    Flow* f1 = new DummyFlow(s1, nullptr);
     
     assert(f1->getSource() == s1);
     
@@ -67,7 +65,7 @@ void unit_Flow_getSource() {
 
 void unit_Flow_clearSource() {
     System* s1 = new SystemImpl("Src", 5.0);
-    Flow* f1 = new TestFlow(s1, nullptr);
+    Flow* f1 = new DummyFlow(s1, nullptr);
     
     f1->clearSource();
     assert(f1->getSource() == nullptr);
@@ -77,7 +75,7 @@ void unit_Flow_clearSource() {
 }
 
 void unit_Flow_setTarget() {
-    Flow* f1 = new TestFlow();
+    Flow* f1 = new DummyFlow();
     System* s1 = new SystemImpl("Tgt", 5.0);
     
     f1->setTarget(s1);
@@ -89,7 +87,7 @@ void unit_Flow_setTarget() {
 
 void unit_Flow_getTarget() {
     System* s1 = new SystemImpl("Tgt", 5.0);
-    Flow* f1 = new TestFlow(nullptr, s1);
+    Flow* f1 = new DummyFlow(nullptr, s1);
     
     assert(f1->getTarget() == s1);
     
@@ -99,7 +97,7 @@ void unit_Flow_getTarget() {
 
 void unit_Flow_clearTarget() {
     System* s1 = new SystemImpl("Tgt", 5.0);
-    Flow* f1 = new TestFlow(nullptr, s1);
+    Flow* f1 = new DummyFlow(nullptr, s1);
     
     f1->clearTarget();
     assert(f1->getTarget() == nullptr);
@@ -110,10 +108,10 @@ void unit_Flow_clearTarget() {
 
 void unit_Flow_execute() {
     System* s1 = new SystemImpl("Src", 100.0);
-    Flow* f1 = new TestFlow(s1, nullptr);
+    Flow* f1 = new DummyFlow(s1, nullptr);
     
-    // Our TestFlow multiplies by 0.1
-    assert(f1->execute() == 10.0); 
+    // Our DummyFlow returns a constant 10.0
+    assert(std::fabs(f1->execute() - 10.0) < 0.0001); 
     
     delete f1;
     delete s1;

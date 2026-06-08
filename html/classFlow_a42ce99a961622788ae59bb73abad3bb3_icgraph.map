@@ -1,0 +1,9 @@
+<map id="Flow::setSource" name="Flow::setSource">
+<area shape="rect" id="Node000001" title="Defines the connection to the flow&#39;s origin system. Follows the Single Responsibility Principle by co..." alt="" coords="512,5,636,31"/>
+<area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title=" " alt="" coords="308,5,464,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,21,464,21,464,15,499,15"/>
+<area shape="rect" id="Node000003" href="$unit__Flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e" title=" " alt="" coords="108,5,260,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,21,260,21,260,15,294,15"/>
+<area shape="rect" id="Node000004" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

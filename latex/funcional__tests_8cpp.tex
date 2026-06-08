@@ -1,53 +1,28 @@
 \doxysection{test/\+funcional/\+funcional\+\_\+tests.cpp File Reference}
 \hypertarget{funcional__tests_8cpp}{}\label{funcional__tests_8cpp}\index{test/funcional/funcional\_tests.cpp@{test/funcional/funcional\_tests.cpp}}
-
-
-Implementation of functional tests for the simulation model.  
-
-
 {\ttfamily \+\#include "{}funcional\+\_\+tests.\+h"{}}\newline
-{\ttfamily \+\#include "{}../\+../\+src/\+model.\+h"{}}\newline
-{\ttfamily \+\#include "{}../\+../\+src/\+system.\+h"{}}\newline
-{\ttfamily \+\#include "{}../\+../\+src/\+flow.\+h"{}}\newline
-{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include "{}../\+../\+src/\+system\+Impl.\+h"{}}\newline
+{\ttfamily \+\#include "{}../\+../\+src/\+model\+Impl.\+h"{}}\newline
 {\ttfamily \+\#include $<$cassert$>$}\newline
 {\ttfamily \+\#include $<$cmath$>$}\newline
-Include dependency graph for funcional\+\_\+tests.\+cpp:\+\nopagebreak
+{\ttfamily \+\#include $<$iostream$>$}\newline
+Include dependency graph for funcional\+\_\+tests.\+cpp:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{funcional__tests_8cpp__incl}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-class \doxymbox{\hyperlink{classExponentialFlow}{Exponential\+Flow}}
-\begin{DoxyCompactList}\small\item\em A flow that operates based on an exponential equation. \end{DoxyCompactList}\item 
-class \doxymbox{\hyperlink{classLogisticalFlow}{Logistical\+Flow}}
-\begin{DoxyCompactList}\small\item\em A flow that operates based on a logistical growth equation. \end{DoxyCompactList}\item 
-class \doxymbox{\hyperlink{classComplexFlow}{Complex\+Flow}}
-\begin{DoxyCompactList}\small\item\em A generic flow used in a multiple-\/system complex scenario. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \doxymbox{\hyperlink{funcional__tests_8cpp_a819c3d7b57ae65abe71bf5b7254e6b11}{rounded}} (double real, double awk)
-\begin{DoxyCompactList}\small\item\em Utility function to check if a value is close enough to the expected result. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27}{exponential\+Funcional\+Test}} ()
-\begin{DoxyCompactList}\small\item\em Performs an exponential transfer test. Expects the system to iteratively approach correct resulting population values. \end{DoxyCompactList}\item 
+\item 
 void \doxymbox{\hyperlink{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29}{logistical\+Funcional\+Test}} ()
-\begin{DoxyCompactList}\small\item\em Performs a logistical transfer test. Evaluates the non-\/linear execution flow logic tied to a capacity ceiling. \end{DoxyCompactList}\item 
+\item 
 void \doxymbox{\hyperlink{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}{complex\+Funcional\+Test}} ()
 \end{DoxyCompactItemize}
-
-
-\doxysubsection{Detailed Description}
-Implementation of functional tests for the simulation model. 
-
-Includes tests for Exponential, Logistical, and Complex simulation behaviors utilizing specific concrete \doxylink{classFlow}{Flow} classes. 
-
-Definition in file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
-
 
 
 \label{funcional__tests_8cpp_doc-func-members}
@@ -61,16 +36,18 @@ void complex\+Funcional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption
 
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00136}{136}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00082}{82}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
 
-Here is the call graph for this function:\+\nopagebreak
+Here is the call graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527_cgraph}
+\includegraphics[width=343pt]{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -85,20 +62,18 @@ void exponential\+Funcional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCap
 
 
 
-Performs an exponential transfer test. Expects the system to iteratively approach correct resulting population values. 
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00034}{34}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
 
-
-
-Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00087}{87}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
-
-Here is the call graph for this function:\+\nopagebreak
+Here is the call graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -113,54 +88,21 @@ void logistical\+Funcional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCapt
 
 
 
-Performs a logistical transfer test. Evaluates the non-\/linear execution flow logic tied to a capacity ceiling. 
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00058}{58}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
 
-Performs a complex system interconnection test. Simulates a large network of 5 systems and 6 flows. Asserts their final states match expected calculated approximations after 100 time ticks.
-
-Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00111}{111}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
-
-Here is the call graph for this function:\+\nopagebreak
+Here is the call graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29_cgraph}
+\includegraphics[width=345pt]{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=284pt]{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{funcional__tests_8cpp_a819c3d7b57ae65abe71bf5b7254e6b11}\index{funcional\_tests.cpp@{funcional\_tests.cpp}!rounded@{rounded}}
-\index{rounded@{rounded}!funcional\_tests.cpp@{funcional\_tests.cpp}}
-\doxysubsubsection{\texorpdfstring{rounded()}{rounded()}}
-{\footnotesize\ttfamily \label{funcional__tests_8cpp_a819c3d7b57ae65abe71bf5b7254e6b11} 
-bool rounded (\begin{DoxyParamCaption}\item[{double}]{real}{, }\item[{double}]{awk}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Utility function to check if a value is close enough to the expected result. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em real} & The actual computed value. \\
-\hline
-{\em awk} & The expected result. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-true if they are deemed equal within a precision of 4 decimal places. 
-\end{DoxyReturn}
-
-
-Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00025}{25}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
-
-Here is the caller graph for this function:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{funcional__tests_8cpp_a819c3d7b57ae65abe71bf5b7254e6b11_icgraph}
 \end{center}
 \end{figure}

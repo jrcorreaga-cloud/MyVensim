@@ -2,308 +2,146 @@
 \hypertarget{classSystem}{}\label{classSystem}\index{System@{System}}
 
 
-Represents a stock/\+system entity in the simulation.  
-
-
-
-
 {\ttfamily \+\#include $<$system.\+h$>$}
 
 
 
-Collaboration diagram for System:\+\nopagebreak
+Inheritance diagram for System:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=159pt]{classSystem__coll__graph}
+\includegraphics[width=176pt]{classSystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classSystem__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{classSystem_ae317936c9bcf1374d61745572e0f2f8a}{System}} ()
-\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classSystem}{System}. Initializes the system with an empty name and a value of 0.\+0. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem_a4f45df63c90a82f1c915114ac1d6e8a1}{System}} (string name, double value)
-\begin{DoxyCompactList}\small\item\em Parameterized constructor for \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem_ae85f88a65a564ff9b3308b05d8fd1fa2}{System}} (const \doxymbox{\hyperlink{classSystem}{System}} \&obj)
-\begin{DoxyCompactList}\small\item\em Copy constructor for \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
-virtual \doxymbox{\hyperlink{classSystem_a3be70bb338e3f062f821173fd15680d0}{\texorpdfstring{$\sim$}{\string~}\+System}} ()
-\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \& \doxymbox{\hyperlink{classSystem_a93f350faa6efd0b1eca2bfc2c73c8cd6}{operator=}} (const \doxymbox{\hyperlink{classSystem}{System}} \&obj)
-\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classSystem_a8ca115c44d52a5bee53cfb7c6990d49e}{set\+Name}} (string name)
-\begin{DoxyCompactList}\small\item\em Sets the name of the system. \end{DoxyCompactList}\item 
-string \doxymbox{\hyperlink{classSystem_a47ece132a04247cd74aea11537830bd4}{get\+Name}} () const
-\begin{DoxyCompactList}\small\item\em Gets the name of the system. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classSystem_a5343de0a45485edd88bc87f338fe9a19}{set\+Value}} (double value)
-\begin{DoxyCompactList}\small\item\em Sets the current value of the system. \end{DoxyCompactList}\item 
-double \doxymbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{get\+Value}} () const
-\begin{DoxyCompactList}\small\item\em Gets the current value of the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
+virtual \doxymbox{\hyperlink{classSystem_a2fc0f34023977cab9b628aa9f734d88c}{\texorpdfstring{$\sim$}{\string~}\+System}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor to guarantee polymorphic resource cleanup. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{classSystem_a2c84980e017370987a25548b13ea9578}{set\+Name}} (const std::\+string \&name)=0
 \item 
-string \doxymbox{\hyperlink{classSystem_a29fe2868c0d56fdebc67f1bef5d5cca3}{name}}
+virtual std::\+string \doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{get\+Name}} () const =0
 \item 
-double \doxymbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}
+virtual void \doxymbox{\hyperlink{classSystem_a7421d2e6970a0c4169a2febe254f2060}{set\+Value}} (double value)=0
+\item 
+virtual double \doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{get\+Value}} () const =0
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Represents a stock/\+system entity in the simulation. 
 
-The \doxylink{classSystem}{System} class encapsulates a state variable with a given name and a double value. It provides constructors, destructors, and accessors for managing this state. 
 
-Definition at line \doxymbox{\hyperlink{system_8h_source_l00020}{20}} of file \doxymbox{\hyperlink{system_8h_source}{system.\+h}}.
+Definition at line \doxymbox{\hyperlink{system_8h_source_l00006}{6}} of file \doxymbox{\hyperlink{system_8h_source}{system.\+h}}.
 
 
 
 \label{classSystem_doc-constructors}
 \Hypertarget{classSystem_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classSystem_ae317936c9bcf1374d61745572e0f2f8a}\index{System@{System}!System@{System}}
-\index{System@{System}!System@{System}}
-\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily \label{classSystem_ae317936c9bcf1374d61745572e0f2f8a} 
-System::\+\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Default constructor for \doxylink{classSystem}{System}. Initializes the system with an empty name and a value of 0.\+0. 
-
-
-
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00008}{8}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
-
-Here is the caller graph for this function:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=321pt]{classSystem_ae317936c9bcf1374d61745572e0f2f8a_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classSystem_a4f45df63c90a82f1c915114ac1d6e8a1}\index{System@{System}!System@{System}}
-\index{System@{System}!System@{System}}
-\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily \label{classSystem_a4f45df63c90a82f1c915114ac1d6e8a1} 
-System::\+\+System (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{double}]{value}{}\end{DoxyParamCaption})}
-
-
-
-Parameterized constructor for \doxylink{classSystem}{System}. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em name} & The name of the system. \\
-\hline
-{\em value} & The initial value of the system. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00010}{10}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
-
-\Hypertarget{classSystem_ae85f88a65a564ff9b3308b05d8fd1fa2}\index{System@{System}!System@{System}}
-\index{System@{System}!System@{System}}
-\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily \label{classSystem_ae85f88a65a564ff9b3308b05d8fd1fa2} 
-System::\+\+System (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classSystem}{System}} \&}]{obj}{}\end{DoxyParamCaption})}
-
-
-
-Copy constructor for \doxylink{classSystem}{System}. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em obj} & The \doxylink{classSystem}{System} object to copy. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00012}{12}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
-
-Here is the call graph for this function:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=308pt]{classSystem_ae85f88a65a564ff9b3308b05d8fd1fa2_cgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classSystem_a3be70bb338e3f062f821173fd15680d0}\index{System@{System}!````~System@{\texorpdfstring{$\sim$}{\string~}System}}
+\Hypertarget{classSystem_a2fc0f34023977cab9b628aa9f734d88c}\index{System@{System}!````~System@{\texorpdfstring{$\sim$}{\string~}System}}
 \index{````~System@{\texorpdfstring{$\sim$}{\string~}System}!System@{System}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}System()}{\string~System()}}
-{\footnotesize\ttfamily \label{classSystem_a3be70bb338e3f062f821173fd15680d0} 
-System::\+\texorpdfstring{$\sim$}{\string~}\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classSystem_a2fc0f34023977cab9b628aa9f734d88c} 
+virtual System::\+\texorpdfstring{$\sim$}{\string~}\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
-Virtual destructor. 
+Virtual destructor to guarantee polymorphic resource cleanup. 
 
 
 
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00014}{14}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{system_8h_source_l00011}{11}} of file \doxymbox{\hyperlink{system_8h_source}{system.\+h}}.
 
 
 
 \label{classSystem_doc-func-members}
 \Hypertarget{classSystem_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classSystem_a47ece132a04247cd74aea11537830bd4}\index{System@{System}!getName@{getName}}
+\Hypertarget{classSystem_a3bc2509274e6c346e07b0bf1151378c5}\index{System@{System}!getName@{getName}}
 \index{getName@{getName}!System@{System}}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
-{\footnotesize\ttfamily \label{classSystem_a47ece132a04247cd74aea11537830bd4} 
-string System::\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classSystem_a3bc2509274e6c346e07b0bf1151378c5} 
+virtual std::\+string System::\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Gets the name of the system. 
+Implemented in \doxymbox{\hyperlink{classSystemImpl_ad3843b49bbde11738f395c5fbeae4633}{System\+Impl}}.
 
-\begin{DoxyReturn}{Returns}
-string The name of the system. 
-\end{DoxyReturn}
-
-
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00025}{25}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
-
-Here is the caller graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classSystem_a47ece132a04247cd74aea11537830bd4_icgraph}
+\includegraphics[width=350pt]{classSystem_a3bc2509274e6c346e07b0bf1151378c5_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classSystem_aa7d17369d1034e7d8643a63f69d1901d}\index{System@{System}!getValue@{getValue}}
+\Hypertarget{classSystem_a41b673faa6c199eb8e4f204639fab4f2}\index{System@{System}!getValue@{getValue}}
 \index{getValue@{getValue}!System@{System}}
 \doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
-{\footnotesize\ttfamily \label{classSystem_aa7d17369d1034e7d8643a63f69d1901d} 
-double System::\+get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classSystem_a41b673faa6c199eb8e4f204639fab4f2} 
+virtual double System::\+get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Gets the current value of the system. 
+Implemented in \doxymbox{\hyperlink{classSystemImpl_abd3ff91586d4474c0a747dc5dd6e0268}{System\+Impl}}.
 
-\begin{DoxyReturn}{Returns}
-double The current value. 
-\end{DoxyReturn}
-
-
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00028}{28}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
-
-Here is the caller graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classSystem_aa7d17369d1034e7d8643a63f69d1901d_icgraph}
+\includegraphics[width=350pt]{classSystem_a41b673faa6c199eb8e4f204639fab4f2_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classSystem_a93f350faa6efd0b1eca2bfc2c73c8cd6}\index{System@{System}!operator=@{operator=}}
-\index{operator=@{operator=}!System@{System}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \label{classSystem_a93f350faa6efd0b1eca2bfc2c73c8cd6} 
-\doxymbox{\hyperlink{classSystem}{System}} \& System::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classSystem}{System}} \&}]{obj}{}\end{DoxyParamCaption})}
-
-
-
-Copy assignment operator. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em obj} & The \doxylink{classSystem}{System} reference to assign from. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-\doxylink{classSystem}{System}\& A reference to the assigned object. 
-\end{DoxyReturn}
-
-
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00016}{16}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
-
-Here is the call graph for this function:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=321pt]{classSystem_a93f350faa6efd0b1eca2bfc2c73c8cd6_cgraph}
-\end{center}
-\end{figure}
-\Hypertarget{classSystem_a8ca115c44d52a5bee53cfb7c6990d49e}\index{System@{System}!setName@{setName}}
+\Hypertarget{classSystem_a2c84980e017370987a25548b13ea9578}\index{System@{System}!setName@{setName}}
 \index{setName@{setName}!System@{System}}
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
-{\footnotesize\ttfamily \label{classSystem_a8ca115c44d52a5bee53cfb7c6990d49e} 
-void System::\+set\+Name (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classSystem_a2c84980e017370987a25548b13ea9578} 
+virtual void System::\+set\+Name (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Sets the name of the system. 
+Implemented in \doxymbox{\hyperlink{classSystemImpl_a64ccf2dd42f82bef7cbaf1a645589d49}{System\+Impl}}.
 
-
-\begin{DoxyParams}{Parameters}
-{\em name} & The new name of the system. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00024}{24}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
-
-Here is the caller graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classSystem_a8ca115c44d52a5bee53cfb7c6990d49e_icgraph}
+\includegraphics[width=350pt]{classSystem_a2c84980e017370987a25548b13ea9578_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classSystem_a5343de0a45485edd88bc87f338fe9a19}\index{System@{System}!setValue@{setValue}}
+\Hypertarget{classSystem_a7421d2e6970a0c4169a2febe254f2060}\index{System@{System}!setValue@{setValue}}
 \index{setValue@{setValue}!System@{System}}
 \doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
-{\footnotesize\ttfamily \label{classSystem_a5343de0a45485edd88bc87f338fe9a19} 
-void System::\+set\+Value (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classSystem_a7421d2e6970a0c4169a2febe254f2060} 
+virtual void System::\+set\+Value (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Sets the current value of the system. 
+Implemented in \doxymbox{\hyperlink{classSystemImpl_a3ebff8dd869e1fab281375d5c2ef8362}{System\+Impl}}.
 
-
-\begin{DoxyParams}{Parameters}
-{\em value} & The new value. \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line \doxymbox{\hyperlink{system_8cpp_source_l00027}{27}} of file \doxymbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
-
-Here is the caller graph for this function:\+\nopagebreak
+Here is the caller graph for this function:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classSystem_a5343de0a45485edd88bc87f338fe9a19_icgraph}
+\includegraphics[width=350pt]{classSystem_a7421d2e6970a0c4169a2febe254f2060_icgraph}
 \end{center}
 \end{figure}
 
 
-\label{classSystem_doc-variable-members}
-\Hypertarget{classSystem_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{classSystem_a29fe2868c0d56fdebc67f1bef5d5cca3}\index{System@{System}!name@{name}}
-\index{name@{name}!System@{System}}
-\doxysubsubsection{\texorpdfstring{name}{name}}
-{\footnotesize\ttfamily \label{classSystem_a29fe2868c0d56fdebc67f1bef5d5cca3} 
-string System::\+name\hspace{0.3cm}{\ttfamily [private]}}
-
-The name of the system 
-
-Definition at line \doxymbox{\hyperlink{system_8h_source_l00022}{22}} of file \doxymbox{\hyperlink{system_8h_source}{system.\+h}}.
-
-\Hypertarget{classSystem_a879687b1125ef20757c2a61345fedd00}\index{System@{System}!value@{value}}
-\index{value@{value}!System@{System}}
-\doxysubsubsection{\texorpdfstring{value}{value}}
-{\footnotesize\ttfamily \label{classSystem_a879687b1125ef20757c2a61345fedd00} 
-double System::\+value\hspace{0.3cm}{\ttfamily [private]}}
-
-The numeric value or state of the system 
-
-Definition at line \doxymbox{\hyperlink{system_8h_source_l00023}{23}} of file \doxymbox{\hyperlink{system_8h_source}{system.\+h}}.
-
-
-
-The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
 \item 
-src/\+\doxymbox{\hyperlink{system_8h}{system.\+h}}\item 
-src/\+\doxymbox{\hyperlink{system_8cpp}{system.\+cpp}}\end{DoxyCompactItemize}
+src/\+\doxymbox{\hyperlink{system_8h}{system.\+h}}\end{DoxyCompactItemize}

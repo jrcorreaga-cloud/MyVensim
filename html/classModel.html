@@ -115,123 +115,97 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classModel.htm
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Model Class Reference</div></div>
+  <div class="headertitle"><div class="title">Model Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Manages the execution of the simulation.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="model_8h_source.html">model.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Model:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel__inherit__graph.png" border="0" usemap="#aModel_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="aModel_inherit__map" id="aModel_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,5,143,311"/>
+<area shape="rect" href="classModelImpl.html" title=" " alt="" coords="5,359,143,744"/>
+<area shape="poly" title=" " alt="" coords="77,325,77,359,71,359,71,325"/>
+</map>
+</div>
 <div class="dynheader">
 Collaboration diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel__coll__graph.png" border="0" usemap="#aModel_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aModel_coll__map" id="aModel_coll__map">
-<area shape="rect" title="Manages the execution of the simulation." alt="" coords="5,5,111,211"/>
+<area shape="rect" title=" " alt="" coords="5,5,143,311"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a32c08d1842bfaf3bc76b65df5c3e0a16" id="r_a32c08d1842bfaf3bc76b65df5c3e0a16"><td class="memItemLeft">typedef std::vector&lt; <a class="el" href="classSystem.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight"><a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a></td></tr>
+<tr class="memdesc:a32c08d1842bfaf3bc76b65df5c3e0a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes iterators without revealing the underlying data structures, ensuring encapsulation according to the Information Hiding principles.  <br /></td></tr>
+<tr class="memitem:af19b499569caa4d43b69914002e04271" id="r_af19b499569caa4d43b69914002e04271"><td class="memItemLeft">typedef std::vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight"><a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3b375de5f6df4faf74a95d64748e048" id="r_ae3b375de5f6df4faf74a95d64748e048"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae3b375de5f6df4faf74a95d64748e048">Model</a> ()</td></tr>
-<tr class="memdesc:ae3b375de5f6df4faf74a95d64748e048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a>.  <br /></td></tr>
-<tr class="memitem:ac00568179c3d466977eb67c0993cbbcf" id="r_ac00568179c3d466977eb67c0993cbbcf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac00568179c3d466977eb67c0993cbbcf">Model</a> (const <a class="el" href="classModel.html">Model</a> &amp;obj)</td></tr>
-<tr class="memdesc:ac00568179c3d466977eb67c0993cbbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a>.  <br /></td></tr>
-<tr class="memitem:ad6ebd2062a0b823db841a0b88baac4c0" id="r_ad6ebd2062a0b823db841a0b88baac4c0"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#ad6ebd2062a0b823db841a0b88baac4c0">~Model</a> ()</td></tr>
-<tr class="memdesc:ad6ebd2062a0b823db841a0b88baac4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a>.  <br /></td></tr>
-<tr class="memitem:a08c2b7ccb88a5521a0b2dbc55c0eb1d0" id="r_a08c2b7ccb88a5521a0b2dbc55c0eb1d0"><td class="memItemLeft"><a class="el" href="classModel.html">Model</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a08c2b7ccb88a5521a0b2dbc55c0eb1d0">operator=</a> (const <a class="el" href="classModel.html">Model</a> &amp;obj)</td></tr>
-<tr class="memdesc:a08c2b7ccb88a5521a0b2dbc55c0eb1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator.  <br /></td></tr>
-<tr class="memitem:a302d4ed93c6e6f9a0f728e021a91f821" id="r_a302d4ed93c6e6f9a0f728e021a91f821"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a302d4ed93c6e6f9a0f728e021a91f821">add</a> (<a class="el" href="classSystem.html">System</a> *system)</td></tr>
-<tr class="memdesc:a302d4ed93c6e6f9a0f728e021a91f821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a> to the simulation.  <br /></td></tr>
-<tr class="memitem:ab69613bde0ace81c92bbf519660ccb2c" id="r_ab69613bde0ace81c92bbf519660ccb2c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab69613bde0ace81c92bbf519660ccb2c">add</a> (<a class="el" href="classFlow.html">Flow</a> *flow)</td></tr>
-<tr class="memdesc:ab69613bde0ace81c92bbf519660ccb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems.">Flow</a> to the simulation.  <br /></td></tr>
-<tr class="memitem:af987d08ccec7405d80a069b6ecf99e2c" id="r_af987d08ccec7405d80a069b6ecf99e2c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af987d08ccec7405d80a069b6ecf99e2c">execute</a> (int initialTime, int finalTime)</td></tr>
-<tr class="memdesc:af987d08ccec7405d80a069b6ecf99e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the simulation. Over the given time period, it iterates on the simulation step by step, recalculating and transferring flow values among the connected Systems.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac7dea8829149e597d2671dbc0a538bf7" id="r_ac7dea8829149e597d2671dbc0a538bf7"><td class="memItemLeft">vector&lt; <a class="el" href="classSystem.html">System</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac7dea8829149e597d2671dbc0a538bf7">systems</a></td></tr>
-<tr class="memitem:aa76c9411f1cf6da6f4c696b2feadcb1a" id="r_aa76c9411f1cf6da6f4c696b2feadcb1a"><td class="memItemLeft">vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa76c9411f1cf6da6f4c696b2feadcb1a">flows</a></td></tr>
+<tr class="memitem:af032d8433c87a0a3a431faf6563a1f03" id="r_af032d8433c87a0a3a431faf6563a1f03"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#af032d8433c87a0a3a431faf6563a1f03">~Model</a> ()</td></tr>
+<tr class="memitem:afde6c25ab942f2eec7aedeaf8eec53fd" id="r_afde6c25ab942f2eec7aedeaf8eec53fd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#afde6c25ab942f2eec7aedeaf8eec53fd">add</a> (<a class="el" href="classSystem.html">System</a> *system)=0</td></tr>
+<tr class="memdesc:afde6c25ab942f2eec7aedeaf8eec53fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contract for managing <a class="el" href="classSystem.html">System</a> entities inside the simulation model.  <br /></td></tr>
+<tr class="memitem:ae87a460b5f8bc4e01c2c4c2413f4df47" id="r_ae87a460b5f8bc4e01c2c4c2413f4df47"><td class="memItemLeft">virtual <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae87a460b5f8bc4e01c2c4c2413f4df47">systemBegin</a> ()=0</td></tr>
+<tr class="memitem:ac381f929e44c3a1f04ed8d393a0c7bbc" id="r_ac381f929e44c3a1f04ed8d393a0c7bbc"><td class="memItemLeft">virtual <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac381f929e44c3a1f04ed8d393a0c7bbc">systemEnd</a> ()=0</td></tr>
+<tr class="memitem:ab7df81041f62f049cfc6e4d50dcaf721" id="r_ab7df81041f62f049cfc6e4d50dcaf721"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab7df81041f62f049cfc6e4d50dcaf721">add</a> (<a class="el" href="classFlow.html">Flow</a> *flow)=0</td></tr>
+<tr class="memdesc:ab7df81041f62f049cfc6e4d50dcaf721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contract for managing <a class="el" href="classFlow.html">Flow</a> entities inside the simulation model.  <br /></td></tr>
+<tr class="memitem:ac3cbad7c7be9a1176b71f689590f5e13" id="r_ac3cbad7c7be9a1176b71f689590f5e13"><td class="memItemLeft">virtual <a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac3cbad7c7be9a1176b71f689590f5e13">flowBegin</a> ()=0</td></tr>
+<tr class="memitem:a3bd1101deb3f40e189036b363288cdf9" id="r_a3bd1101deb3f40e189036b363288cdf9"><td class="memItemLeft">virtual <a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3bd1101deb3f40e189036b363288cdf9">flowEnd</a> ()=0</td></tr>
+<tr class="memitem:a299939795a2d298025372ab5173020c6" id="r_a299939795a2d298025372ab5173020c6"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a299939795a2d298025372ab5173020c6">run</a> (double startTime, double endTime, double step)=0</td></tr>
+<tr class="memdesc:a299939795a2d298025372ab5173020c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core simulation lifecycle manager. Executes the operational loop.  <br /></td></tr>
+<tr class="memitem:ad9e8e4d0a942396c74932a8c57b03b57" id="r_ad9e8e4d0a942396c74932a8c57b03b57"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad9e8e4d0a942396c74932a8c57b03b57">setName</a> (const std::string &amp;name)=0</td></tr>
+<tr class="memdesc:ad9e8e4d0a942396c74932a8c57b03b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata tracking methods.  <br /></td></tr>
+<tr class="memitem:a17e89ca8d15af46d074423a47d3c6802" id="r_a17e89ca8d15af46d074423a47d3c6802"><td class="memItemLeft">virtual std::string&#160;</td><td class="memItemRight"><a class="el" href="#a17e89ca8d15af46d074423a47d3c6802">getName</a> () const =0</td></tr>
+<tr class="memitem:ab89eff21392ee4e7f58da939238acc7c" id="r_ab89eff21392ee4e7f58da939238acc7c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab89eff21392ee4e7f58da939238acc7c">setTime</a> (double time)=0</td></tr>
+<tr class="memitem:a41569269c162962571a791c0fe737bca" id="r_a41569269c162962571a791c0fe737bca"><td class="memItemLeft">virtual double&#160;</td><td class="memItemRight"><a class="el" href="#a41569269c162962571a791c0fe737bca">getTime</a> () const =0</td></tr>
+<tr class="memitem:a27981fdb221eef87b2d441a576ca6747" id="r_a27981fdb221eef87b2d441a576ca6747"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a27981fdb221eef87b2d441a576ca6747">incrementTime</a> (double step)=0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages the execution of the simulation. </p>
-<p>The <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a> class aggregates Systems and Flows, acting as a container for the simulation components and providing the means to execute the simulation over a given timeframe. </p>
-
-<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00023">23</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae3b375de5f6df4faf74a95d64748e048" name="ae3b375de5f6df4faf74a95d64748e048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b375de5f6df4faf74a95d64748e048">&#9670;&#160;</a></span>Model() <span class="overload">[1/2]</span></h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00009">9</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a id="af19b499569caa4d43b69914002e04271" name="af19b499569caa4d43b69914002e04271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af19b499569caa4d43b69914002e04271">&#9670;&#160;</a></span>flowIterator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Model::Model </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="classFlow.html">Flow</a>*&gt;::iterator <a class="el" href="#af19b499569caa4d43b69914002e04271">Model::flowIterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default constructor for <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="model_8cpp_source.html#l00008">8</a> of file <a class="el" href="model_8cpp_source.html">model.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModel_ae3b375de5f6df4faf74a95d64748e048_icgraph.png" border="0" usemap="#aclassModel_ae3b375de5f6df4faf74a95d64748e048_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassModel_ae3b375de5f6df4faf74a95d64748e048_icgraph" id="aclassModel_ae3b375de5f6df4faf74a95d64748e048_icgraph">
-<area shape="rect" title="Default constructor for Model." alt="" coords="189,31,300,56"/>
-<area shape="rect" href="classModel.html#ac00568179c3d466977eb67c0993cbbcf" title="Copy constructor for Model." alt="" coords="18,5,129,31"/>
-<area shape="poly" title=" " alt="" coords="175,36,128,29,129,24,176,31"/>
-<area shape="rect" href="classModel.html#a08c2b7ccb88a5521a0b2dbc55c0eb1d0" title="Copy assignment operator." alt="" coords="5,55,141,80"/>
-<area shape="poly" title=" " alt="" coords="176,56,142,60,141,55,175,50"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00016">16</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
-<a id="ac00568179c3d466977eb67c0993cbbcf" name="ac00568179c3d466977eb67c0993cbbcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac00568179c3d466977eb67c0993cbbcf">&#9670;&#160;</a></span>Model() <span class="overload">[2/2]</span></h2>
+<a id="a32c08d1842bfaf3bc76b65df5c3e0a16" name="a32c08d1842bfaf3bc76b65df5c3e0a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c08d1842bfaf3bc76b65df5c3e0a16">&#9670;&#160;</a></span>systemIterator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Model::Model </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModel.html">Model</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="classSystem.html">System</a>*&gt;::iterator <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">Model::systemIterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Copy constructor for <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">obj</td><td>The <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a> object to copy. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Exposes iterators without revealing the underlying data structures, ensuring encapsulation according to the Information Hiding principles. </p>
 
-<p class="definition">Definition at line <a class="el" href="model_8cpp_source.html#l00010">10</a> of file <a class="el" href="model_8cpp_source.html">model.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModel_ac00568179c3d466977eb67c0993cbbcf_cgraph.png" border="0" usemap="#aclassModel_ac00568179c3d466977eb67c0993cbbcf_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassModel_ac00568179c3d466977eb67c0993cbbcf_cgraph" id="aclassModel_ac00568179c3d466977eb67c0993cbbcf_cgraph">
-<area shape="rect" title="Copy constructor for Model." alt="" coords="5,5,116,31"/>
-<area shape="rect" href="classModel.html#ae3b375de5f6df4faf74a95d64748e048" title="Default constructor for Model." alt="" coords="164,5,275,31"/>
-<area shape="poly" title=" " alt="" coords="116,15,150,15,150,21,116,21"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00015">15</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
-<a id="ad6ebd2062a0b823db841a0b88baac4c0" name="ad6ebd2062a0b823db841a0b88baac4c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6ebd2062a0b823db841a0b88baac4c0">&#9670;&#160;</a></span>~Model()</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af032d8433c87a0a3a431faf6563a1f03" name="af032d8433c87a0a3a431faf6563a1f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af032d8433c87a0a3a431faf6563a1f03">&#9670;&#160;</a></span>~Model()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +214,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Model::~Model </td>
+          <td class="memname">virtual Model::~Model </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -248,205 +222,453 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Virtual destructor for <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="model_8cpp_source.html#l00012">12</a> of file <a class="el" href="model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00018">18</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ab69613bde0ace81c92bbf519660ccb2c" name="ab69613bde0ace81c92bbf519660ccb2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab69613bde0ace81c92bbf519660ccb2c">&#9670;&#160;</a></span>add() <span class="overload">[1/2]</span></h2>
+<a id="ab7df81041f62f049cfc6e4d50dcaf721" name="ab7df81041f62f049cfc6e4d50dcaf721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7df81041f62f049cfc6e4d50dcaf721">&#9670;&#160;</a></span>add() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Model::add </td>
+          <td class="memname">virtual void Model::add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classFlow.html">Flow</a> *</td>          <td class="paramname"><span class="paramname"><em>flow</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Adds a <a class="el" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems.">Flow</a> to the simulation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flow</td><td>Pointer to the <a class="el" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems.">Flow</a> to be added. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Contract for managing <a class="el" href="classFlow.html">Flow</a> entities inside the simulation model. </p>
 
-<p class="definition">Definition at line <a class="el" href="model_8cpp_source.html#l00026">26</a> of file <a class="el" href="model_8cpp_source.html">model.cpp</a>.</p>
+<p>Implemented in <a class="el" href="classModelImpl.html#a3e8843e5353f40ab30afcf19b4f13a67">ModelImpl</a>.</p>
 
 </div>
 </div>
-<a id="a302d4ed93c6e6f9a0f728e021a91f821" name="a302d4ed93c6e6f9a0f728e021a91f821"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a302d4ed93c6e6f9a0f728e021a91f821">&#9670;&#160;</a></span>add() <span class="overload">[2/2]</span></h2>
+<a id="afde6c25ab942f2eec7aedeaf8eec53fd" name="afde6c25ab942f2eec7aedeaf8eec53fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde6c25ab942f2eec7aedeaf8eec53fd">&#9670;&#160;</a></span>add() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Model::add </td>
+          <td class="memname">virtual void Model::add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>system</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Adds a <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a> to the simulation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">system</td><td>Pointer to the <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a> to be added. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Contract for managing <a class="el" href="classSystem.html">System</a> entities inside the simulation model. </p>
 
-<p class="definition">Definition at line <a class="el" href="model_8cpp_source.html#l00022">22</a> of file <a class="el" href="model_8cpp_source.html">model.cpp</a>.</p>
+<p>Implemented in <a class="el" href="classModelImpl.html#a24e46f6ee90908c0ed4e882094573800">ModelImpl</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph.png" border="0" usemap="#aclassModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph" id="aclassModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph">
-<area shape="rect" title="Adds a System to the simulation." alt="" coords="559,80,653,105"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="334,5,501,31"/>
-<area shape="poly" title=" " alt="" coords="571,75,510,44,475,33,477,28,512,40,574,70"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Performs an exponential transfer test. Expects the system to iteratively approach correct resulting p..." alt="" coords="324,55,511,80"/>
-<area shape="poly" title=" " alt="" coords="545,87,511,83,511,77,545,82"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Performs a logistical transfer test. Evaluates the non&#45;linear execution flow logic tied to a capacity..." alt="" coords="333,104,502,129"/>
-<area shape="poly" title=" " alt="" coords="545,103,503,109,502,103,544,98"/>
-<area shape="rect" href="unit__tests_8cpp.html#af1df775ac89780cd90d3c64800ea6a2b" title=" " alt="" coords="350,153,485,179"/>
-<area shape="poly" title=" " alt="" coords="572,114,512,143,473,156,471,151,510,138,570,110"/>
-<area shape="rect" href="funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="165,55,219,80"/>
-<area shape="poly" title=" " alt="" coords="346,36,220,64,219,59,345,31"/>
-<area shape="poly" title=" " alt="" coords="310,70,219,70,219,65,310,65"/>
-<area shape="poly" title=" " alt="" coords="345,104,219,76,220,71,346,98"/>
-<area shape="rect" href="unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a" title=" " alt="" coords="108,153,276,179"/>
-<area shape="poly" title=" " alt="" coords="336,169,276,169,276,163,336,163"/>
-<area shape="rect" href="unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,60,179"/>
-<area shape="poly" title=" " alt="" coords="94,169,60,169,60,163,94,163"/>
+<div class="center"><img src="classModel_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph.png" border="0" usemap="#aclassModel_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph" id="aclassModel_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph">
+<area shape="rect" title="Contract for managing System entities inside the simulation model." alt="" coords="569,203,664,228"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="336,5,503,31"/>
+<area shape="poly" title=" " alt="" coords="606,190,595,157,577,117,552,77,520,44,501,33,503,29,523,40,556,74,582,114,600,155,611,189"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="326,55,513,80"/>
+<area shape="poly" title=" " alt="" coords="601,192,569,141,546,115,520,94,498,83,500,78,523,89,550,111,573,138,605,189"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="335,104,504,129"/>
+<area shape="poly" title=" " alt="" coords="591,195,559,167,520,143,490,132,492,127,523,138,562,163,594,190"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="392,153,447,179"/>
+<area shape="poly" title=" " alt="" coords="555,202,521,193,446,175,447,169,522,187,557,196"/>
+<area shape="rect" href="unit__Model_8cpp.html#a742a3cf3113b9b5828bf0dfe22abc6a3" title=" " alt="" coords="341,203,497,228"/>
+<area shape="poly" title=" " alt="" coords="556,218,498,218,498,213,556,213"/>
+<area shape="rect" href="unit__Model_8cpp.html#a06390bb362065cf4ccf41ddfa0c33693" title=" " alt="" coords="332,252,507,277"/>
+<area shape="poly" title=" " alt="" coords="556,233,522,242,472,255,471,249,521,237,555,228"/>
+<area shape="rect" href="unit__Model_8cpp.html#a1df2814100543bb544fd49a2131ed0ad" title=" " alt="" coords="328,301,511,327"/>
+<area shape="poly" title=" " alt="" coords="594,240,562,267,523,291,489,304,487,299,520,286,559,262,591,236"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title=" " alt="" coords="358,351,481,376"/>
+<area shape="poly" title=" " alt="" coords="605,241,573,292,550,318,523,340,482,358,480,353,520,336,546,314,569,289,601,238"/>
+<area shape="rect" href="unit__Model_8cpp.html#aa846d99bdbd927897564c081694970b5" title=" " alt="" coords="317,400,521,425"/>
+<area shape="poly" title=" " alt="" coords="611,242,599,276,581,316,556,356,523,389,500,402,498,398,520,385,552,352,576,313,594,274,606,240"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="161,55,216,80"/>
+<area shape="poly" title=" " alt="" coords="346,36,217,64,216,59,345,31"/>
+<area shape="poly" title=" " alt="" coords="312,70,216,70,216,65,312,65"/>
+<area shape="poly" title=" " alt="" coords="345,104,216,76,217,70,346,98"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,301,269,327"/>
+<area shape="poly" title=" " alt="" coords="340,234,318,242,257,273,209,304,206,299,255,268,316,237,338,229"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,301,60,327"/>
+<area shape="poly" title=" " alt="" coords="94,317,60,317,60,311,94,311"/>
+<area shape="poly" title=" " alt="" coords="347,283,249,304,248,299,346,278"/>
+<area shape="poly" title=" " alt="" coords="314,317,269,317,269,311,314,311"/>
+<area shape="poly" title=" " alt="" coords="346,350,248,329,249,324,347,345"/>
+<area shape="poly" title=" " alt="" coords="342,399,316,390,255,359,207,329,210,325,258,355,318,385,344,394"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af987d08ccec7405d80a069b6ecf99e2c" name="af987d08ccec7405d80a069b6ecf99e2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af987d08ccec7405d80a069b6ecf99e2c">&#9670;&#160;</a></span>execute()</h2>
+<a id="ac3cbad7c7be9a1176b71f689590f5e13" name="ac3cbad7c7be9a1176b71f689590f5e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3cbad7c7be9a1176b71f689590f5e13">&#9670;&#160;</a></span>flowBegin()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Model::execute </td>
+          <td class="memname">virtual <a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a> Model::flowBegin </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>initialTime</em></span>, </td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classModelImpl.html#a47b7434a49e79c2b648b5db575a23d35">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_ac3cbad7c7be9a1176b71f689590f5e13_icgraph.png" border="0" usemap="#aclassModel_ac3cbad7c7be9a1176b71f689590f5e13_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_ac3cbad7c7be9a1176b71f689590f5e13_icgraph" id="aclassModel_ac3cbad7c7be9a1176b71f689590f5e13_icgraph">
+<area shape="rect" title=" " alt="" coords="548,55,683,80"/>
+<area shape="rect" href="unit__Model_8cpp.html#a742a3cf3113b9b5828bf0dfe22abc6a3" title=" " alt="" coords="331,5,487,31"/>
+<area shape="poly" title=" " alt="" coords="548,54,462,33,463,28,549,49"/>
+<area shape="rect" href="unit__Model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="321,55,496,80"/>
+<area shape="poly" title=" " alt="" coords="534,70,496,70,496,65,534,65"/>
+<area shape="rect" href="unit__Model_8cpp.html#a1df2814100543bb544fd49a2131ed0ad" title=" " alt="" coords="317,104,500,129"/>
+<area shape="poly" title=" " alt="" coords="549,86,463,107,462,101,548,81"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,55,269,80"/>
+<area shape="poly" title=" " alt="" coords="339,36,247,57,246,52,337,31"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
+<area shape="poly" title=" " alt="" coords="307,70,270,70,270,65,307,65"/>
+<area shape="poly" title=" " alt="" coords="337,104,246,83,247,77,339,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3bd1101deb3f40e189036b363288cdf9" name="a3bd1101deb3f40e189036b363288cdf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bd1101deb3f40e189036b363288cdf9">&#9670;&#160;</a></span>flowEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a> Model::flowEnd </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classModelImpl.html#acc758ca09a6781e6fb204166365dabbb">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a3bd1101deb3f40e189036b363288cdf9_icgraph.png" border="0" usemap="#aclassModel_a3bd1101deb3f40e189036b363288cdf9_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_a3bd1101deb3f40e189036b363288cdf9_icgraph" id="aclassModel_a3bd1101deb3f40e189036b363288cdf9_icgraph">
+<area shape="rect" title=" " alt="" coords="548,31,669,56"/>
+<area shape="rect" href="unit__Model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="321,5,496,31"/>
+<area shape="poly" title=" " alt="" coords="534,37,496,32,496,26,535,31"/>
+<area shape="rect" href="unit__Model_8cpp.html#a1df2814100543bb544fd49a2131ed0ad" title=" " alt="" coords="317,55,500,80"/>
+<area shape="poly" title=" " alt="" coords="535,55,500,59,500,54,534,50"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,31,269,56"/>
+<area shape="poly" title=" " alt="" coords="308,32,270,37,269,31,307,27"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,60,56"/>
+<area shape="poly" title=" " alt="" coords="94,46,60,46,60,41,94,41"/>
+<area shape="poly" title=" " alt="" coords="303,59,269,55,270,49,304,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a17e89ca8d15af46d074423a47d3c6802" name="a17e89ca8d15af46d074423a47d3c6802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e89ca8d15af46d074423a47d3c6802">&#9670;&#160;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Model::getName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classModelImpl.html#a6d6ef8f72413650749d9ca9850226a6b">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a17e89ca8d15af46d074423a47d3c6802_icgraph.png" border="0" usemap="#aclassModel_a17e89ca8d15af46d074423a47d3c6802_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_a17e89ca8d15af46d074423a47d3c6802_icgraph" id="aclassModel_a17e89ca8d15af46d074423a47d3c6802_icgraph">
+<area shape="rect" title=" " alt="" coords="540,80,671,105"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="377,5,432,31"/>
+<area shape="poly" title=" " alt="" coords="565,76,491,45,432,27,433,22,493,39,567,71"/>
+<area shape="rect" href="unit__Model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="317,55,492,80"/>
+<area shape="poly" title=" " alt="" coords="526,85,492,81,493,76,527,80"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title=" " alt="" coords="324,104,485,129"/>
+<area shape="poly" title=" " alt="" coords="526,105,486,110,485,104,526,99"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title=" " alt="" coords="325,153,485,179"/>
+<area shape="poly" title=" " alt="" coords="565,114,493,143,454,156,452,151,491,138,563,109"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,104,269,129"/>
+<area shape="poly" title=" " alt="" coords="336,86,246,107,245,101,335,80"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,104,60,129"/>
+<area shape="poly" title=" " alt="" coords="94,119,60,119,60,114,94,114"/>
+<area shape="poly" title=" " alt="" coords="310,119,270,119,270,114,310,114"/>
+<area shape="poly" title=" " alt="" coords="335,153,245,132,246,127,336,148"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41569269c162962571a791c0fe737bca" name="a41569269c162962571a791c0fe737bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41569269c162962571a791c0fe737bca">&#9670;&#160;</a></span>getTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Model::getTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classModelImpl.html#a9233d23b2fa19917f314cf286749a924">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a41569269c162962571a791c0fe737bca_icgraph.png" border="0" usemap="#aclassModel_a41569269c162962571a791c0fe737bca_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_a41569269c162962571a791c0fe737bca_icgraph" id="aclassModel_a41569269c162962571a791c0fe737bca_icgraph">
+<area shape="rect" title=" " alt="" coords="565,104,689,129"/>
+<area shape="rect" href="unit__Model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="330,5,505,31"/>
+<area shape="poly" title=" " alt="" coords="599,97,561,70,516,44,485,33,486,28,518,40,564,65,602,93"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3cccf91ec949426c8c8f839d4ef8b43d" title=" " alt="" coords="340,55,495,80"/>
+<area shape="poly" title=" " alt="" coords="559,103,472,83,473,77,560,98"/>
+<area shape="rect" href="unit__Model_8cpp.html#aca4b3243c61a709985d47617c965b511" title=" " alt="" coords="317,104,517,129"/>
+<area shape="poly" title=" " alt="" coords="551,119,517,119,517,114,551,114"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title=" " alt="" coords="356,153,479,179"/>
+<area shape="poly" title=" " alt="" coords="560,135,473,156,472,151,559,130"/>
+<area shape="rect" href="unit__Model_8cpp.html#a08ad72f756534b6b0f87eb638731d0ef" title=" " alt="" coords="340,203,495,228"/>
+<area shape="poly" title=" " alt="" coords="602,140,564,167,518,192,483,205,481,200,516,188,561,163,599,136"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,104,269,129"/>
+<area shape="poly" title=" " alt="" coords="340,37,318,44,258,75,210,106,207,101,255,71,316,40,338,32"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,104,60,129"/>
+<area shape="poly" title=" " alt="" coords="94,119,60,119,60,114,94,114"/>
+<area shape="poly" title=" " alt="" coords="345,86,249,107,248,101,344,80"/>
+<area shape="poly" title=" " alt="" coords="303,119,269,119,269,114,303,114"/>
+<area shape="poly" title=" " alt="" coords="344,153,248,132,249,127,345,148"/>
+<area shape="poly" title=" " alt="" coords="341,201,316,192,255,162,207,132,210,127,258,157,318,188,343,196"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a27981fdb221eef87b2d441a576ca6747" name="a27981fdb221eef87b2d441a576ca6747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27981fdb221eef87b2d441a576ca6747">&#9670;&#160;</a></span>incrementTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Model::incrementTime </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>step</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classModelImpl.html#ac35b905745e42c2623bf431609b9f09c">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a27981fdb221eef87b2d441a576ca6747_icgraph.png" border="0" usemap="#aclassModel_a27981fdb221eef87b2d441a576ca6747_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_a27981fdb221eef87b2d441a576ca6747_icgraph" id="aclassModel_a27981fdb221eef87b2d441a576ca6747_icgraph">
+<area shape="rect" title=" " alt="" coords="565,5,735,31"/>
+<area shape="rect" href="unit__Model_8cpp.html#aca4b3243c61a709985d47617c965b511" title=" " alt="" coords="317,5,517,31"/>
+<area shape="poly" title=" " alt="" coords="551,21,518,21,518,15,551,15"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,5,269,31"/>
+<area shape="poly" title=" " alt="" coords="303,21,269,21,269,15,303,15"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a299939795a2d298025372ab5173020c6" name="a299939795a2d298025372ab5173020c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299939795a2d298025372ab5173020c6">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Model::run </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>startTime</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>finalTime</em></span>&#160;)</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>endTime</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>step</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Executes the simulation. Over the given time period, it iterates on the simulation step by step, recalculating and transferring flow values among the connected Systems. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">initialTime</td><td>The starting point of the simulation. </td></tr>
-    <tr><td class="paramname">finalTime</td><td>The endpoint of the simulation. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Core simulation lifecycle manager. Executes the operational loop. </p>
 
-<p class="definition">Definition at line <a class="el" href="model_8cpp_source.html#l00030">30</a> of file <a class="el" href="model_8cpp_source.html">model.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModel_af987d08ccec7405d80a069b6ecf99e2c_cgraph.png" border="0" usemap="#aclassModel_af987d08ccec7405d80a069b6ecf99e2c_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassModel_af987d08ccec7405d80a069b6ecf99e2c_cgraph" id="aclassModel_af987d08ccec7405d80a069b6ecf99e2c_cgraph">
-<area shape="rect" title="Executes the simulation. Over the given time period, it iterates on the simulation step by step,..." alt="" coords="5,31,127,56"/>
-<area shape="rect" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="Gets the current value of the system." alt="" coords="175,5,311,31"/>
-<area shape="poly" title=" " alt="" coords="126,32,161,27,161,32,127,37"/>
-<area shape="rect" href="classSystem.html#a5343de0a45485edd88bc87f338fe9a19" title="Sets the current value of the system." alt="" coords="175,55,310,80"/>
-<area shape="poly" title=" " alt="" coords="127,49,162,54,161,59,126,54"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classModelImpl.html#aea9f737fee60153508e6bd734022b3e0">ModelImpl</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classModel_af987d08ccec7405d80a069b6ecf99e2c_icgraph.png" border="0" usemap="#aclassModel_af987d08ccec7405d80a069b6ecf99e2c_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassModel_af987d08ccec7405d80a069b6ecf99e2c_icgraph" id="aclassModel_af987d08ccec7405d80a069b6ecf99e2c_icgraph">
-<area shape="rect" title="Executes the simulation. Over the given time period, it iterates on the simulation step by step,..." alt="" coords="559,80,680,105"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="334,5,501,31"/>
-<area shape="poly" title=" " alt="" coords="581,76,510,44,473,33,475,28,512,40,583,71"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Performs an exponential transfer test. Expects the system to iteratively approach correct resulting p..." alt="" coords="324,55,511,80"/>
-<area shape="poly" title=" " alt="" coords="545,86,511,82,511,76,545,81"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Performs a logistical transfer test. Evaluates the non&#45;linear execution flow logic tied to a capacity..." alt="" coords="333,104,502,129"/>
-<area shape="poly" title=" " alt="" coords="545,104,502,109,502,104,544,99"/>
-<area shape="rect" href="unit__tests_8cpp.html#af1df775ac89780cd90d3c64800ea6a2b" title=" " alt="" coords="350,153,485,179"/>
-<area shape="poly" title=" " alt="" coords="581,114,512,143,471,156,469,151,510,138,579,109"/>
-<area shape="rect" href="funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="165,55,219,80"/>
-<area shape="poly" title=" " alt="" coords="346,36,220,64,219,59,345,31"/>
-<area shape="poly" title=" " alt="" coords="310,70,219,70,219,65,310,65"/>
-<area shape="poly" title=" " alt="" coords="345,104,219,76,220,71,346,98"/>
-<area shape="rect" href="unit__tests_8cpp.html#aaef0e580ac1123f30a7c742b9b73e51a" title=" " alt="" coords="108,153,276,179"/>
-<area shape="poly" title=" " alt="" coords="336,169,276,169,276,163,336,163"/>
-<area shape="rect" href="unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,60,179"/>
+<div class="center"><img src="classModel_a299939795a2d298025372ab5173020c6_icgraph.png" border="0" usemap="#aclassModel_a299939795a2d298025372ab5173020c6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_a299939795a2d298025372ab5173020c6_icgraph" id="aclassModel_a299939795a2d298025372ab5173020c6_icgraph">
+<area shape="rect" title="Core simulation lifecycle manager. Executes the operational loop." alt="" coords="552,80,643,105"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="327,5,494,31"/>
+<area shape="poly" title=" " alt="" coords="563,75,503,44,469,33,470,28,505,40,566,70"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="317,55,504,80"/>
+<area shape="poly" title=" " alt="" coords="538,87,504,83,505,77,539,82"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="326,104,495,129"/>
+<area shape="poly" title=" " alt="" coords="539,103,496,108,495,103,538,98"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title=" " alt="" coords="349,153,472,179"/>
+<area shape="poly" title=" " alt="" coords="564,114,505,143,466,156,465,151,503,138,562,110"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="161,55,216,80"/>
+<area shape="poly" title=" " alt="" coords="340,36,217,64,216,59,339,31"/>
+<area shape="poly" title=" " alt="" coords="304,70,216,70,216,65,304,65"/>
+<area shape="poly" title=" " alt="" coords="339,104,216,76,217,71,340,98"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,153,269,179"/>
+<area shape="poly" title=" " alt="" coords="335,169,270,169,270,163,335,163"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,60,179"/>
 <area shape="poly" title=" " alt="" coords="94,169,60,169,60,163,94,163"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a08c2b7ccb88a5521a0b2dbc55c0eb1d0" name="a08c2b7ccb88a5521a0b2dbc55c0eb1d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08c2b7ccb88a5521a0b2dbc55c0eb1d0">&#9670;&#160;</a></span>operator=()</h2>
+<a id="ad9e8e4d0a942396c74932a8c57b03b57" name="ad9e8e4d0a942396c74932a8c57b03b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e8e4d0a942396c74932a8c57b03b57">&#9670;&#160;</a></span>setName()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModel.html">Model</a> &amp; Model::operator= </td>
+          <td class="memname">virtual void Model::setName </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classModel.html">Model</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Copy assignment operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">obj</td><td>The <a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a> reference to assign from. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classModel.html" title="Manages the execution of the simulation.">Model</a>&amp; A reference to the assigned object. </dd></dl>
+<p>Metadata tracking methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="model_8cpp_source.html#l00014">14</a> of file <a class="el" href="model_8cpp_source.html">model.cpp</a>.</p>
+<p>Implemented in <a class="el" href="classModelImpl.html#a0d4dc3b77ac3007091760dda1a1dfa8b">ModelImpl</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0_cgraph.png" border="0" usemap="#aclassModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0_cgraph" id="aclassModel_a08c2b7ccb88a5521a0b2dbc55c0eb1d0_cgraph">
-<area shape="rect" title="Copy assignment operator." alt="" coords="5,5,141,31"/>
-<area shape="rect" href="classModel.html#ae3b375de5f6df4faf74a95d64748e048" title="Default constructor for Model." alt="" coords="189,5,300,31"/>
-<area shape="poly" title=" " alt="" coords="142,15,175,15,175,21,142,21"/>
+<div class="center"><img src="classModel_ad9e8e4d0a942396c74932a8c57b03b57_icgraph.png" border="0" usemap="#aclassModel_ad9e8e4d0a942396c74932a8c57b03b57_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_ad9e8e4d0a942396c74932a8c57b03b57_icgraph" id="aclassModel_ad9e8e4d0a942396c74932a8c57b03b57_icgraph">
+<area shape="rect" title="Metadata tracking methods." alt="" coords="525,5,655,31"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title=" " alt="" coords="317,5,477,31"/>
+<area shape="poly" title=" " alt="" coords="511,21,477,21,477,15,511,15"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,5,269,31"/>
+<area shape="poly" title=" " alt="" coords="303,21,270,21,270,15,303,15"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>
 </div>
 
 </div>
 </div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="aa76c9411f1cf6da6f4c696b2feadcb1a" name="aa76c9411f1cf6da6f4c696b2feadcb1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa76c9411f1cf6da6f4c696b2feadcb1a">&#9670;&#160;</a></span>flows</h2>
+<a id="ab89eff21392ee4e7f58da939238acc7c" name="ab89eff21392ee4e7f58da939238acc7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89eff21392ee4e7f58da939238acc7c">&#9670;&#160;</a></span>setTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,23 +677,39 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;<a class="el" href="classFlow.html">Flow</a>*&gt; Model::flows</td>
+          <td class="memname">virtual void Model::setTime </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>time</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Collection of flows connecting the systems </p>
 
-<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00026">26</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
+<p>Implemented in <a class="el" href="classModelImpl.html#a1071f515e45c86e9295b193b7d28cc98">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_ab89eff21392ee4e7f58da939238acc7c_icgraph.png" border="0" usemap="#aclassModel_ab89eff21392ee4e7f58da939238acc7c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_ab89eff21392ee4e7f58da939238acc7c_icgraph" id="aclassModel_ab89eff21392ee4e7f58da939238acc7c_icgraph">
+<area shape="rect" title=" " alt="" coords="520,5,643,31"/>
+<area shape="rect" href="unit__Model_8cpp.html#a08ad72f756534b6b0f87eb638731d0ef" title=" " alt="" coords="317,5,472,31"/>
+<area shape="poly" title=" " alt="" coords="506,21,473,21,473,15,506,15"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,5,269,31"/>
+<area shape="poly" title=" " alt="" coords="303,21,269,21,269,15,303,15"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="ac7dea8829149e597d2671dbc0a538bf7" name="ac7dea8829149e597d2671dbc0a538bf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7dea8829149e597d2671dbc0a538bf7">&#9670;&#160;</a></span>systems</h2>
+<a id="ae87a460b5f8bc4e01c2c4c2413f4df47" name="ae87a460b5f8bc4e01c2c4c2413f4df47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87a460b5f8bc4e01c2c4c2413f4df47">&#9670;&#160;</a></span>systemBegin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -480,24 +718,93 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;<a class="el" href="classSystem.html">System</a>*&gt; Model::systems</td>
+          <td class="memname">virtual <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a> Model::systemBegin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Collection of subsystems in the simulation </p>
 
-<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00025">25</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
+<p>Implemented in <a class="el" href="classModelImpl.html#ae133e78b100032b9aaf28d6a0cf0fadc">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_ae87a460b5f8bc4e01c2c4c2413f4df47_icgraph.png" border="0" usemap="#aclassModel_ae87a460b5f8bc4e01c2c4c2413f4df47_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_ae87a460b5f8bc4e01c2c4c2413f4df47_icgraph" id="aclassModel_ae87a460b5f8bc4e01c2c4c2413f4df47_icgraph">
+<area shape="rect" title=" " alt="" coords="569,80,724,105"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="392,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="604,77,521,45,446,26,448,21,522,39,606,72"/>
+<area shape="rect" href="unit__Model_8cpp.html#a06390bb362065cf4ccf41ddfa0c33693" title=" " alt="" coords="332,55,507,80"/>
+<area shape="poly" title=" " alt="" coords="556,85,506,80,507,74,556,80"/>
+<area shape="rect" href="unit__Model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="332,104,507,129"/>
+<area shape="poly" title=" " alt="" coords="556,105,507,110,506,105,556,100"/>
+<area shape="rect" href="unit__Model_8cpp.html#aa846d99bdbd927897564c081694970b5" title=" " alt="" coords="317,153,521,179"/>
+<area shape="poly" title=" " alt="" coords="604,113,522,143,477,156,476,151,521,138,602,108"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,104,269,129"/>
+<area shape="poly" title=" " alt="" coords="347,85,249,107,248,101,346,80"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,104,60,129"/>
+<area shape="poly" title=" " alt="" coords="94,119,60,119,60,114,94,114"/>
+<area shape="poly" title=" " alt="" coords="318,119,270,119,270,114,318,114"/>
+<area shape="poly" title=" " alt="" coords="346,153,248,132,249,127,347,148"/>
+</map>
+</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a id="ac381f929e44c3a1f04ed8d393a0c7bbc" name="ac381f929e44c3a1f04ed8d393a0c7bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac381f929e44c3a1f04ed8d393a0c7bbc">&#9670;&#160;</a></span>systemEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a> Model::systemEnd </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classModelImpl.html#aa502f29742a6c1390f44d899720b4454">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_ac381f929e44c3a1f04ed8d393a0c7bbc_icgraph.png" border="0" usemap="#aclassModel_ac381f929e44c3a1f04ed8d393a0c7bbc_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassModel_ac381f929e44c3a1f04ed8d393a0c7bbc_icgraph" id="aclassModel_ac381f929e44c3a1f04ed8d393a0c7bbc_icgraph">
+<area shape="rect" title=" " alt="" coords="569,55,712,80"/>
+<area shape="rect" href="src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="392,5,447,31"/>
+<area shape="poly" title=" " alt="" coords="569,54,446,27,448,21,570,49"/>
+<area shape="rect" href="unit__Model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b" title=" " alt="" coords="332,55,507,80"/>
+<area shape="poly" title=" " alt="" coords="555,70,507,70,507,65,555,65"/>
+<area shape="rect" href="unit__Model_8cpp.html#aa846d99bdbd927897564c081694970b5" title=" " alt="" coords="317,104,521,129"/>
+<area shape="poly" title=" " alt="" coords="570,86,478,107,477,101,569,80"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,80,269,105"/>
+<area shape="poly" title=" " alt="" coords="319,81,270,86,269,81,318,76"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,80,60,105"/>
+<area shape="poly" title=" " alt="" coords="94,95,60,95,60,90,94,90"/>
+<area shape="poly" title=" " alt="" coords="304,107,269,104,270,98,304,102"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="model_8h_source.html">model.h</a></li>
-<li>src/<a class="el" href="model_8cpp_source.html">model.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,7 @@
+<map id="unit_Flow_setSource" name="unit_Flow_setSource">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,161,56"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="209,5,335,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,30,195,26,196,31,162,36"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a42ce99a961622788ae59bb73abad3bb3" title="Defines the connection to the flow&#39;s origin system. Follows the Single Responsibility Principle by co..." alt="" coords="210,55,334,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,51,197,55,196,60,161,56"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="Model::run" name="Model::run">
+<area shape="rect" id="Node000001" title="Core simulation lifecycle manager. Executes the operational loop." alt="" coords="552,80,643,105"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="327,5,494,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="563,75,503,44,469,33,470,28,505,40,566,70"/>
+<area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="317,55,504,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="538,87,504,83,505,77,539,82"/>
+<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="326,104,495,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="539,103,496,108,495,103,538,98"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title=" " alt="" coords="349,153,472,179"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="564,114,505,143,466,156,465,151,503,138,562,110"/>
+<area shape="rect" id="Node000003" href="$test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="161,55,216,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,36,217,64,216,59,339,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="304,70,216,70,216,65,304,65"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="339,104,216,76,217,71,340,98"/>
+<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51" title=" " alt="" coords="108,153,269,179"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="335,169,270,169,270,163,335,163"/>
+<area shape="rect" id="Node000008" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,60,179"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="94,169,60,169,60,163,94,163"/>
+</map>

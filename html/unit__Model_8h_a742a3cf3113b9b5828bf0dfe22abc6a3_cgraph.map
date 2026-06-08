@@ -1,0 +1,7 @@
+<map id="unit_Model_addFlow" name="unit_Model_addFlow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,161,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Contract for managing System entities inside the simulation model." alt="" coords="229,5,324,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,30,216,23,216,29,162,36"/>
+<area shape="rect" id="Node000003" href="$classModel.html#ac3cbad7c7be9a1176b71f689590f5e13" title=" " alt="" coords="209,55,344,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,50,196,55,195,60,161,56"/>
+</map>

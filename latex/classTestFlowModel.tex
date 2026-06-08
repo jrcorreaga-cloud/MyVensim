@@ -1,0 +1,119 @@
+\doxysection{Test\+Flow\+Model Class Reference}
+\hypertarget{classTestFlowModel}{}\label{classTestFlowModel}\index{TestFlowModel@{TestFlowModel}}
+
+
+Inheritance diagram for Test\+Flow\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classTestFlowModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Test\+Flow\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classTestFlowModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classTestFlowModel_a71bc7c00df26db23efca2f7806539b6a}{Test\+Flow\+Model}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
+\item 
+double \doxymbox{\hyperlink{classTestFlowModel_a0d29488e8ae433f2570cb1eac19e7736}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classFlowImpl_a4a88f4376cdaf1c0e62a900f507d4295}{Flow\+Impl}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
+\item 
+virtual \doxymbox{\hyperlink{classFlowImpl_a2d91539593b336aee4a19048f8a82e8c}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Impl}} ()
+\item 
+void \doxymbox{\hyperlink{classFlowImpl_aa48ab1dd4effd57c55c1434ccfce3ac3}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_a06c8ffdcfd36b04ddad091d2c043f5d0}{get\+Source}} () const override
+\item 
+void \doxymbox{\hyperlink{classFlowImpl_acf4fc570ead9b0421638d428f44305c1}{clear\+Source}} () override
+\item 
+void \doxymbox{\hyperlink{classFlowImpl_a48b3e6939aec2694d412760149164622}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_adb35e3574470e91207c631fda3cdc9bd}{get\+Target}} () const override
+\item 
+void \doxymbox{\hyperlink{classFlowImpl_acf255f5bb33cdc0a09f486f2bab20d99}{clear\+Target}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic resolution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}}
+\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00008}{8}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+
+
+\label{classTestFlowModel_doc-constructors}
+\Hypertarget{classTestFlowModel_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTestFlowModel_a71bc7c00df26db23efca2f7806539b6a}\index{TestFlowModel@{TestFlowModel}!TestFlowModel@{TestFlowModel}}
+\index{TestFlowModel@{TestFlowModel}!TestFlowModel@{TestFlowModel}}
+\doxysubsubsection{\texorpdfstring{TestFlowModel()}{TestFlowModel()}}
+{\footnotesize\ttfamily \label{classTestFlowModel_a71bc7c00df26db23efca2f7806539b6a} 
+Test\+Flow\+Model::\+\+Test\+Flow\+Model (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{ = {\ttfamily nullptr}, }\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00010}{10}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTestFlowModel_a71bc7c00df26db23efca2f7806539b6a_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{classTestFlowModel_doc-func-members}
+\Hypertarget{classTestFlowModel_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTestFlowModel_a0d29488e8ae433f2570cb1eac19e7736}\index{TestFlowModel@{TestFlowModel}!execute@{execute}}
+\index{execute@{execute}!TestFlowModel@{TestFlowModel}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{classTestFlowModel_a0d29488e8ae433f2570cb1eac19e7736} 
+double Test\+Flow\+Model::\+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlowImpl_a88d14f759988f1dcf393b83a93aea1f1}{Flow\+Impl}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00013}{13}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+test/\+unit/\+\doxymbox{\hyperlink{unit__Model_8cpp}{unit\+\_\+\+Model.\+cpp}}\end{DoxyCompactItemize}

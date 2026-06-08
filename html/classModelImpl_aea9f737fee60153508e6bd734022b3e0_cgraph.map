@@ -1,0 +1,9 @@
+<map id="ModelImpl::run" name="ModelImpl::run">
+<area shape="rect" id="Node000001" title="Core simulation lifecycle manager. Executes the operational loop." alt="" coords="5,55,125,80"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title=" " alt="" coords="205,5,341,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,52,205,31,206,37,120,57"/>
+<area shape="rect" id="Node000003" href="$classModelImpl.html#ac35b905745e42c2623bf431609b9f09c" title=" " alt="" coords="173,55,372,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,65,160,65,160,70,126,70"/>
+<area shape="rect" id="Node000004" href="$classSystem.html#a7421d2e6970a0c4169a2febe254f2060" title=" " alt="" coords="205,104,340,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="120,77,206,98,205,103,119,83"/>
+</map>
