@@ -1,18 +1,13 @@
 #include <iostream>
 #include "system.h"
-#include "systemImpl.h"
 #include "model.h"
-#include "modelImpl.h"
 using namespace std;
 int main() {
     // The client application targets abstraction boundaries instead of concrete structures,
 // preserving the Dependency Inversion Principle.
-    Model* simulator = new ModelImpl("Simulador Global", 0.0);
-    System* s1 = new SystemImpl("Poblacion", 100.0);
-    System* s2 = new SystemImpl("Recursos", 500.0);
-
-    simulator->add(s1);
-    simulator->add(s2);
+    Model* simulator = Model::createModel("Simulador Global", 0.0);
+    System* s1 = simulator->createSystem("Poblacion", 100.0);
+    System* s2 = simulator->createSystem("Recursos", 500.0);
 
     cout << "Model '" << simulator->getName() << "' loaded into memory." << endl;
     cout << "Registered systems: " << endl;

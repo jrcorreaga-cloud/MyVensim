@@ -13,7 +13,10 @@ protected:
     std::vector<Flow*> flows;
 
 public:
-        ModelImpl(const std::string& name = "", double time = 0.0);
+    static Model* createModel(const std::string& name = "", double time = 0.0);
+    System* createSystem(const std::string& name = "", double value = 0.0) override;
+
+    ModelImpl(const std::string& name = "", double time = 0.0);
     virtual ~ModelImpl();
 
         void add(System* system) override;

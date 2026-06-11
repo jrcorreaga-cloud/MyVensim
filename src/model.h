@@ -8,6 +8,16 @@
 
 class Model {
 public:
+    static Model* createModel(const std::string& name = "", double time = 0.0);
+    virtual System* createSystem(const std::string& name = "", double value = 0.0) = 0;
+
+    template <typename T_FLOW>
+    Flow* createFlow(System* source = nullptr, System* target = nullptr) {
+        Flow* flow = new T_FLOW(source, target);
+        add(flow);
+        return flow;
+    }
+
     /**
      * @brief Exposes iterators without revealing the underlying data structures,
      * ensuring encapsulation according to the Information Hiding principles.

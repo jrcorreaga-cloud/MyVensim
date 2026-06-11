@@ -15,18 +15,19 @@ set(CORE_SRC
     src/modelImpl.cpp
 )
 
+# Core simulator shared library
+add_library(myvensim SHARED ${CORE_SRC})
+
 # Main product executable
-add_executable(simulador 
-    src/main.cpp 
-    ${CORE_SRC}
-)
+add_executable(simulador src/main.cpp)
+target_link_libraries(simulador myvensim)
 
 # Functional tests executable
 add_executable(test_funcional 
     test/funcional/main.cpp 
     test/funcional/funcional_tests.cpp 
-    ${CORE_SRC}
 )
+target_link_libraries(test_funcional myvensim)
 
 # Unit tests executable
 add_executable(test_unit 
@@ -35,5 +36,5 @@ add_executable(test_unit
     test/unit/unit_System.cpp 
     test/unit/unit_Flow.cpp 
     test/unit/unit_Model.cpp 
-    ${CORE_SRC}
 )
+target_link_libraries(test_unit myvensim)

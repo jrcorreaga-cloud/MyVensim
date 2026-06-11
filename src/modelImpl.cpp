@@ -1,4 +1,15 @@
 #include "modelImpl.h"
+#include "systemImpl.h"
+
+Model* Model::createModel(const std::string& name, double time) {
+    return new ModelImpl(name, time);
+}
+
+System* ModelImpl::createSystem(const std::string& name, double value) {
+    System* s = new SystemImpl(name, value);
+    add(s);
+    return s;
+}
 
 // Constructor
 ModelImpl::ModelImpl(const std::string& name, double time) : name(name), time(time) {}

@@ -1,6 +1,5 @@
 #include "funcional_tests.h"
-#include "../../src/systemImpl.h"
-#include "../../src/modelImpl.h"
+#include "../../src/model.h"
 #include <cassert>
 #include <cmath>
 #include <iostream>
@@ -32,14 +31,10 @@ double ComplexFlow::execute() {
 // --- Test Cases ---
 
 void exponentialFuncionalTest() {
-    Model* m = new ModelImpl("Simulacion Exponencial");
-    System* pop1 = new SystemImpl("pop1", 100.0);
-    System* pop2 = new SystemImpl("pop2", 0.0);
-    Flow* expFlow = new ExponentialFlow(pop1, pop2);
-
-    m->add(pop1);
-    m->add(pop2);
-    m->add(expFlow);
+    Model* m = Model::createModel("Simulacion Exponencial");
+    System* pop1 = m->createSystem("pop1", 100.0);
+    System* pop2 = m->createSystem("pop2", 0.0);
+    Flow* expFlow = m->createFlow<ExponentialFlow>(pop1, pop2);
 
     m->run(0, 100, 1);
 
@@ -56,14 +51,10 @@ void exponentialFuncionalTest() {
 }
 
 void logisticalFuncionalTest() {
-    Model* m = new ModelImpl("Simulacion Logistica");
-    System* p1 = new SystemImpl("p1", 100.0);
-    System* p2 = new SystemImpl("p2", 10.0);
-    Flow* logFlow = new LogisticalFlow(p1, p2);
-
-    m->add(p1);
-    m->add(p2);
-    m->add(logFlow);
+    Model* m = Model::createModel("Simulacion Logistica");
+    System* p1 = m->createSystem("p1", 100.0);
+    System* p2 = m->createSystem("p2", 10.0);
+    Flow* logFlow = m->createFlow<LogisticalFlow>(p1, p2);
 
     m->run(0, 100, 1);
 
@@ -80,22 +71,19 @@ void logisticalFuncionalTest() {
 }
 
 void complexFuncionalTest() {
-    Model* m = new ModelImpl("Simulacion Compleja");
-    System* q1 = new SystemImpl("q1", 100.0);
-    System* q2 = new SystemImpl("q2", 0.0);
-    System* q3 = new SystemImpl("q3", 100.0);
-    System* q4 = new SystemImpl("q4", 0.0);
-    System* q5 = new SystemImpl("q5", 0.0);
+    Model* m = Model::createModel("Simulacion Compleja");
+    System* q1 = m->createSystem("q1", 100.0);
+    System* q2 = m->createSystem("q2", 0.0);
+    System* q3 = m->createSystem("q3", 100.0);
+    System* q4 = m->createSystem("q4", 0.0);
+    System* q5 = m->createSystem("q5", 0.0);
 
-    Flow* f = new ComplexFlow(q1, q2);
-    Flow* g = new ComplexFlow(q1, q3);
-    Flow* r = new ComplexFlow(q2, q5);
-    Flow* t = new ComplexFlow(q2, q3);
-    Flow* u = new ComplexFlow(q3, q4);
-    Flow* v = new ComplexFlow(q4, q1);
-
-    m->add(q1); m->add(q2); m->add(q3); m->add(q4); m->add(q5);
-    m->add(f); m->add(g); m->add(r); m->add(t); m->add(u); m->add(v);
+    Flow* f = m->createFlow<ComplexFlow>(q1, q2);
+    Flow* g = m->createFlow<ComplexFlow>(q1, q3);
+    Flow* r = m->createFlow<ComplexFlow>(q2, q5);
+    Flow* t = m->createFlow<ComplexFlow>(q2, q3);
+    Flow* u = m->createFlow<ComplexFlow>(q3, q4);
+    Flow* v = m->createFlow<ComplexFlow>(q4, q1);
 
     m->run(0, 100, 1);
 

@@ -2,13 +2,22 @@
 #include <cassert>
 #include <cmath>
 #include "../../src/model.h"
-#include "../../src/modelImpl.h"
-#include "../../src/systemImpl.h"
-#include "../../src/flowImpl.h"
+#include "../../src/system.h"
+#include "../../src/flow.h"
 
-class DummyFlow : public FlowImpl {
+class DummyFlow : public Flow {
+protected:
+    System* source;
+    System* target;
 public:
-    DummyFlow(System* source = nullptr, System* target = nullptr) : FlowImpl(source, target) {}
+    DummyFlow(System* source = nullptr, System* target = nullptr) : source(source), target(target) {}
+    ~DummyFlow() {}
+    void setSource(System* source) override { this->source = source; }
+    System* getSource() const override { return source; }
+    void clearSource() override { source = nullptr; }
+    void setTarget(System* target) override { this->target = target; }
+    System* getTarget() const override { return target; }
+    void clearTarget() override { target = nullptr; }
     
     // Predictable equation: Always transfers a constant value of 10.0
     double execute() override {
@@ -18,7 +27,7 @@ public:
 
 void unit_Model_constructor() {
     // Default constructor
-    Model* m1 = new ModelImpl();
+    Model* m1 = Model::createModel();
     assert(m1->getName() == "");
     assert(std::fabs(m1->getTime() - 0.0) < 0.0001);
     // Verify that it starts empty
@@ -27,35 +36,31 @@ void unit_Model_constructor() {
     delete m1;
 
     // Parameterized constructor
-    Model* m2 = new ModelImpl("Sim1", 10.0);
+    Model* m2 = Model::createModel("Sim1", 10.0);
     assert(m2->getName() == "Sim1");
     assert(std::fabs(m2->getTime() - 10.0) < 0.0001);
     delete m2;
 }
 
 void unit_Model_destructor() {
-    Model* m1 = new ModelImpl();
+    Model* m1 = Model::createModel();
     delete m1; // We validate there are no leaks on destruction
 }
 
 void unit_Model_addSystem() {
-    Model* m1 = new ModelImpl();
-    System* s1 = new SystemImpl("S1", 10.0);
+    Model* m1 = Model::createModel();
+    System* s1 = m1->createSystem("S1", 10.0);
     
-    m1->add(s1);
-        assert(*(m1->systemBegin()) == s1); 
+    assert(*(m1->systemBegin()) == s1); 
     
     delete s1;
     delete m1;
 }
 
 void unit_Model_systemIterators() {
-    Model* m1 = new ModelImpl();
-    System* s1 = new SystemImpl("S1", 10.0);
-    System* s2 = new SystemImpl("S2", 20.0);
-    
-    m1->add(s1);
-    m1->add(s2);
+    Model* m1 = Model::createModel();
+    System* s1 = m1->createSystem("S1", 10.0);
+    System* s2 = m1->createSystem("S2", 20.0);
     
     int count = 0;
     for (auto it = m1->systemBegin(); it != m1->systemEnd(); ++it) {
@@ -69,10 +74,9 @@ void unit_Model_systemIterators() {
 }
 
 void unit_Model_addFlow() {
-    Model* m1 = new ModelImpl();
-    Flow* f1 = new DummyFlow();
+    Model* m1 = Model::createModel();
+    Flow* f1 = m1->createFlow<DummyFlow>();
     
-    m1->add(f1);
     assert(*(m1->flowBegin()) == f1);
     
     delete f1;
@@ -80,10 +84,8 @@ void unit_Model_addFlow() {
 }
 
 void unit_Model_flowIterators() {
-    Model* m1 = new ModelImpl();
-    Flow* f1 = new DummyFlow();
-    
-    m1->add(f1);
+    Model* m1 = Model::createModel();
+    Flow* f1 = m1->createFlow<DummyFlow>();
     
     int count = 0;
     for (auto it = m1->flowBegin(); it != m1->flowEnd(); ++it) {
@@ -96,51 +98,47 @@ void unit_Model_flowIterators() {
 }
 
 void unit_Model_setName() {
-    Model* m1 = new ModelImpl();
+    Model* m1 = Model::createModel();
     m1->setName("NuevoModelo");
     assert(m1->getName() == "NuevoModelo");
     delete m1;
 }
 
 void unit_Model_getName() {
-    Model* m1 = new ModelImpl("TestName", 0.0);
+    Model* m1 = Model::createModel("TestName", 0.0);
     assert(m1->getName() == "TestName");
     delete m1;
 }
 
 void unit_Model_setTime() {
-    Model* m1 = new ModelImpl();
+    Model* m1 = Model::createModel();
     m1->setTime(5.5);
     assert(std::fabs(m1->getTime() - 5.5) < 0.0001);
     delete m1;
 }
 
 void unit_Model_getTime() {
-    Model* m1 = new ModelImpl("", 15.0);
+    Model* m1 = Model::createModel("", 15.0);
     assert(std::fabs(m1->getTime() - 15.0) < 0.0001);
     delete m1;
 }
 
 void unit_Model_incrementTime() {
-    Model* m1 = new ModelImpl("", 0.0);
+    Model* m1 = Model::createModel("", 0.0);
     m1->incrementTime(2.5);
     assert(std::fabs(m1->getTime() - 2.5) < 0.0001);
     delete m1;
 }
 
 void unit_Model_run() {
-    Model* m1 = new ModelImpl("SimRun", 0.0);
-    System* s1 = new SystemImpl("Origen", 100.0); 
-    System* s2 = new SystemImpl("Destino", 0.0); 
-    Flow* f1 = new DummyFlow(s1, s2); // Transfers 10.0 at each step
+    Model* m1 = Model::createModel("SimRun", 0.0);
+    System* s1 = m1->createSystem("Origen", 100.0); 
+    System* s2 = m1->createSystem("Destino", 0.0); 
+    Flow* f1 = m1->createFlow<DummyFlow>(s1, s2); // Transfers 10.0 at each step
     
-    m1->add(s1);
-    m1->add(s2);
-    m1->add(f1);
+    m1->run(0, 3, 1);
     
-        m1->run(0, 3, 1);
-    
-        assert(std::fabs(m1->getTime() - 3.0) < 0.0001);
+    assert(std::fabs(m1->getTime() - 3.0) < 0.0001);
     
     // 3 iterations * 10.0 transferred = 30.0 in total transferred
     assert(std::fabs(s1->getValue() - 70.0) < 0.0001); // 100.0 - 30.0 = 70.0
