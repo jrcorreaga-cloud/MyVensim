@@ -27,6 +27,8 @@ Collaboration diagram for Model\+Impl:\+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classModelImpl_a98e153c59919e45c8403bef1e7bf3539}{create\+System}} (const std::\+string \&name="{}"{}, double value=0.\+0) override
+\item 
 \doxymbox{\hyperlink{classModelImpl_a3a336f08431e278c004244ab4252d555}{Model\+Impl}} (const std::\+string \&name="{}"{}, double time=0.\+0)
 \item 
 virtual \doxymbox{\hyperlink{classModelImpl_a427f422a6d356b94afbe3937d6452a2b}{\texorpdfstring{$\sim$}{\string~}\+Model\+Impl}} ()
@@ -58,7 +60,19 @@ void \doxymbox{\hyperlink{classModelImpl_ac35b905745e42c2623bf431609b9f09c}{incr
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classModel}{Model}}}
 \begin{DoxyCompactItemize}
 \item 
+{\footnotesize template$<$typename T\+\_\+\+FLOW$>$ }\\\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{create\+Flow}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
+\item 
 virtual \doxymbox{\hyperlink{classModel_af032d8433c87a0a3a431faf6563a1f03}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classModelImpl_a0546c8c9a7ce2872b46c1e1aa4628569}{create\+Model}} (const std::\+string \&name="{}"{}, double time=0.\+0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \doxymbox{\hyperlink{classModel}{Model}}}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{create\+Model}} (const std::\+string \&name="{}"{}, double time=0.\+0)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -99,7 +113,7 @@ Model\+Impl::\+\+Model\+Impl (\begin{DoxyParamCaption}\item[{const std::\+string
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00004}{4}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00015}{15}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_a427f422a6d356b94afbe3937d6452a2b}\index{ModelImpl@{ModelImpl}!````~ModelImpl@{\texorpdfstring{$\sim$}{\string~}ModelImpl}}
 \index{````~ModelImpl@{\texorpdfstring{$\sim$}{\string~}ModelImpl}!ModelImpl@{ModelImpl}}
@@ -109,7 +123,7 @@ Model\+Impl::\+\texorpdfstring{$\sim$}{\string~}\+Model\+Impl (\begin{DoxyParamC
 
 Architectural Note:\+ Following aggregation semantics, the \doxylink{classModel}{Model} refrains from destroying \doxylink{classSystem}{System} and \doxylink{classFlow}{Flow} instances directly. Responsibility lies with the client.
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00007}{7}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00018}{18}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 
 
@@ -132,7 +146,7 @@ Implements \doxymbox{\hyperlink{classModel_ab7df81041f62f049cfc6e4d50dcaf721}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00026}{26}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00037}{37}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_a24e46f6ee90908c0ed4e882094573800}\index{ModelImpl@{ModelImpl}!add@{add}}
 \index{add@{add}!ModelImpl@{ModelImpl}}
@@ -150,8 +164,44 @@ Implements \doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00014}{14}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00025}{25}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_a24e46f6ee90908c0ed4e882094573800_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_a0546c8c9a7ce2872b46c1e1aa4628569}\index{ModelImpl@{ModelImpl}!createModel@{createModel}}
+\index{createModel@{createModel}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \label{classModelImpl_a0546c8c9a7ce2872b46c1e1aa4628569} 
+\doxymbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} Model\+Impl::\+create\+Model (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{ = {\ttfamily "{}"{}}, }\item[{double}]{time}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classModelImpl_a98e153c59919e45c8403bef1e7bf3539}\index{ModelImpl@{ModelImpl}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \label{classModelImpl_a98e153c59919e45c8403bef1e7bf3539} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Model\+Impl::\+create\+System (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{ = {\ttfamily "{}"{}}, }\item[{double}]{value}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{Model}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00008}{8}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_a98e153c59919e45c8403bef1e7bf3539_cgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classModelImpl_a47b7434a49e79c2b648b5db575a23d35}\index{ModelImpl@{ModelImpl}!flowBegin@{flowBegin}}
 \index{flowBegin@{flowBegin}!ModelImpl@{ModelImpl}}
 \doxysubsubsection{\texorpdfstring{flowBegin()}{flowBegin()}}
@@ -164,7 +214,7 @@ Implements \doxymbox{\hyperlink{classModel_ac3cbad7c7be9a1176b71f689590f5e13}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00030}{30}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00041}{41}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_acc758ca09a6781e6fb204166365dabbb}\index{ModelImpl@{ModelImpl}!flowEnd@{flowEnd}}
 \index{flowEnd@{flowEnd}!ModelImpl@{ModelImpl}}
@@ -178,7 +228,7 @@ Implements \doxymbox{\hyperlink{classModel_a3bd1101deb3f40e189036b363288cdf9}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00034}{34}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00045}{45}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_a6d6ef8f72413650749d9ca9850226a6b}\index{ModelImpl@{ModelImpl}!getName@{getName}}
 \index{getName@{getName}!ModelImpl@{ModelImpl}}
@@ -192,7 +242,7 @@ Implements \doxymbox{\hyperlink{classModel_a17e89ca8d15af46d074423a47d3c6802}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00042}{42}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00053}{53}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_a9233d23b2fa19917f314cf286749a924}\index{ModelImpl@{ModelImpl}!getTime@{getTime}}
 \index{getTime@{getTime}!ModelImpl@{ModelImpl}}
@@ -206,7 +256,7 @@ Implements \doxymbox{\hyperlink{classModel_a41569269c162962571a791c0fe737bca}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00050}{50}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00061}{61}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_ac35b905745e42c2623bf431609b9f09c}\index{ModelImpl@{ModelImpl}!incrementTime@{incrementTime}}
 \index{incrementTime@{incrementTime}!ModelImpl@{ModelImpl}}
@@ -220,10 +270,9 @@ Implements \doxymbox{\hyperlink{classModel_a27981fdb221eef87b2d441a576ca6747}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00054}{54}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00065}{65}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -246,10 +295,9 @@ Implements \doxymbox{\hyperlink{classModel_a299939795a2d298025372ab5173020c6}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00058}{58}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00069}{69}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
-Here is the call graph for this function:\+
-\nopagebreak
+Here is the call graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -272,7 +320,7 @@ Implements \doxymbox{\hyperlink{classModel_ad9e8e4d0a942396c74932a8c57b03b57}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00038}{38}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00049}{49}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_a1071f515e45c86e9295b193b7d28cc98}\index{ModelImpl@{ModelImpl}!setTime@{setTime}}
 \index{setTime@{setTime}!ModelImpl@{ModelImpl}}
@@ -286,7 +334,7 @@ Implements \doxymbox{\hyperlink{classModel_ab89eff21392ee4e7f58da939238acc7c}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00046}{46}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00057}{57}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_ae133e78b100032b9aaf28d6a0cf0fadc}\index{ModelImpl@{ModelImpl}!systemBegin@{systemBegin}}
 \index{systemBegin@{systemBegin}!ModelImpl@{ModelImpl}}
@@ -300,7 +348,7 @@ Implements \doxymbox{\hyperlink{classModel_ae87a460b5f8bc4e01c2c4c2413f4df47}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00018}{18}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00029}{29}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 \Hypertarget{classModelImpl_aa502f29742a6c1390f44d899720b4454}\index{ModelImpl@{ModelImpl}!systemEnd@{systemEnd}}
 \index{systemEnd@{systemEnd}!ModelImpl@{ModelImpl}}
@@ -314,7 +362,7 @@ Implements \doxymbox{\hyperlink{classModel_ac381f929e44c3a1f04ed8d393a0c7bbc}{Mo
 
 
 
-Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00022}{22}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00033}{33}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
 
 
 

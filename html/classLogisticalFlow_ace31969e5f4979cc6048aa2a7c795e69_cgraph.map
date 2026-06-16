@@ -1,7 +1,7 @@
 <map id="LogisticalFlow::execute" name="LogisticalFlow::execute">
 <area shape="rect" id="Node000001" title="Executes the numerical simulation operation for this specific flow. Subclasses must implement their s..." alt="" coords="5,31,179,56"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html#adb35e3574470e91207c631fda3cdc9bd" title=" " alt="" coords="227,5,377,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,30,213,26,214,31,179,36"/>
-<area shape="rect" id="Node000003" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title=" " alt="" coords="234,55,370,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,51,221,55,220,61,179,56"/>
+<area shape="rect" id="Node000002" href="$classLogisticalFlow.html#ac200638ea75ab0bf6a0a1cfc0d7f7ef6" title=" " alt="" coords="227,5,409,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,31,213,27,213,32,179,36"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title=" " alt="" coords="250,55,386,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,50,237,56,236,61,179,55"/>
 </map>

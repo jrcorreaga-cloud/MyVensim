@@ -3,117 +3,105 @@
 \doxymbox{\hyperlink{funcional__tests_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{funcional__tests_8h}{funcional\_tests.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{systemImpl_8h}{../../src/systemImpl.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{modelImpl_8h}{../../src/modelImpl.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <cassert>}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <cmath>}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00007}00007\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00008}00008\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00009}00009\ \textcolor{comment}{//\ -\/-\/-\/\ Equations\ -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00010}00010\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00011}\doxymbox{\hyperlink{classExponentialFlow_aafb074830c5c18138913cb10da3b8782}{00011}}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classExponentialFlow_aafb074830c5c18138913cb10da3b8782}{ExponentialFlow::execute}}()\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classFlowImpl_a06c8ffdcfd36b04ddad091d2c043f5d0}{getSource}}()\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \doxymbox{\hyperlink{classFlowImpl_a06c8ffdcfd36b04ddad091d2c043f5d0}{getSource}}()-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00014}00014\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00015}00015\ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00016}00016\ \}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00017}00017\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00018}\doxymbox{\hyperlink{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69}{00018}}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69}{LogisticalFlow::execute}}()\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classFlowImpl_adb35e3574470e91207c631fda3cdc9bd}{getTarget}}()\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \doxymbox{\hyperlink{classFlowImpl_adb35e3574470e91207c631fda3cdc9bd}{getTarget}}()-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ (1.0\ -\/\ (\doxymbox{\hyperlink{classFlowImpl_adb35e3574470e91207c631fda3cdc9bd}{getTarget}}()-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ /\ 70.0));}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00021}00021\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00023}00023\ \}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00024}00024\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00025}\doxymbox{\hyperlink{classComplexFlow_a744cb3029e9335038f3f8c1da6daea4d}{00025}}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classComplexFlow_a744cb3029e9335038f3f8c1da6daea4d}{ComplexFlow::execute}}()\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classFlowImpl_a06c8ffdcfd36b04ddad091d2c043f5d0}{getSource}}()\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \doxymbox{\hyperlink{classFlowImpl_a06c8ffdcfd36b04ddad091d2c043f5d0}{getSource}}()-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00028}00028\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00030}00030\ \}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00031}00031\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00032}00032\ \textcolor{comment}{//\ -\/-\/-\/\ Test\ Cases\ -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00033}00033\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00034}\doxymbox{\hyperlink{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27}{00034}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27}{exponentialFuncionalTest}}()\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00035}00035\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Simulacion\ Exponencial"{}});}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00036}00036\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ pop1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}pop1"{}},\ 100.0);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00037}00037\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ pop2\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}pop2"{}},\ 0.0);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00038}00038\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ expFlow\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}(pop1,\ pop2);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00039}00039\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00040}00040\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(pop1);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00041}00041\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(pop2);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00042}00042\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(expFlow);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00043}00043\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00044}00044\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_a299939795a2d298025372ab5173020c6}{run}}(0,\ 100,\ 1);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00045}00045\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{comment}{//\ Precise\ validation\ using\ original\ logic}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00047}00047\ \ \ \ \ assert(round(pop1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 36.6032);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00048}00048\ \ \ \ \ assert(round(pop2-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 63.3968);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00049}00049\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keyword}{delete}\ expFlow;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{keyword}{delete}\ pop2;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keyword}{delete}\ pop1;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00054}00054\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00055}00055\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Exponential\ Functional\ Test\ completed\ successfully."{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00056}00056\ \}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00057}00057\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00058}\doxymbox{\hyperlink{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29}{00058}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29}{logisticalFuncionalTest}}()\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00059}00059\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Simulacion\ Logistica"{}});}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00060}00060\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ p1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}p1"{}},\ 100.0);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00061}00061\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ p2\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}p2"{}},\ 10.0);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00062}00062\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ logFlow\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classLogisticalFlow}{LogisticalFlow}}(p1,\ p2);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00063}00063\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00064}00064\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(p1);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00065}00065\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(p2);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00066}00066\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(logFlow);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00067}00067\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00068}00068\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_a299939795a2d298025372ab5173020c6}{run}}(0,\ 100,\ 1);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00069}00069\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{comment}{//\ Precise\ validation\ using\ original\ logic}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00071}00071\ \ \ \ \ assert(round(p1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 88.2167);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00072}00072\ \ \ \ \ assert(round(p2-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 21.7833);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00073}00073\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{keyword}{delete}\ logFlow;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keyword}{delete}\ p2;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keyword}{delete}\ p1;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00078}00078\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00079}00079\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Logistical\ Functional\ Test\ completed\ successfully."{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00080}00080\ \}}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00081}00081\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00082}\doxymbox{\hyperlink{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}{00082}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}{complexFuncionalTest}}()\ \{}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00083}00083\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classModelImpl}{ModelImpl}}(\textcolor{stringliteral}{"{}Simulacion\ Compleja"{}});}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00084}00084\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}q1"{}},\ 100.0);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00085}00085\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q2\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}q2"{}},\ 0.0);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00086}00086\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q3\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}q3"{}},\ 100.0);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00087}00087\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q4\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}q4"{}},\ 0.0);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00088}00088\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q5\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}q5"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{model_8h}{../../src/model.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <cassert>}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00006}00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00008}00008\ \textcolor{comment}{//\ -\/-\/-\/\ Equations\ -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00010}\doxymbox{\hyperlink{classExponentialFlow_aafb074830c5c18138913cb10da3b8782}{00010}}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classExponentialFlow_aafb074830c5c18138913cb10da3b8782}{ExponentialFlow::execute}}()\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classExponentialFlow_a66994e0383712a54c4d4e640a35f63c3}{getSource}}()\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \doxymbox{\hyperlink{classExponentialFlow_a66994e0383712a54c4d4e640a35f63c3}{getSource}}()-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00013}00013\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00015}00015\ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00017}\doxymbox{\hyperlink{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69}{00017}}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69}{LogisticalFlow::execute}}()\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classLogisticalFlow_ac200638ea75ab0bf6a0a1cfc0d7f7ef6}{getTarget}}()\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \doxymbox{\hyperlink{classLogisticalFlow_ac200638ea75ab0bf6a0a1cfc0d7f7ef6}{getTarget}}()-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ (1.0\ -\/\ (\doxymbox{\hyperlink{classLogisticalFlow_ac200638ea75ab0bf6a0a1cfc0d7f7ef6}{getTarget}}()-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ /\ 70.0));}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00022}00022\ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00024}\doxymbox{\hyperlink{classComplexFlow_a744cb3029e9335038f3f8c1da6daea4d}{00024}}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classComplexFlow_a744cb3029e9335038f3f8c1da6daea4d}{ComplexFlow::execute}}()\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classComplexFlow_a393496676f7e7b752294949aa7ddf7eb}{getSource}}()\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \doxymbox{\hyperlink{classComplexFlow_a393496676f7e7b752294949aa7ddf7eb}{getSource}}()-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00029}00029\ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00031}00031\ \textcolor{comment}{//\ -\/-\/-\/\ Test\ Cases\ -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00033}\doxymbox{\hyperlink{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27}{00033}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{funcional__tests_8cpp_a2c448ffaffdff4b03c825a01dffa6f27}{exponentialFuncionalTest}}()\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00034}00034\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}(\textcolor{stringliteral}{"{}Simulacion\ Exponencial"{}});}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00035}00035\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ pop1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}pop1"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00036}00036\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ pop2\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}pop2"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00037}00037\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ expFlow\ =\ m-\/>\doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{createFlow}}<\doxymbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}>(pop1,\ pop2);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00039}00039\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_a299939795a2d298025372ab5173020c6}{run}}(0,\ 100,\ 1);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{comment}{//\ Precise\ validation\ using\ original\ logic}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00042}00042\ \ \ \ \ assert(round(pop1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 36.6032);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00043}00043\ \ \ \ \ assert(round(pop2-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 63.3968);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{keyword}{delete}\ expFlow;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{delete}\ pop2;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{delete}\ pop1;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00049}00049\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00050}00050\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Exponential\ Functional\ Test\ completed\ successfully."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00053}\doxymbox{\hyperlink{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29}{00053}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{funcional__tests_8cpp_a60914db64bde71b56d69320797266c29}{logisticalFuncionalTest}}()\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00054}00054\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}(\textcolor{stringliteral}{"{}Simulacion\ Logistica"{}});}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00055}00055\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ p1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}p1"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00056}00056\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ p2\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}p2"{}},\ 10.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00057}00057\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ logFlow\ =\ m-\/>\doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{createFlow}}<\doxymbox{\hyperlink{classLogisticalFlow}{LogisticalFlow}}>(p1,\ p2);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00059}00059\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_a299939795a2d298025372ab5173020c6}{run}}(0,\ 100,\ 1);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{comment}{//\ Precise\ validation\ using\ original\ logic}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00062}00062\ \ \ \ \ assert(round(p1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 88.2167);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00063}00063\ \ \ \ \ assert(round(p2-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 21.7833);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{keyword}{delete}\ logFlow;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00066}00066\ \ \ \ \ \textcolor{keyword}{delete}\ p2;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keyword}{delete}\ p1;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00069}00069\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00070}00070\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Logistical\ Functional\ Test\ completed\ successfully."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00071}00071\ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00073}\doxymbox{\hyperlink{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}{00073}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{funcional__tests_8cpp_a943dfe0c597a01c9760c140715fed527}{complexFuncionalTest}}()\ \{}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00074}00074\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}(\textcolor{stringliteral}{"{}Simulacion\ Compleja"{}});}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00075}00075\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}q1"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00076}00076\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q2\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}q2"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00077}00077\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q3\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}q3"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00078}00078\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q4\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}q4"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00079}00079\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ q5\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}q5"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00081}00081\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ f\ =\ m-\/>\doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{createFlow}}<\doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(q1,\ q2);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00082}00082\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ g\ =\ m-\/>\doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{createFlow}}<\doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(q1,\ q3);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00083}00083\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ r\ =\ m-\/>\doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{createFlow}}<\doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(q2,\ q5);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00084}00084\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ t\ =\ m-\/>\doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{createFlow}}<\doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(q2,\ q3);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00085}00085\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ u\ =\ m-\/>\doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{createFlow}}<\doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(q3,\ q4);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00086}00086\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ v\ =\ m-\/>\doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{createFlow}}<\doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}>(q4,\ q1);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00088}00088\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_a299939795a2d298025372ab5173020c6}{run}}(0,\ 100,\ 1);}
 \DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00089}00089\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00090}00090\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ f\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}(q1,\ q2);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00091}00091\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ g\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}(q1,\ q3);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00092}00092\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ r\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}(q2,\ q5);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00093}00093\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ t\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}(q2,\ q3);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00094}00094\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ u\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}(q3,\ q4);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00095}00095\ \ \ \ \ \doxymbox{\hyperlink{classFlow}{Flow}}*\ v\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classComplexFlow}{ComplexFlow}}(q4,\ q1);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00096}00096\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00097}00097\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q1);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q2);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q3);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q4);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q5);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00098}00098\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(f);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(g);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(r);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(t);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(u);\ m-\/>\doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(v);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00099}00099\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00100}00100\ \ \ \ \ m-\/>\doxymbox{\hyperlink{classModel_a299939795a2d298025372ab5173020c6}{run}}(0,\ 100,\ 1);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00101}00101\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00102}00102\ \ \ \ \ assert(round(q1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 31.8513);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00103}00103\ \ \ \ \ assert(round(q2-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 18.4003);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00104}00104\ \ \ \ \ assert(round(q3-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 77.1143);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00105}00105\ \ \ \ \ assert(round(q4-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 56.1728);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00106}00106\ \ \ \ \ assert(round(q5-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 16.4612);}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00107}00107\ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00108}00108\ \ \ \ \ \textcolor{keyword}{delete}\ v;\ \textcolor{keyword}{delete}\ u;\ \textcolor{keyword}{delete}\ t;\ \textcolor{keyword}{delete}\ r;\ \textcolor{keyword}{delete}\ g;\ \textcolor{keyword}{delete}\ f;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00109}00109\ \ \ \ \ \textcolor{keyword}{delete}\ q5;\ \textcolor{keyword}{delete}\ q4;\ \textcolor{keyword}{delete}\ q3;\ \textcolor{keyword}{delete}\ q2;\ \textcolor{keyword}{delete}\ q1;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00110}00110\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00111}00111\ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00112}00112\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Complex\ Functional\ Test\ completed\ successfully."{}}\ <<\ endl;}
-\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00113}00113\ \}}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00090}00090\ \ \ \ \ assert(round(q1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 31.8513);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00091}00091\ \ \ \ \ assert(round(q2-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 18.4003);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00092}00092\ \ \ \ \ assert(round(q3-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 77.1143);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00093}00093\ \ \ \ \ assert(round(q4-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 56.1728);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00094}00094\ \ \ \ \ assert(round(q5-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ /\ 10000\ ==\ 16.4612);}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00096}00096\ \ \ \ \ \textcolor{keyword}{delete}\ v;\ \textcolor{keyword}{delete}\ u;\ \textcolor{keyword}{delete}\ t;\ \textcolor{keyword}{delete}\ r;\ \textcolor{keyword}{delete}\ g;\ \textcolor{keyword}{delete}\ f;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00097}00097\ \ \ \ \ \textcolor{keyword}{delete}\ q5;\ \textcolor{keyword}{delete}\ q4;\ \textcolor{keyword}{delete}\ q3;\ \textcolor{keyword}{delete}\ q2;\ \textcolor{keyword}{delete}\ q1;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00098}00098\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00099}00099\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00100}00100\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Complex\ Functional\ Test\ completed\ successfully."{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{funcional__tests_8cpp_source_l00101}00101\ \}}
 
 \end{DoxyCode}

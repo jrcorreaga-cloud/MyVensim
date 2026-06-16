@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "ComplexFlow", "classComplexFlow.html", "classComplexFlow" ],
+    [ "DummyFlow", "classDummyFlow.html", "classDummyFlow" ],
     [ "ExponentialFlow", "classExponentialFlow.html", "classExponentialFlow" ],
     [ "Flow", "classFlow.html", "classFlow" ],
     [ "FlowImpl", "classFlowImpl.html", "classFlowImpl" ],
@@ -8,7 +9,5 @@ var annotated_dup =
     [ "Model", "classModel.html", "classModel" ],
     [ "ModelImpl", "classModelImpl.html", "classModelImpl" ],
     [ "System", "classSystem.html", "classSystem" ],
-    [ "SystemImpl", "classSystemImpl.html", "classSystemImpl" ],
-    [ "TestFlow", "classTestFlow.html", "classTestFlow" ],
-    [ "TestFlowModel", "classTestFlowModel.html", "classTestFlowModel" ]
+    [ "SystemImpl", "classSystemImpl.html", "classSystemImpl" ]
 ];

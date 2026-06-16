@@ -1,15 +1,5 @@
 <map id="FlowImpl" name="FlowImpl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="337,259,452,504"/>
-<area shape="rect" id="Node000003" href="$classComplexFlow.html" title=" " alt="" coords="5,552,133,637"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="327,429,135,554,132,550,324,425"/>
-<area shape="rect" id="Node000004" href="$classExponentialFlow.html" title=" " alt="" coords="157,552,304,637"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="331,469,265,554,261,550,327,465"/>
-<area shape="rect" id="Node000005" href="$classLogisticalFlow.html" title=" " alt="" coords="329,552,461,637"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="397,518,397,552,392,552,392,518"/>
-<area shape="rect" id="Node000006" href="$classTestFlow.html" title=" " alt="" coords="485,552,581,637"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="462,480,508,550,504,553,458,483"/>
-<area shape="rect" id="Node000007" href="$classTestFlowModel.html" title=" " alt="" coords="605,552,741,637"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="465,432,620,550,617,554,462,437"/>
-<area shape="rect" id="Node000002" href="$classFlow.html" title=" " alt="" coords="337,5,452,211"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,224,397,258,392,258,392,224"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,259,120,504"/>
+<area shape="rect" id="Node000002" href="$classFlow.html" title=" " alt="" coords="5,5,120,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,224,65,258,60,258,60,224"/>
 </map>

@@ -4,6 +4,8 @@ var classModelImpl =
     [ "~ModelImpl", "classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b", null ],
     [ "add", "classModelImpl.html#a3e8843e5353f40ab30afcf19b4f13a67", null ],
     [ "add", "classModelImpl.html#a24e46f6ee90908c0ed4e882094573800", null ],
+    [ "createModel", "classModelImpl.html#a0546c8c9a7ce2872b46c1e1aa4628569", null ],
+    [ "createSystem", "classModelImpl.html#a98e153c59919e45c8403bef1e7bf3539", null ],
     [ "flowBegin", "classModelImpl.html#a47b7434a49e79c2b648b5db575a23d35", null ],
     [ "flowEnd", "classModelImpl.html#acc758ca09a6781e6fb204166365dabbb", null ],
     [ "getName", "classModelImpl.html#a6d6ef8f72413650749d9ca9850226a6b", null ],

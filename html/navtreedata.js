@@ -51,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "3_828_83_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp.html",
-"test__funcional_8dir_2src_2modelImpl_8cpp_8o_8d.html"
+"funcional__tests_8cpp_8o_8d_source.html"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

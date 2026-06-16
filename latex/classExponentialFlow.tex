@@ -11,7 +11,7 @@ Inheritance diagram for Exponential\+Flow:\+
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classExponentialFlow__inherit__graph}
+\includegraphics[width=198pt]{classExponentialFlow__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,7 +21,7 @@ Collaboration diagram for Exponential\+Flow:\+
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classExponentialFlow__coll__graph}
+\includegraphics[width=258pt]{classExponentialFlow__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -29,39 +29,33 @@ Collaboration diagram for Exponential\+Flow:\+
 \item 
 \doxymbox{\hyperlink{classExponentialFlow_ad298be6a81718d8a27ac45c42ca28eea}{Exponential\+Flow}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
 \item 
+\doxymbox{\hyperlink{classExponentialFlow_a47f85f24c8a74a00b025541e3ed950eb}{\texorpdfstring{$\sim$}{\string~}\+Exponential\+Flow}} ()
+\item 
+void \doxymbox{\hyperlink{classExponentialFlow_a39fa810a7110ac97cfc5791135286090}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classExponentialFlow_a66994e0383712a54c4d4e640a35f63c3}{get\+Source}} () const override
+\item 
+void \doxymbox{\hyperlink{classExponentialFlow_afe5f5699cebc6e6e29eba07e5530bedc}{clear\+Source}} () override
+\item 
+void \doxymbox{\hyperlink{classExponentialFlow_a421761c9a29cdc5c4febbd176bf2d1ed}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classExponentialFlow_abb414b48dcc5e091231970d06178b21b}{get\+Target}} () const override
+\item 
+void \doxymbox{\hyperlink{classExponentialFlow_ad29195a7b8328a35c50ef69f9c86e912}{clear\+Target}} () override
+\item 
 double \doxymbox{\hyperlink{classExponentialFlow_aafb074830c5c18138913cb10da3b8782}{execute}} () override
 \begin{DoxyCompactList}\small\item\em Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
-\begin{DoxyCompactItemize}
-\item 
-\doxymbox{\hyperlink{classFlowImpl_a4a88f4376cdaf1c0e62a900f507d4295}{Flow\+Impl}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
-\item 
-virtual \doxymbox{\hyperlink{classFlowImpl_a2d91539593b336aee4a19048f8a82e8c}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Impl}} ()
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_aa48ab1dd4effd57c55c1434ccfce3ac3}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
-\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_a06c8ffdcfd36b04ddad091d2c043f5d0}{get\+Source}} () const override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_acf4fc570ead9b0421638d428f44305c1}{clear\+Source}} () override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_a48b3e6939aec2694d412760149164622}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
-\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_adb35e3574470e91207c631fda3cdc9bd}{get\+Target}} () const override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_acf255f5bb33cdc0a09f486f2bab20d99}{clear\+Target}} () override
-\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual \doxymbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
 \begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic resolution. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
+\doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}}
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classExponentialFlow_ae86fa5a2fdfdc06d27852660cfced934}{source}}
 \item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}}
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classExponentialFlow_a301c3adb04b0712c40171df46d3296ea}{target}}
 \end{DoxyCompactItemize}
 
 
@@ -83,21 +77,51 @@ Exponential\+Flow::\+\+Exponential\+Flow (\begin{DoxyParamCaption}\item[{\doxymb
 
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00008}{8}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00011}{11}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
 
-Here is the call graph for this function:\+
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classExponentialFlow_ad298be6a81718d8a27ac45c42ca28eea_cgraph}
-\end{center}
-\end{figure}
+\Hypertarget{classExponentialFlow_a47f85f24c8a74a00b025541e3ed950eb}\index{ExponentialFlow@{ExponentialFlow}!````~ExponentialFlow@{\texorpdfstring{$\sim$}{\string~}ExponentialFlow}}
+\index{````~ExponentialFlow@{\texorpdfstring{$\sim$}{\string~}ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ExponentialFlow()}{\string~ExponentialFlow()}}
+{\footnotesize\ttfamily \label{classExponentialFlow_a47f85f24c8a74a00b025541e3ed950eb} 
+Exponential\+Flow::\+\texorpdfstring{$\sim$}{\string~}\+Exponential\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00012}{12}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 
 
 \label{classExponentialFlow_doc-func-members}
 \Hypertarget{classExponentialFlow_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{classExponentialFlow_afe5f5699cebc6e6e29eba07e5530bedc}\index{ExponentialFlow@{ExponentialFlow}!clearSource@{clearSource}}
+\index{clearSource@{clearSource}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{clearSource()}{clearSource()}}
+{\footnotesize\ttfamily \label{classExponentialFlow_afe5f5699cebc6e6e29eba07e5530bedc} 
+void Exponential\+Flow::\+clear\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a98e7aafb65699a9645a22f215b49c8b0}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00015}{15}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classExponentialFlow_ad29195a7b8328a35c50ef69f9c86e912}\index{ExponentialFlow@{ExponentialFlow}!clearTarget@{clearTarget}}
+\index{clearTarget@{clearTarget}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{clearTarget()}{clearTarget()}}
+{\footnotesize\ttfamily \label{classExponentialFlow_ad29195a7b8328a35c50ef69f9c86e912} 
+void Exponential\+Flow::\+clear\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a52f8ab7ff430f5d2e87aa0fdb12ad64b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00018}{18}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 \Hypertarget{classExponentialFlow_aafb074830c5c18138913cb10da3b8782}\index{ExponentialFlow@{ExponentialFlow}!execute@{execute}}
 \index{execute@{execute}!ExponentialFlow@{ExponentialFlow}}
 \doxysubsubsection{\texorpdfstring{execute()}{execute()}}
@@ -110,11 +134,11 @@ Executes the numerical simulation operation for this specific flow. Subclasses m
 
 
 
-Implements \doxymbox{\hyperlink{classFlowImpl_a88d14f759988f1dcf393b83a93aea1f1}{Flow\+Impl}}.
+Implements \doxymbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
 
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00011}{11}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00010}{10}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
@@ -124,6 +148,103 @@ Here is the call graph for this function:\+
 \includegraphics[width=350pt]{classExponentialFlow_aafb074830c5c18138913cb10da3b8782_cgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classExponentialFlow_a66994e0383712a54c4d4e640a35f63c3}\index{ExponentialFlow@{ExponentialFlow}!getSource@{getSource}}
+\index{getSource@{getSource}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \label{classExponentialFlow_a66994e0383712a54c4d4e640a35f63c3} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Exponential\+Flow::\+get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00014}{14}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classExponentialFlow_a66994e0383712a54c4d4e640a35f63c3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classExponentialFlow_abb414b48dcc5e091231970d06178b21b}\index{ExponentialFlow@{ExponentialFlow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \label{classExponentialFlow_abb414b48dcc5e091231970d06178b21b} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Exponential\+Flow::\+get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00017}{17}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classExponentialFlow_a39fa810a7110ac97cfc5791135286090}\index{ExponentialFlow@{ExponentialFlow}!setSource@{setSource}}
+\index{setSource@{setSource}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily \label{classExponentialFlow_a39fa810a7110ac97cfc5791135286090} 
+void Exponential\+Flow::\+set\+Source (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a42ce99a961622788ae59bb73abad3bb3}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00013}{13}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classExponentialFlow_a421761c9a29cdc5c4febbd176bf2d1ed}\index{ExponentialFlow@{ExponentialFlow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily \label{classExponentialFlow_a421761c9a29cdc5c4febbd176bf2d1ed} 
+void Exponential\+Flow::\+set\+Target (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s destination system. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00016}{16}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+
+
+\label{classExponentialFlow_doc-variable-members}
+\Hypertarget{classExponentialFlow_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classExponentialFlow_ae86fa5a2fdfdc06d27852660cfced934}\index{ExponentialFlow@{ExponentialFlow}!source@{source}}
+\index{source@{source}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \label{classExponentialFlow_ae86fa5a2fdfdc06d27852660cfced934} 
+\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*} Exponential\+Flow::\+source\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00008}{8}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classExponentialFlow_a301c3adb04b0712c40171df46d3296ea}\index{ExponentialFlow@{ExponentialFlow}!target@{target}}
+\index{target@{target}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \label{classExponentialFlow_a301c3adb04b0712c40171df46d3296ea} 
+\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*} Exponential\+Flow::\+target\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00009}{9}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 
 
 The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}

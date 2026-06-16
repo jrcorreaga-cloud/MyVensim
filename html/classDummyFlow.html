@@ -123,9 +123,10 @@ Inheritance diagram for DummyFlow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDummyFlow__inherit__graph.png" border="0" usemap="#aDummyFlow_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="aDummyFlow_inherit__map" id="aDummyFlow_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,399,127,484"/>
-<area shape="rect" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems." alt="" coords="13,5,119,351"/>
-<area shape="poly" title=" " alt="" coords="69,365,69,398,63,398,63,365"/>
+<area shape="rect" title=" " alt="" coords="5,259,139,544"/>
+<area shape="rect" href="classFlow.html" title=" " alt="" coords="15,5,129,211"/>
+<area shape="poly" title=" " alt="" coords="66,225,66,259,60,259,61,224"/>
+<area shape="poly" title=" " alt="" coords="83,224,84,259,78,259,78,225"/>
 </map>
 </div>
 <div class="dynheader">
@@ -133,58 +134,56 @@ Collaboration diagram for DummyFlow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDummyFlow__coll__graph.png" border="0" usemap="#aDummyFlow_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aDummyFlow_coll__map" id="aDummyFlow_coll__map">
-<area shape="rect" title=" " alt="" coords="5,696,127,781"/>
-<area shape="rect" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems." alt="" coords="13,341,119,647"/>
-<area shape="poly" title=" " alt="" coords="69,660,69,696,63,696,63,660"/>
-<area shape="rect" href="classSystem.html" title="Represents a stock/system entity in the simulation." alt="" coords="13,5,119,251"/>
-<area shape="poly" title=" " alt="" coords="69,251,69,325,63,325,63,251"/>
+<area shape="rect" title=" " alt="" coords="5,301,139,567"/>
+<area shape="rect" href="classFlow.html" title=" " alt="" coords="15,5,129,211"/>
+<area shape="poly" title=" " alt="" coords="66,224,66,301,60,301,61,224"/>
+<area shape="poly" title=" " alt="" coords="83,224,84,301,78,301,78,224"/>
+<area shape="rect" href="classSystem.html" title=" " alt="" coords="153,35,252,181"/>
+<area shape="poly" title=" " alt="" coords="176,182,134,287,129,285,171,180"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38cb5397cfd1a70f320c26be5d264124" id="r_a38cb5397cfd1a70f320c26be5d264124"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a38cb5397cfd1a70f320c26be5d264124">DummyFlow</a> (string name=&quot;&quot;)</td></tr>
+<tr class="memitem:af4ceacb15cc3e158d52907fae1cd5cf0" id="r_af4ceacb15cc3e158d52907fae1cd5cf0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af4ceacb15cc3e158d52907fae1cd5cf0">DummyFlow</a> (<a class="el" href="classSystem.html">System</a> *source=nullptr, <a class="el" href="classSystem.html">System</a> *target=nullptr)</td></tr>
+<tr class="memitem:a3706549c462c21bf5a76e9ce19307c74" id="r_a3706549c462c21bf5a76e9ce19307c74"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3706549c462c21bf5a76e9ce19307c74">~DummyFlow</a> ()</td></tr>
+<tr class="memitem:a6c21f11d4c848fb08a9b8c43082d2b8c" id="r_a6c21f11d4c848fb08a9b8c43082d2b8c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c21f11d4c848fb08a9b8c43082d2b8c">setSource</a> (<a class="el" href="classSystem.html">System</a> *source) override</td></tr>
+<tr class="memdesc:a6c21f11d4c848fb08a9b8c43082d2b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the connection to the flow's origin system. Follows the Single Responsibility Principle by confining source operations.  <br /></td></tr>
+<tr class="memitem:aac31731e841d45b473a433c767f5cf56" id="r_aac31731e841d45b473a433c767f5cf56"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aac31731e841d45b473a433c767f5cf56">getSource</a> () const override</td></tr>
+<tr class="memitem:a73d984ec3764e9614e099a0c259bd35e" id="r_a73d984ec3764e9614e099a0c259bd35e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a73d984ec3764e9614e099a0c259bd35e">clearSource</a> () override</td></tr>
+<tr class="memitem:a6b1c0a6e70a7e6fcce3fb07160e377e8" id="r_a6b1c0a6e70a7e6fcce3fb07160e377e8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b1c0a6e70a7e6fcce3fb07160e377e8">setTarget</a> (<a class="el" href="classSystem.html">System</a> *target) override</td></tr>
+<tr class="memdesc:a6b1c0a6e70a7e6fcce3fb07160e377e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the connection to the flow's destination system.  <br /></td></tr>
+<tr class="memitem:a767f0f7a6ef6f046b42300358c8cb6fe" id="r_a767f0f7a6ef6f046b42300358c8cb6fe"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a767f0f7a6ef6f046b42300358c8cb6fe">getTarget</a> () const override</td></tr>
+<tr class="memitem:ac23ff71fbab260a803dd887e69763b67" id="r_ac23ff71fbab260a803dd887e69763b67"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac23ff71fbab260a803dd887e69763b67">clearTarget</a> () override</td></tr>
 <tr class="memitem:a760be0dafdbc304cacd6c8353c9abf06" id="r_a760be0dafdbc304cacd6c8353c9abf06"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a760be0dafdbc304cacd6c8353c9abf06">execute</a> () override</td></tr>
-<tr class="memdesc:a760be0dafdbc304cacd6c8353c9abf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method for flow execution. Computes the amount of value transferred from source to target.  <br /></td></tr>
+<tr class="memdesc:a760be0dafdbc304cacd6c8353c9abf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here.  <br /></td></tr>
+<tr class="memitem:af4ceacb15cc3e158d52907fae1cd5cf0" id="r_af4ceacb15cc3e158d52907fae1cd5cf0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af4ceacb15cc3e158d52907fae1cd5cf0">DummyFlow</a> (<a class="el" href="classSystem.html">System</a> *source=nullptr, <a class="el" href="classSystem.html">System</a> *target=nullptr)</td></tr>
+<tr class="memitem:a3706549c462c21bf5a76e9ce19307c74" id="r_a3706549c462c21bf5a76e9ce19307c74"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3706549c462c21bf5a76e9ce19307c74">~DummyFlow</a> ()</td></tr>
+<tr class="memitem:a6c21f11d4c848fb08a9b8c43082d2b8c" id="r_a6c21f11d4c848fb08a9b8c43082d2b8c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c21f11d4c848fb08a9b8c43082d2b8c">setSource</a> (<a class="el" href="classSystem.html">System</a> *source) override</td></tr>
+<tr class="memdesc:a6c21f11d4c848fb08a9b8c43082d2b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the connection to the flow's origin system. Follows the Single Responsibility Principle by confining source operations.  <br /></td></tr>
+<tr class="memitem:aac31731e841d45b473a433c767f5cf56" id="r_aac31731e841d45b473a433c767f5cf56"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aac31731e841d45b473a433c767f5cf56">getSource</a> () const override</td></tr>
+<tr class="memitem:a73d984ec3764e9614e099a0c259bd35e" id="r_a73d984ec3764e9614e099a0c259bd35e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a73d984ec3764e9614e099a0c259bd35e">clearSource</a> () override</td></tr>
+<tr class="memitem:a6b1c0a6e70a7e6fcce3fb07160e377e8" id="r_a6b1c0a6e70a7e6fcce3fb07160e377e8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b1c0a6e70a7e6fcce3fb07160e377e8">setTarget</a> (<a class="el" href="classSystem.html">System</a> *target) override</td></tr>
+<tr class="memdesc:a6b1c0a6e70a7e6fcce3fb07160e377e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the connection to the flow's destination system.  <br /></td></tr>
+<tr class="memitem:a767f0f7a6ef6f046b42300358c8cb6fe" id="r_a767f0f7a6ef6f046b42300358c8cb6fe"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a767f0f7a6ef6f046b42300358c8cb6fe">getTarget</a> () const override</td></tr>
+<tr class="memitem:ac23ff71fbab260a803dd887e69763b67" id="r_ac23ff71fbab260a803dd887e69763b67"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac23ff71fbab260a803dd887e69763b67">clearTarget</a> () override</td></tr>
+<tr class="memitem:a760be0dafdbc304cacd6c8353c9abf06" id="r_a760be0dafdbc304cacd6c8353c9abf06"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a760be0dafdbc304cacd6c8353c9abf06">execute</a> () override</td></tr>
+<tr class="memdesc:a760be0dafdbc304cacd6c8353c9abf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classFlow"><td colspan="2">Public Member Functions inherited from <a class="el" href="classFlow.html">Flow</a></td></tr>
-<tr class="memitem:ac9975e144e606242748197798e87dd32 pub_methods_classFlow" id="r_ac9975e144e606242748197798e87dd32"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#ac9975e144e606242748197798e87dd32">Flow</a> ()</td></tr>
-<tr class="memdesc:ac9975e144e606242748197798e87dd32 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Initializes the flow with no name and null Systems.  <br /></td></tr>
-<tr class="memitem:a65e83df864f9de223cdf020d9290f35a pub_methods_classFlow" id="r_a65e83df864f9de223cdf020d9290f35a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a65e83df864f9de223cdf020d9290f35a">Flow</a> (string name, <a class="el" href="classSystem.html">System</a> *source=nullptr, <a class="el" href="classSystem.html">System</a> *target=nullptr)</td></tr>
-<tr class="memdesc:a65e83df864f9de223cdf020d9290f35a pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor.  <br /></td></tr>
-<tr class="memitem:aa9a50d7ede896bf6a0740a6d1330ae21 pub_methods_classFlow" id="r_aa9a50d7ede896bf6a0740a6d1330ae21"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#aa9a50d7ede896bf6a0740a6d1330ae21">Flow</a> (const <a class="el" href="classFlow.html">Flow</a> &amp;obj)</td></tr>
-<tr class="memdesc:aa9a50d7ede896bf6a0740a6d1330ae21 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classFlow.html" title="Abstract base class representing a transfer of values between two Systems.">Flow</a>.  <br /></td></tr>
-<tr class="memitem:a5991efa6e8cf88c4ef2125cc727db333 pub_methods_classFlow" id="r_a5991efa6e8cf88c4ef2125cc727db333"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a5991efa6e8cf88c4ef2125cc727db333">~Flow</a> ()</td></tr>
-<tr class="memdesc:a5991efa6e8cf88c4ef2125cc727db333 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
-<tr class="memitem:a21f26edbbb55b1c8312d0836153c08a9 pub_methods_classFlow" id="r_a21f26edbbb55b1c8312d0836153c08a9"><td class="memItemLeft"><a class="el" href="classFlow.html">Flow</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a21f26edbbb55b1c8312d0836153c08a9">operator=</a> (const <a class="el" href="classFlow.html">Flow</a> &amp;obj)</td></tr>
-<tr class="memdesc:a21f26edbbb55b1c8312d0836153c08a9 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator.  <br /></td></tr>
-<tr class="memitem:ac829599a96f9ae03979d762771a4fea0 pub_methods_classFlow" id="r_ac829599a96f9ae03979d762771a4fea0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#ac829599a96f9ae03979d762771a4fea0">setName</a> (string name)</td></tr>
-<tr class="memdesc:ac829599a96f9ae03979d762771a4fea0 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the flow.  <br /></td></tr>
-<tr class="memitem:a62bbc54ff95eeb0795511519edf32077 pub_methods_classFlow" id="r_a62bbc54ff95eeb0795511519edf32077"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a62bbc54ff95eeb0795511519edf32077">getName</a> () const</td></tr>
-<tr class="memdesc:a62bbc54ff95eeb0795511519edf32077 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the flow.  <br /></td></tr>
-<tr class="memitem:a250fc53158862fc0db77b323a33e48a3 pub_methods_classFlow" id="r_a250fc53158862fc0db77b323a33e48a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a250fc53158862fc0db77b323a33e48a3">setSource</a> (<a class="el" href="classSystem.html">System</a> *source)</td></tr>
-<tr class="memdesc:a250fc53158862fc0db77b323a33e48a3 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the source <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a>.  <br /></td></tr>
-<tr class="memitem:a1f3858f90d141807377c2640fb5dd0fc pub_methods_classFlow" id="r_a1f3858f90d141807377c2640fb5dd0fc"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a1f3858f90d141807377c2640fb5dd0fc">getSource</a> () const</td></tr>
-<tr class="memdesc:a1f3858f90d141807377c2640fb5dd0fc pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the source <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a>.  <br /></td></tr>
-<tr class="memitem:ab69903880174e5bcdc0d815b5de7b3e0 pub_methods_classFlow" id="r_ab69903880174e5bcdc0d815b5de7b3e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#ab69903880174e5bcdc0d815b5de7b3e0">setTarget</a> (<a class="el" href="classSystem.html">System</a> *target)</td></tr>
-<tr class="memdesc:ab69903880174e5bcdc0d815b5de7b3e0 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the target <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a>.  <br /></td></tr>
-<tr class="memitem:aff8a0f8ca8dc50d37c92ab7556e172b5 pub_methods_classFlow" id="r_aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5">getTarget</a> () const</td></tr>
-<tr class="memdesc:aff8a0f8ca8dc50d37c92ab7556e172b5 pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the target <a class="el" href="classSystem.html" title="Represents a stock/system entity in the simulation.">System</a>.  <br /></td></tr>
-<tr class="memitem:a47f7a0b4b34a8bab2c38b323e588f2ec pub_methods_classFlow" id="r_a47f7a0b4b34a8bab2c38b323e588f2ec"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a47f7a0b4b34a8bab2c38b323e588f2ec">connect</a> (<a class="el" href="classSystem.html">System</a> *source, <a class="el" href="classSystem.html">System</a> *target)</td></tr>
-<tr class="memdesc:a47f7a0b4b34a8bab2c38b323e588f2ec pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to set both source and target Systems.  <br /></td></tr>
+<tr class="memitem:a325d284a50ca3274b126b21f5c39b9af pub_methods_classFlow" id="r_a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
+<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af pub_methods_classFlow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for polymorphic resolution.  <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classFlow"><td colspan="2">Protected Attributes inherited from <a class="el" href="classFlow.html">Flow</a></td></tr>
-<tr class="memitem:a8801d2ed91a9d96003d4bc8024451551 pro_attribs_classFlow" id="r_a8801d2ed91a9d96003d4bc8024451551"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a8801d2ed91a9d96003d4bc8024451551">name</a></td></tr>
-<tr class="memitem:a963ca162995d112f0f30322e2bb9de63 pro_attribs_classFlow" id="r_a963ca162995d112f0f30322e2bb9de63"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a963ca162995d112f0f30322e2bb9de63">source</a></td></tr>
-<tr class="memitem:a87be88d9bae4e927b29205faabeaf387 pro_attribs_classFlow" id="r_a87be88d9bae4e927b29205faabeaf387"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="classFlow.html#a87be88d9bae4e927b29205faabeaf387">target</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aeaf417ccc400b5b1141c59d064fec781" id="r_aeaf417ccc400b5b1141c59d064fec781"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aeaf417ccc400b5b1141c59d064fec781">source</a></td></tr>
+<tr class="memitem:ac235f73dfeaebb36272293cb0a3a66ba" id="r_ac235f73dfeaebb36272293cb0a3a66ba"><td class="memItemLeft"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ac235f73dfeaebb36272293cb0a3a66ba">target</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="unit__tests_8cpp_source.html#l00016">16</a> of file <a class="el" href="unit__tests_8cpp_source.html">unit_tests.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00007">7</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a38cb5397cfd1a70f320c26be5d264124" name="a38cb5397cfd1a70f320c26be5d264124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38cb5397cfd1a70f320c26be5d264124">&#9670;&#160;</a></span>DummyFlow()</h2>
+<a id="af4ceacb15cc3e158d52907fae1cd5cf0" name="af4ceacb15cc3e158d52907fae1cd5cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ceacb15cc3e158d52907fae1cd5cf0">&#9670;&#160;</a></span>DummyFlow() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +194,38 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">DummyFlow::DummyFlow </td>
           <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>source</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00012">12</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3706549c462c21bf5a76e9ce19307c74" name="a3706549c462c21bf5a76e9ce19307c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3706549c462c21bf5a76e9ce19307c74">&#9670;&#160;</a></span>~DummyFlow() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DummyFlow::~DummyFlow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -206,23 +236,187 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="unit__tests_8cpp_source.html#l00018">18</a> of file <a class="el" href="unit__tests_8cpp_source.html">unit_tests.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDummyFlow_a38cb5397cfd1a70f320c26be5d264124_cgraph.png" border="0" usemap="#aclassDummyFlow_a38cb5397cfd1a70f320c26be5d264124_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassDummyFlow_a38cb5397cfd1a70f320c26be5d264124_cgraph" id="aclassDummyFlow_a38cb5397cfd1a70f320c26be5d264124_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,200,31"/>
-<area shape="rect" href="classFlow.html#ac9975e144e606242748197798e87dd32" title="Default constructor. Initializes the flow with no name and null Systems." alt="" coords="248,5,339,31"/>
-<area shape="poly" title=" " alt="" coords="200,15,234,15,234,21,200,21"/>
-</map>
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00013">13</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
 </div>
+</div>
+<a id="af4ceacb15cc3e158d52907fae1cd5cf0" name="af4ceacb15cc3e158d52907fae1cd5cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ceacb15cc3e158d52907fae1cd5cf0">&#9670;&#160;</a></span>DummyFlow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DummyFlow::DummyFlow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>source</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00013">13</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3706549c462c21bf5a76e9ce19307c74" name="a3706549c462c21bf5a76e9ce19307c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3706549c462c21bf5a76e9ce19307c74">&#9670;&#160;</a></span>~DummyFlow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DummyFlow::~DummyFlow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00014">14</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a73d984ec3764e9614e099a0c259bd35e" name="a73d984ec3764e9614e099a0c259bd35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d984ec3764e9614e099a0c259bd35e">&#9670;&#160;</a></span>clearSource() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DummyFlow::clearSource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classFlow.html#a98e7aafb65699a9645a22f215b49c8b0">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00016">16</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73d984ec3764e9614e099a0c259bd35e" name="a73d984ec3764e9614e099a0c259bd35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d984ec3764e9614e099a0c259bd35e">&#9670;&#160;</a></span>clearSource() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DummyFlow::clearSource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classFlow.html#a98e7aafb65699a9645a22f215b49c8b0">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00017">17</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac23ff71fbab260a803dd887e69763b67" name="ac23ff71fbab260a803dd887e69763b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23ff71fbab260a803dd887e69763b67">&#9670;&#160;</a></span>clearTarget() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DummyFlow::clearTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classFlow.html#a52f8ab7ff430f5d2e87aa0fdb12ad64b">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00019">19</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac23ff71fbab260a803dd887e69763b67" name="ac23ff71fbab260a803dd887e69763b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23ff71fbab260a803dd887e69763b67">&#9670;&#160;</a></span>clearTarget() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DummyFlow::clearTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classFlow.html#a52f8ab7ff430f5d2e87aa0fdb12ad64b">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00020">20</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a760be0dafdbc304cacd6c8353c9abf06" name="a760be0dafdbc304cacd6c8353c9abf06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a760be0dafdbc304cacd6c8353c9abf06">&#9670;&#160;</a></span>execute()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a760be0dafdbc304cacd6c8353c9abf06">&#9670;&#160;</a></span>execute() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,17 +438,337 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Pure virtual method for flow execution. Computes the amount of value transferred from source to target. </p>
-<dl class="section return"><dt>Returns</dt><dd>double The value to be transferred. </dd></dl>
+<p>Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. </p>
 
 <p>Implements <a class="el" href="classFlow.html#a619be0b590c78202127bc6ac7fb04029">Flow</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="unit__tests_8cpp_source.html#l00019">19</a> of file <a class="el" href="unit__tests_8cpp_source.html">unit_tests.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00022">22</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>test/unit/<a class="el" href="unit__tests_8cpp_source.html">unit_tests.cpp</a></li>
+<a id="a760be0dafdbc304cacd6c8353c9abf06" name="a760be0dafdbc304cacd6c8353c9abf06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760be0dafdbc304cacd6c8353c9abf06">&#9670;&#160;</a></span>execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DummyFlow::execute </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. </p>
+
+<p>Implements <a class="el" href="classFlow.html#a619be0b590c78202127bc6ac7fb04029">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00023">23</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aac31731e841d45b473a433c767f5cf56" name="aac31731e841d45b473a433c767f5cf56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac31731e841d45b473a433c767f5cf56">&#9670;&#160;</a></span>getSource() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSystem.html">System</a> * DummyFlow::getSource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00015">15</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aac31731e841d45b473a433c767f5cf56" name="aac31731e841d45b473a433c767f5cf56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac31731e841d45b473a433c767f5cf56">&#9670;&#160;</a></span>getSource() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSystem.html">System</a> * DummyFlow::getSource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00016">16</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a767f0f7a6ef6f046b42300358c8cb6fe" name="a767f0f7a6ef6f046b42300358c8cb6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767f0f7a6ef6f046b42300358c8cb6fe">&#9670;&#160;</a></span>getTarget() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSystem.html">System</a> * DummyFlow::getTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00018">18</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a767f0f7a6ef6f046b42300358c8cb6fe" name="a767f0f7a6ef6f046b42300358c8cb6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767f0f7a6ef6f046b42300358c8cb6fe">&#9670;&#160;</a></span>getTarget() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSystem.html">System</a> * DummyFlow::getTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00019">19</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6c21f11d4c848fb08a9b8c43082d2b8c" name="a6c21f11d4c848fb08a9b8c43082d2b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c21f11d4c848fb08a9b8c43082d2b8c">&#9670;&#160;</a></span>setSource() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DummyFlow::setSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines the connection to the flow's origin system. Follows the Single Responsibility Principle by confining source operations. </p>
+
+<p>Implements <a class="el" href="classFlow.html#a42ce99a961622788ae59bb73abad3bb3">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00014">14</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6c21f11d4c848fb08a9b8c43082d2b8c" name="a6c21f11d4c848fb08a9b8c43082d2b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c21f11d4c848fb08a9b8c43082d2b8c">&#9670;&#160;</a></span>setSource() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DummyFlow::setSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines the connection to the flow's origin system. Follows the Single Responsibility Principle by confining source operations. </p>
+
+<p>Implements <a class="el" href="classFlow.html#a42ce99a961622788ae59bb73abad3bb3">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00015">15</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b1c0a6e70a7e6fcce3fb07160e377e8" name="a6b1c0a6e70a7e6fcce3fb07160e377e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1c0a6e70a7e6fcce3fb07160e377e8">&#9670;&#160;</a></span>setTarget() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DummyFlow::setTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines the connection to the flow's destination system. </p>
+
+<p>Implements <a class="el" href="classFlow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00017">17</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b1c0a6e70a7e6fcce3fb07160e377e8" name="a6b1c0a6e70a7e6fcce3fb07160e377e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1c0a6e70a7e6fcce3fb07160e377e8">&#9670;&#160;</a></span>setTarget() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DummyFlow::setTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines the connection to the flow's destination system. </p>
+
+<p>Implements <a class="el" href="classFlow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b">Flow</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="unit__Model_8cpp_source.html#l00018">18</a> of file <a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="aeaf417ccc400b5b1141c59d064fec781" name="aeaf417ccc400b5b1141c59d064fec781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf417ccc400b5b1141c59d064fec781">&#9670;&#160;</a></span>source</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSystem.html">System</a> * DummyFlow::source</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00009">9</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac235f73dfeaebb36272293cb0a3a66ba" name="ac235f73dfeaebb36272293cb0a3a66ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac235f73dfeaebb36272293cb0a3a66ba">&#9670;&#160;</a></span>target</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSystem.html">System</a> * DummyFlow::target</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="unit__Flow_8cpp_source.html#l00010">10</a> of file <a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>test/unit/<a class="el" href="unit__Flow_8cpp_source.html">unit_Flow.cpp</a></li>
+<li>test/unit/<a class="el" href="unit__Model_8cpp_source.html">unit_Model.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

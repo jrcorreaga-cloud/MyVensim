@@ -4,63 +4,74 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{unit__System_8h}{unit\_System.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <cassert>}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{system_8h}{../../src/system.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{systemImpl_8h}{../../src/systemImpl.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{model_8h}{../../src/model.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00005}00005\ }
 \DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00006}\doxymbox{\hyperlink{unit__System_8cpp_a6a39fd054412469cd77649218d3ecceb}{00006}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_a6a39fd054412469cd77649218d3ecceb}{unit\_System\_constructor}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00007}00007\ \ \ \ \ \textcolor{comment}{//\ Default\ constructor\ test}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00008}00008\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00009}00009\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ ==\ \textcolor{stringliteral}{"{}"{}});}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00010}00010\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ ==\ 0.0);}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{keyword}{delete}\ s1;\ \textcolor{comment}{//\ Free\ memory}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00012}00012\ }
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00013}00013\ \ \ \ \ \textcolor{comment}{//\ Parameterized\ constructor\ test}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00014}00014\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s2\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}Sist1"{}},\ 10.5);}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00015}00015\ \ \ \ \ assert(s2-\/>\doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ ==\ \textcolor{stringliteral}{"{}Sist1"{}});}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00016}00016\ \ \ \ \ assert(s2-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ ==\ 10.5);}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00018}00018\ \}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00019}00019\ }
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00020}\doxymbox{\hyperlink{unit__System_8cpp_a021603784a12638ed34bc8690c832dfc}{00020}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_a021603784a12638ed34bc8690c832dfc}{unit\_System\_destructor}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}TestDestructor"{}},\ 0.0);}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keyword}{delete}\ s1;\ }
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{comment}{//\ If\ the\ architecture\ (virtual\ destructor)\ wasn't\ done\ well,\ }}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00024}00024\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00025}00025\ }
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00026}\doxymbox{\hyperlink{unit__System_8cpp_a672a51794472bbde676a33115e003b15}{00026}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_a672a51794472bbde676a33115e003b15}{unit\_System\_getName}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00027}00027\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}SistName"{}},\ 5.0);}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00028}00028\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ ==\ \textcolor{stringliteral}{"{}SistName"{}});}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00030}00030\ \}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00031}00031\ }
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00032}\doxymbox{\hyperlink{unit__System_8cpp_a470f565c55f643e387d5cc7005cab1ea}{00032}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_a470f565c55f643e387d5cc7005cab1ea}{unit\_System\_setName}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00033}00033\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00034}00034\ \ \ \ \ s1-\/>\doxymbox{\hyperlink{classSystem_a2c84980e017370987a25548b13ea9578}{setName}}(\textcolor{stringliteral}{"{}NewName"{}});}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00035}00035\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ ==\ \textcolor{stringliteral}{"{}NewName"{}});}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00037}00037\ \}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00038}00038\ }
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00039}\doxymbox{\hyperlink{unit__System_8cpp_ab320622db511f54344c510a9cfdbff94}{00039}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_ab320622db511f54344c510a9cfdbff94}{unit\_System\_getValue}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00040}00040\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}(\textcolor{stringliteral}{"{}SistValue"{}},\ 100.0);}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00041}00041\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ ==\ 100.0);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00007}00007\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00008}00008\ \ \ \ \ \textcolor{comment}{//\ Default\ constructor\ test}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00009}00009\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00010}00010\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ ==\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00011}00011\ \ \ \ \ assert(std::fabs(s1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ -\/\ 0.0)\ <\ 0.0001);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{keyword}{delete}\ s1;\ \textcolor{comment}{//\ Free\ memory}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{comment}{//\ Parameterized\ constructor\ test}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00015}00015\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s2\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}Sist1"{}},\ 10.5);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00016}00016\ \ \ \ \ assert(s2-\/>\doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ ==\ \textcolor{stringliteral}{"{}Sist1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00017}00017\ \ \ \ \ assert(std::fabs(s2-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ -\/\ 10.5)\ <\ 0.0001);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00022}\doxymbox{\hyperlink{unit__System_8cpp_a021603784a12638ed34bc8690c832dfc}{00022}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_a021603784a12638ed34bc8690c832dfc}{unit\_System\_destructor}}()\ \{}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00023}00023\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00024}00024\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}TestDestructor"{}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{delete}\ s1;\ }
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00029}\doxymbox{\hyperlink{unit__System_8cpp_a672a51794472bbde676a33115e003b15}{00029}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_a672a51794472bbde676a33115e003b15}{unit\_System\_getName}}()\ \{}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00030}00030\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00031}00031\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}SistName"{}},\ 5.0);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00032}00032\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ ==\ \textcolor{stringliteral}{"{}SistName"{}});}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00037}\doxymbox{\hyperlink{unit__System_8cpp_a470f565c55f643e387d5cc7005cab1ea}{00037}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_a470f565c55f643e387d5cc7005cab1ea}{unit\_System\_setName}}()\ \{}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00038}00038\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00039}00039\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00040}00040\ \ \ \ \ s1-\/>\doxymbox{\hyperlink{classSystem_a2c84980e017370987a25548b13ea9578}{setName}}(\textcolor{stringliteral}{"{}NewName"{}});}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00041}00041\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ ==\ \textcolor{stringliteral}{"{}NewName"{}});}
 \DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00043}00043\ \}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00044}00044\ }
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00045}\doxymbox{\hyperlink{unit__System_8cpp_ac322ab5fd0cd1051b54ffab7177032e6}{00045}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_ac322ab5fd0cd1051b54ffab7177032e6}{unit\_System\_setValue}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00046}00046\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{classSystemImpl}{SystemImpl}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00047}00047\ \ \ \ \ s1-\/>\doxymbox{\hyperlink{classSystem_a7421d2e6970a0c4169a2febe254f2060}{setValue}}(50.5);}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00048}00048\ \ \ \ \ assert(s1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ ==\ 50.5);}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00050}00050\ \}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00051}00051\ }
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00052}00052\ \textcolor{comment}{//\ Grouping\ function}}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00053}\doxymbox{\hyperlink{unit__System_8cpp_ad467de422f8fd316dde6be5ded75b13b}{00053}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_ad467de422f8fd316dde6be5ded75b13b}{run\_unit\_tests\_System}}()\ \{}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00054}00054\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_a6a39fd054412469cd77649218d3ecceb}{unit\_System\_constructor}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00055}00055\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_a021603784a12638ed34bc8690c832dfc}{unit\_System\_destructor}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00056}00056\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_a672a51794472bbde676a33115e003b15}{unit\_System\_getName}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00057}00057\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_a470f565c55f643e387d5cc7005cab1ea}{unit\_System\_setName}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00058}00058\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_ab320622db511f54344c510a9cfdbff94}{unit\_System\_getValue}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00059}00059\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_ac322ab5fd0cd1051b54ffab7177032e6}{unit\_System\_setValue}}();}
-\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00046}\doxymbox{\hyperlink{unit__System_8cpp_ab320622db511f54344c510a9cfdbff94}{00046}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_ab320622db511f54344c510a9cfdbff94}{unit\_System\_getValue}}()\ \{}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00047}00047\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00048}00048\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}(\textcolor{stringliteral}{"{}SistValue"{}},\ 100.0);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00049}00049\ \ \ \ \ assert(std::fabs(s1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ -\/\ 100.0)\ <\ 0.0001);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00052}00052\ \}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00054}\doxymbox{\hyperlink{unit__System_8cpp_ac322ab5fd0cd1051b54ffab7177032e6}{00054}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_ac322ab5fd0cd1051b54ffab7177032e6}{unit\_System\_setValue}}()\ \{}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00055}00055\ \ \ \ \ \doxymbox{\hyperlink{classModel}{Model}}*\ m\ =\ \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{Model::createModel}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00056}00056\ \ \ \ \ \doxymbox{\hyperlink{classSystem}{System}}*\ s1\ =\ m-\/>\doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{createSystem}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00057}00057\ \ \ \ \ s1-\/>\doxymbox{\hyperlink{classSystem_a7421d2e6970a0c4169a2febe254f2060}{setValue}}(50.5);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00058}00058\ \ \ \ \ assert(std::fabs(s1-\/>\doxymbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ -\/\ 50.5)\ <\ 0.0001);}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keyword}{delete}\ m;}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00061}00061\ \}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00063}00063\ \textcolor{comment}{//\ Grouping\ function}}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00064}\doxymbox{\hyperlink{unit__System_8cpp_ad467de422f8fd316dde6be5ded75b13b}{00064}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{unit__System_8cpp_ad467de422f8fd316dde6be5ded75b13b}{run\_unit\_tests\_System}}()\ \{}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00065}00065\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_a6a39fd054412469cd77649218d3ecceb}{unit\_System\_constructor}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00066}00066\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_a021603784a12638ed34bc8690c832dfc}{unit\_System\_destructor}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00067}00067\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_a672a51794472bbde676a33115e003b15}{unit\_System\_getName}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00068}00068\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_a470f565c55f643e387d5cc7005cab1ea}{unit\_System\_setName}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00069}00069\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_ab320622db511f54344c510a9cfdbff94}{unit\_System\_getValue}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00070}00070\ \ \ \ \ \doxymbox{\hyperlink{unit__System_8cpp_ac322ab5fd0cd1051b54ffab7177032e6}{unit\_System\_setValue}}();}
+\DoxyCodeLine{\Hypertarget{unit__System_8cpp_source_l00071}00071\ \}}
 
 \end{DoxyCode}

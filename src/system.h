@@ -6,7 +6,7 @@
 class System {
 public:
     /** 
-     * @brief Virtual destructor to guarantee polymorphic resource cleanup.
+     * @brief Virtual destructor.
      */
     virtual ~System() {}
 

@@ -2,123 +2,380 @@
 \hypertarget{classDummyFlow}{}\label{classDummyFlow}\index{DummyFlow@{DummyFlow}}
 
 
-Inheritance diagram for Dummy\+Flow:\+\nopagebreak
+Inheritance diagram for Dummy\+Flow:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=171pt]{classDummyFlow__inherit__graph}
+\includegraphics[width=180pt]{classDummyFlow__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Dummy\+Flow:\+\nopagebreak
+Collaboration diagram for Dummy\+Flow:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classDummyFlow__coll__graph}
+\includegraphics[width=265pt]{classDummyFlow__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{classDummyFlow_a38cb5397cfd1a70f320c26be5d264124}{Dummy\+Flow}} (string name="{}"{})
+\doxymbox{\hyperlink{classDummyFlow_af4ceacb15cc3e158d52907fae1cd5cf0}{Dummy\+Flow}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
+\item 
+\doxymbox{\hyperlink{classDummyFlow_a3706549c462c21bf5a76e9ce19307c74}{\texorpdfstring{$\sim$}{\string~}\+Dummy\+Flow}} ()
+\item 
+void \doxymbox{\hyperlink{classDummyFlow_a6c21f11d4c848fb08a9b8c43082d2b8c}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDummyFlow_aac31731e841d45b473a433c767f5cf56}{get\+Source}} () const override
+\item 
+void \doxymbox{\hyperlink{classDummyFlow_a73d984ec3764e9614e099a0c259bd35e}{clear\+Source}} () override
+\item 
+void \doxymbox{\hyperlink{classDummyFlow_a6b1c0a6e70a7e6fcce3fb07160e377e8}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDummyFlow_a767f0f7a6ef6f046b42300358c8cb6fe}{get\+Target}} () const override
+\item 
+void \doxymbox{\hyperlink{classDummyFlow_ac23ff71fbab260a803dd887e69763b67}{clear\+Target}} () override
 \item 
 double \doxymbox{\hyperlink{classDummyFlow_a760be0dafdbc304cacd6c8353c9abf06}{execute}} () override
-\begin{DoxyCompactList}\small\item\em Pure virtual method for flow execution. Computes the amount of value transferred from source to target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classDummyFlow_af4ceacb15cc3e158d52907fae1cd5cf0}{Dummy\+Flow}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
+\item 
+\doxymbox{\hyperlink{classDummyFlow_a3706549c462c21bf5a76e9ce19307c74}{\texorpdfstring{$\sim$}{\string~}\+Dummy\+Flow}} ()
+\item 
+void \doxymbox{\hyperlink{classDummyFlow_a6c21f11d4c848fb08a9b8c43082d2b8c}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDummyFlow_aac31731e841d45b473a433c767f5cf56}{get\+Source}} () const override
+\item 
+void \doxymbox{\hyperlink{classDummyFlow_a73d984ec3764e9614e099a0c259bd35e}{clear\+Source}} () override
+\item 
+void \doxymbox{\hyperlink{classDummyFlow_a6b1c0a6e70a7e6fcce3fb07160e377e8}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDummyFlow_a767f0f7a6ef6f046b42300358c8cb6fe}{get\+Target}} () const override
+\item 
+void \doxymbox{\hyperlink{classDummyFlow_ac23ff71fbab260a803dd887e69763b67}{clear\+Target}} () override
+\item 
+double \doxymbox{\hyperlink{classDummyFlow_a760be0dafdbc304cacd6c8353c9abf06}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{classFlow_ac9975e144e606242748197798e87dd32}{Flow}} ()
-\begin{DoxyCompactList}\small\item\em Default constructor. Initializes the flow with no name and null Systems. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classFlow_a65e83df864f9de223cdf020d9290f35a}{Flow}} (string name, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
-\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classFlow_aa9a50d7ede896bf6a0740a6d1330ae21}{Flow}} (const \doxymbox{\hyperlink{classFlow}{Flow}} \&obj)
-\begin{DoxyCompactList}\small\item\em Copy constructor for \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
-virtual \doxymbox{\hyperlink{classFlow_a5991efa6e8cf88c4ef2125cc727db333}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
-\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classFlow}{Flow}} \& \doxymbox{\hyperlink{classFlow_a21f26edbbb55b1c8312d0836153c08a9}{operator=}} (const \doxymbox{\hyperlink{classFlow}{Flow}} \&obj)
-\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classFlow_ac829599a96f9ae03979d762771a4fea0}{set\+Name}} (string name)
-\begin{DoxyCompactList}\small\item\em Sets the name of the flow. \end{DoxyCompactList}\item 
-string \doxymbox{\hyperlink{classFlow_a62bbc54ff95eeb0795511519edf32077}{get\+Name}} () const
-\begin{DoxyCompactList}\small\item\em Gets the name of the flow. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classFlow_a250fc53158862fc0db77b323a33e48a3}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source)
-\begin{DoxyCompactList}\small\item\em Sets the source \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
-\begin{DoxyCompactList}\small\item\em Gets the source \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classFlow_ab69903880174e5bcdc0d815b5de7b3e0}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target)
-\begin{DoxyCompactList}\small\item\em Sets the target \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
-\begin{DoxyCompactList}\small\item\em Gets the target \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{classFlow_a47f7a0b4b34a8bab2c38b323e588f2ec}{connect}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target)
-\begin{DoxyCompactList}\small\item\em Helper method to set both source and target Systems. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classFlow}{Flow}}}
+virtual \doxymbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic resolution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-string \doxymbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}}
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDummyFlow_aeaf417ccc400b5b1141c59d064fec781}{source}}
 \item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}
-\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDummyFlow_ac235f73dfeaebb36272293cb0a3a66ba}{target}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \doxymbox{\hyperlink{unit__tests_8cpp_source_l00016}{16}} of file \doxymbox{\hyperlink{unit__tests_8cpp_source}{unit\+\_\+tests.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00007}{7}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 
 
 \label{classDummyFlow_doc-constructors}
 \Hypertarget{classDummyFlow_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classDummyFlow_a38cb5397cfd1a70f320c26be5d264124}\index{DummyFlow@{DummyFlow}!DummyFlow@{DummyFlow}}
+\Hypertarget{classDummyFlow_af4ceacb15cc3e158d52907fae1cd5cf0}\index{DummyFlow@{DummyFlow}!DummyFlow@{DummyFlow}}
 \index{DummyFlow@{DummyFlow}!DummyFlow@{DummyFlow}}
-\doxysubsubsection{\texorpdfstring{DummyFlow()}{DummyFlow()}}
-{\footnotesize\ttfamily \label{classDummyFlow_a38cb5397cfd1a70f320c26be5d264124} 
-Dummy\+Flow::\+\+Dummy\+Flow (\begin{DoxyParamCaption}\item[{string}]{name}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{\texorpdfstring{DummyFlow()}{DummyFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_af4ceacb15cc3e158d52907fae1cd5cf0} 
+Dummy\+Flow::\+\+Dummy\+Flow (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{ = {\ttfamily nullptr}, }\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__tests_8cpp_source_l00018}{18}} of file \doxymbox{\hyperlink{unit__tests_8cpp_source}{unit\+\_\+tests.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00012}{12}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
-Here is the call graph for this function:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{classDummyFlow_a38cb5397cfd1a70f320c26be5d264124_cgraph}
-\end{center}
-\end{figure}
+\Hypertarget{classDummyFlow_a3706549c462c21bf5a76e9ce19307c74}\index{DummyFlow@{DummyFlow}!````~DummyFlow@{\texorpdfstring{$\sim$}{\string~}DummyFlow}}
+\index{````~DummyFlow@{\texorpdfstring{$\sim$}{\string~}DummyFlow}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DummyFlow()}{\string~DummyFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a3706549c462c21bf5a76e9ce19307c74} 
+Dummy\+Flow::\+\texorpdfstring{$\sim$}{\string~}\+Dummy\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00013}{13}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_af4ceacb15cc3e158d52907fae1cd5cf0}\index{DummyFlow@{DummyFlow}!DummyFlow@{DummyFlow}}
+\index{DummyFlow@{DummyFlow}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{DummyFlow()}{DummyFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_af4ceacb15cc3e158d52907fae1cd5cf0} 
+Dummy\+Flow::\+\+Dummy\+Flow (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{ = {\ttfamily nullptr}, }\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00013}{13}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a3706549c462c21bf5a76e9ce19307c74}\index{DummyFlow@{DummyFlow}!````~DummyFlow@{\texorpdfstring{$\sim$}{\string~}DummyFlow}}
+\index{````~DummyFlow@{\texorpdfstring{$\sim$}{\string~}DummyFlow}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DummyFlow()}{\string~DummyFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a3706549c462c21bf5a76e9ce19307c74} 
+Dummy\+Flow::\+\texorpdfstring{$\sim$}{\string~}\+Dummy\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00014}{14}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
 
 
 \label{classDummyFlow_doc-func-members}
 \Hypertarget{classDummyFlow_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{classDummyFlow_a73d984ec3764e9614e099a0c259bd35e}\index{DummyFlow@{DummyFlow}!clearSource@{clearSource}}
+\index{clearSource@{clearSource}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{clearSource()}{clearSource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a73d984ec3764e9614e099a0c259bd35e} 
+void Dummy\+Flow::\+clear\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a98e7aafb65699a9645a22f215b49c8b0}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00016}{16}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a73d984ec3764e9614e099a0c259bd35e}\index{DummyFlow@{DummyFlow}!clearSource@{clearSource}}
+\index{clearSource@{clearSource}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{clearSource()}{clearSource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a73d984ec3764e9614e099a0c259bd35e} 
+void Dummy\+Flow::\+clear\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a98e7aafb65699a9645a22f215b49c8b0}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00017}{17}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+\Hypertarget{classDummyFlow_ac23ff71fbab260a803dd887e69763b67}\index{DummyFlow@{DummyFlow}!clearTarget@{clearTarget}}
+\index{clearTarget@{clearTarget}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{clearTarget()}{clearTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_ac23ff71fbab260a803dd887e69763b67} 
+void Dummy\+Flow::\+clear\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a52f8ab7ff430f5d2e87aa0fdb12ad64b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00019}{19}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_ac23ff71fbab260a803dd887e69763b67}\index{DummyFlow@{DummyFlow}!clearTarget@{clearTarget}}
+\index{clearTarget@{clearTarget}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{clearTarget()}{clearTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_ac23ff71fbab260a803dd887e69763b67} 
+void Dummy\+Flow::\+clear\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a52f8ab7ff430f5d2e87aa0fdb12ad64b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00020}{20}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
 \Hypertarget{classDummyFlow_a760be0dafdbc304cacd6c8353c9abf06}\index{DummyFlow@{DummyFlow}!execute@{execute}}
 \index{execute@{execute}!DummyFlow@{DummyFlow}}
-\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{classDummyFlow_a760be0dafdbc304cacd6c8353c9abf06} 
 double Dummy\+Flow::\+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Pure virtual method for flow execution. Computes the amount of value transferred from source to target. 
+Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. 
 
-\begin{DoxyReturn}{Returns}
-double The value to be transferred. 
-\end{DoxyReturn}
 
 
 Implements \doxymbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__tests_8cpp_source_l00019}{19}} of file \doxymbox{\hyperlink{unit__tests_8cpp_source}{unit\+\_\+tests.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00022}{22}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a760be0dafdbc304cacd6c8353c9abf06}\index{DummyFlow@{DummyFlow}!execute@{execute}}
+\index{execute@{execute}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a760be0dafdbc304cacd6c8353c9abf06} 
+double Dummy\+Flow::\+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00023}{23}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+\Hypertarget{classDummyFlow_aac31731e841d45b473a433c767f5cf56}\index{DummyFlow@{DummyFlow}!getSource@{getSource}}
+\index{getSource@{getSource}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_aac31731e841d45b473a433c767f5cf56} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Dummy\+Flow::\+get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00015}{15}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_aac31731e841d45b473a433c767f5cf56}\index{DummyFlow@{DummyFlow}!getSource@{getSource}}
+\index{getSource@{getSource}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_aac31731e841d45b473a433c767f5cf56} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Dummy\+Flow::\+get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00016}{16}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a767f0f7a6ef6f046b42300358c8cb6fe}\index{DummyFlow@{DummyFlow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a767f0f7a6ef6f046b42300358c8cb6fe} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Dummy\+Flow::\+get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00018}{18}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a767f0f7a6ef6f046b42300358c8cb6fe}\index{DummyFlow@{DummyFlow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a767f0f7a6ef6f046b42300358c8cb6fe} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Dummy\+Flow::\+get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00019}{19}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a6c21f11d4c848fb08a9b8c43082d2b8c}\index{DummyFlow@{DummyFlow}!setSource@{setSource}}
+\index{setSource@{setSource}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a6c21f11d4c848fb08a9b8c43082d2b8c} 
+void Dummy\+Flow::\+set\+Source (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a42ce99a961622788ae59bb73abad3bb3}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00014}{14}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a6c21f11d4c848fb08a9b8c43082d2b8c}\index{DummyFlow@{DummyFlow}!setSource@{setSource}}
+\index{setSource@{setSource}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a6c21f11d4c848fb08a9b8c43082d2b8c} 
+void Dummy\+Flow::\+set\+Source (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a42ce99a961622788ae59bb73abad3bb3}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00015}{15}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a6b1c0a6e70a7e6fcce3fb07160e377e8}\index{DummyFlow@{DummyFlow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a6b1c0a6e70a7e6fcce3fb07160e377e8} 
+void Dummy\+Flow::\+set\+Target (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s destination system. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00017}{17}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_a6b1c0a6e70a7e6fcce3fb07160e377e8}\index{DummyFlow@{DummyFlow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classDummyFlow_a6b1c0a6e70a7e6fcce3fb07160e377e8} 
+void Dummy\+Flow::\+set\+Target (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s destination system. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Model_8cpp_source_l00018}{18}} of file \doxymbox{\hyperlink{unit__Model_8cpp_source}{unit\+\_\+\+Model.\+cpp}}.
+
+
+
+\label{classDummyFlow_doc-variable-members}
+\Hypertarget{classDummyFlow_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classDummyFlow_aeaf417ccc400b5b1141c59d064fec781}\index{DummyFlow@{DummyFlow}!source@{source}}
+\index{source@{source}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \label{classDummyFlow_aeaf417ccc400b5b1141c59d064fec781} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Dummy\+Flow::\+source\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00009}{9}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+\Hypertarget{classDummyFlow_ac235f73dfeaebb36272293cb0a3a66ba}\index{DummyFlow@{DummyFlow}!target@{target}}
+\index{target@{target}!DummyFlow@{DummyFlow}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \label{classDummyFlow_ac235f73dfeaebb36272293cb0a3a66ba} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Dummy\+Flow::\+target\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00010}{10}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-test/\+unit/\+\doxymbox{\hyperlink{unit__tests_8cpp}{unit\+\_\+tests.\+cpp}}\end{DoxyCompactItemize}
+test/\+unit/\+\doxymbox{\hyperlink{unit__Flow_8cpp}{unit\+\_\+\+Flow.\+cpp}}\item 
+test/\+unit/\+\doxymbox{\hyperlink{unit__Model_8cpp}{unit\+\_\+\+Model.\+cpp}}\end{DoxyCompactItemize}

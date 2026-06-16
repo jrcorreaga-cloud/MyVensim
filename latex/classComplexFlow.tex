@@ -11,7 +11,7 @@ Inheritance diagram for Complex\+Flow:\+
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classComplexFlow__inherit__graph}
+\includegraphics[width=184pt]{classComplexFlow__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,7 +21,7 @@ Collaboration diagram for Complex\+Flow:\+
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classComplexFlow__coll__graph}
+\includegraphics[width=258pt]{classComplexFlow__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -29,46 +29,40 @@ Collaboration diagram for Complex\+Flow:\+
 \item 
 \doxymbox{\hyperlink{classComplexFlow_a2a85c166feac6de8841466f16267e317}{Complex\+Flow}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
 \item 
+\doxymbox{\hyperlink{classComplexFlow_a3ea63b4de8f10baefdbb71c52986cd74}{\texorpdfstring{$\sim$}{\string~}\+Complex\+Flow}} ()
+\item 
+void \doxymbox{\hyperlink{classComplexFlow_acaefe2aace6648c75c2ba776f0403892}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classComplexFlow_a393496676f7e7b752294949aa7ddf7eb}{get\+Source}} () const override
+\item 
+void \doxymbox{\hyperlink{classComplexFlow_a08fd648a75cee79a977d1575b077abd6}{clear\+Source}} () override
+\item 
+void \doxymbox{\hyperlink{classComplexFlow_ae38d2c4c334c1ca9812087ee8575c63c}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classComplexFlow_ad0b4c97b74625290bcc991eb4889a6ba}{get\+Target}} () const override
+\item 
+void \doxymbox{\hyperlink{classComplexFlow_a26af846d31a1aa762ef60319e9c8fcbb}{clear\+Target}} () override
+\item 
 double \doxymbox{\hyperlink{classComplexFlow_a744cb3029e9335038f3f8c1da6daea4d}{execute}} () override
 \begin{DoxyCompactList}\small\item\em Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
-\begin{DoxyCompactItemize}
-\item 
-\doxymbox{\hyperlink{classFlowImpl_a4a88f4376cdaf1c0e62a900f507d4295}{Flow\+Impl}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
-\item 
-virtual \doxymbox{\hyperlink{classFlowImpl_a2d91539593b336aee4a19048f8a82e8c}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Impl}} ()
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_aa48ab1dd4effd57c55c1434ccfce3ac3}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
-\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_a06c8ffdcfd36b04ddad091d2c043f5d0}{get\+Source}} () const override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_acf4fc570ead9b0421638d428f44305c1}{clear\+Source}} () override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_a48b3e6939aec2694d412760149164622}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
-\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_adb35e3574470e91207c631fda3cdc9bd}{get\+Target}} () const override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_acf255f5bb33cdc0a09f486f2bab20d99}{clear\+Target}} () override
-\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual \doxymbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
 \begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic resolution. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
+\doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}}
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classComplexFlow_ac983a1dd2ac97999f7e6832069b2c52f}{source}}
 \item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}}
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classComplexFlow_a717a7acf6b44c95424fd8dc229f6bb75}{target}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00018}{18}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00038}{38}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
 
 
 
@@ -83,21 +77,51 @@ Complex\+Flow::\+\+Complex\+Flow (\begin{DoxyParamCaption}\item[{\doxymbox{\hype
 
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00020}{20}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00043}{43}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
 
-Here is the call graph for this function:\+
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classComplexFlow_a2a85c166feac6de8841466f16267e317_cgraph}
-\end{center}
-\end{figure}
+\Hypertarget{classComplexFlow_a3ea63b4de8f10baefdbb71c52986cd74}\index{ComplexFlow@{ComplexFlow}!````~ComplexFlow@{\texorpdfstring{$\sim$}{\string~}ComplexFlow}}
+\index{````~ComplexFlow@{\texorpdfstring{$\sim$}{\string~}ComplexFlow}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ComplexFlow()}{\string~ComplexFlow()}}
+{\footnotesize\ttfamily \label{classComplexFlow_a3ea63b4de8f10baefdbb71c52986cd74} 
+Complex\+Flow::\+\texorpdfstring{$\sim$}{\string~}\+Complex\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00044}{44}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 
 
 \label{classComplexFlow_doc-func-members}
 \Hypertarget{classComplexFlow_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{classComplexFlow_a08fd648a75cee79a977d1575b077abd6}\index{ComplexFlow@{ComplexFlow}!clearSource@{clearSource}}
+\index{clearSource@{clearSource}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{clearSource()}{clearSource()}}
+{\footnotesize\ttfamily \label{classComplexFlow_a08fd648a75cee79a977d1575b077abd6} 
+void Complex\+Flow::\+clear\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a98e7aafb65699a9645a22f215b49c8b0}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00047}{47}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classComplexFlow_a26af846d31a1aa762ef60319e9c8fcbb}\index{ComplexFlow@{ComplexFlow}!clearTarget@{clearTarget}}
+\index{clearTarget@{clearTarget}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{clearTarget()}{clearTarget()}}
+{\footnotesize\ttfamily \label{classComplexFlow_a26af846d31a1aa762ef60319e9c8fcbb} 
+void Complex\+Flow::\+clear\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a52f8ab7ff430f5d2e87aa0fdb12ad64b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00050}{50}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 \Hypertarget{classComplexFlow_a744cb3029e9335038f3f8c1da6daea4d}\index{ComplexFlow@{ComplexFlow}!execute@{execute}}
 \index{execute@{execute}!ComplexFlow@{ComplexFlow}}
 \doxysubsubsection{\texorpdfstring{execute()}{execute()}}
@@ -110,11 +134,11 @@ Executes the numerical simulation operation for this specific flow. Subclasses m
 
 
 
-Implements \doxymbox{\hyperlink{classFlowImpl_a88d14f759988f1dcf393b83a93aea1f1}{Flow\+Impl}}.
+Implements \doxymbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
 
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00025}{25}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00024}{24}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
@@ -124,6 +148,103 @@ Here is the call graph for this function:\+
 \includegraphics[width=350pt]{classComplexFlow_a744cb3029e9335038f3f8c1da6daea4d_cgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classComplexFlow_a393496676f7e7b752294949aa7ddf7eb}\index{ComplexFlow@{ComplexFlow}!getSource@{getSource}}
+\index{getSource@{getSource}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \label{classComplexFlow_a393496676f7e7b752294949aa7ddf7eb} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Complex\+Flow::\+get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00046}{46}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComplexFlow_a393496676f7e7b752294949aa7ddf7eb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classComplexFlow_ad0b4c97b74625290bcc991eb4889a6ba}\index{ComplexFlow@{ComplexFlow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \label{classComplexFlow_ad0b4c97b74625290bcc991eb4889a6ba} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Complex\+Flow::\+get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00049}{49}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classComplexFlow_acaefe2aace6648c75c2ba776f0403892}\index{ComplexFlow@{ComplexFlow}!setSource@{setSource}}
+\index{setSource@{setSource}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily \label{classComplexFlow_acaefe2aace6648c75c2ba776f0403892} 
+void Complex\+Flow::\+set\+Source (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a42ce99a961622788ae59bb73abad3bb3}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00045}{45}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classComplexFlow_ae38d2c4c334c1ca9812087ee8575c63c}\index{ComplexFlow@{ComplexFlow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily \label{classComplexFlow_ae38d2c4c334c1ca9812087ee8575c63c} 
+void Complex\+Flow::\+set\+Target (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s destination system. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00048}{48}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+
+
+\label{classComplexFlow_doc-variable-members}
+\Hypertarget{classComplexFlow_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classComplexFlow_ac983a1dd2ac97999f7e6832069b2c52f}\index{ComplexFlow@{ComplexFlow}!source@{source}}
+\index{source@{source}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \label{classComplexFlow_ac983a1dd2ac97999f7e6832069b2c52f} 
+\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*} Complex\+Flow::\+source\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00040}{40}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classComplexFlow_a717a7acf6b44c95424fd8dc229f6bb75}\index{ComplexFlow@{ComplexFlow}!target@{target}}
+\index{target@{target}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \label{classComplexFlow_a717a7acf6b44c95424fd8dc229f6bb75} 
+\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*} Complex\+Flow::\+target\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00041}{41}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 
 
 The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}

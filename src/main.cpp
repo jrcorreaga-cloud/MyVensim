@@ -1,13 +1,17 @@
 #include <iostream>
+#include "modelFactory.h"
 #include "system.h"
 #include "model.h"
+
 using namespace std;
+
 int main() {
-    // The client application targets abstraction boundaries instead of concrete structures,
-// preserving the Dependency Inversion Principle.
-    Model* simulator = Model::createModel("Simulador Global", 0.0);
-    System* s1 = simulator->createSystem("Poblacion", 100.0);
-    System* s2 = simulator->createSystem("Recursos", 500.0);
+    // We now use the ModelFactory to decouple creation from the interface.
+    Model* simulator = ModelFactory::createModel("Simulador Global", 0.0);
+    
+    // The model is now the factory and owner of its systems.
+    simulator->createSystem("Poblacion", 100.0);
+    simulator->createSystem("Recursos", 500.0);
 
     cout << "Model '" << simulator->getName() << "' loaded into memory." << endl;
     cout << "Registered systems: " << endl;
@@ -19,9 +23,7 @@ int main() {
 
     cout << "\nBase simulation ready to operate. (OK)" << endl;
 
-    // Graceful memory deallocation ensures strict resource lifecycle management.
-    delete s1;
-    delete s2;
+    // Only delete the simulator; it will clean up its own systems and flows.
     delete simulator;
 
     return 0;

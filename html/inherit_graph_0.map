@@ -1,15 +1,13 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" href="$classFlow.html" title=" " alt="" coords="5,104,59,129"/>
-<area shape="rect" id="Node000001" href="$classFlowImpl.html" title=" " alt="" coords="107,104,189,129"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="73,114,106,114,106,119,73,119"/>
-<area shape="rect" id="Node000002" href="$classComplexFlow.html" title=" " alt="" coords="247,5,358,31"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="170,92,200,65,236,40,260,28,262,33,239,44,203,69,174,96"/>
-<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title=" " alt="" coords="237,55,368,80"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="201,97,261,78,263,83,202,102"/>
-<area shape="rect" id="Node000004" href="$classLogisticalFlow.html" title=" " alt="" coords="245,104,360,129"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="203,114,245,114,245,119,203,119"/>
-<area shape="rect" id="Node000005" href="$classTestFlow.html" title=" " alt="" coords="263,153,342,179"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="202,131,264,151,262,156,200,136"/>
-<area shape="rect" id="Node000006" href="$classTestFlowModel.html" title=" " alt="" coords="243,203,362,228"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="174,137,204,163,239,188,265,200,262,205,236,192,200,167,170,141"/>
+<area shape="rect" id="Node000001" href="$classComplexFlow.html" title=" " alt="" coords="117,5,227,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="50,91,75,65,105,40,128,28,130,33,108,44,78,69,54,95"/>
+<area shape="rect" id="Node000002" href="$classDummyFlow.html" title=" " alt="" coords="119,55,225,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="71,100,134,78,136,83,73,105"/>
+<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title=" " alt="" coords="107,104,237,129"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="73,114,106,114,106,119,73,119"/>
+<area shape="rect" id="Node000004" href="$classFlowImpl.html" title=" " alt="" coords="131,153,213,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="73,128,136,151,134,156,71,133"/>
+<area shape="rect" id="Node000005" href="$classLogisticalFlow.html" title=" " alt="" coords="115,203,229,228"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="54,138,79,164,108,188,132,200,130,205,105,192,75,168,50,142"/>
 </map>

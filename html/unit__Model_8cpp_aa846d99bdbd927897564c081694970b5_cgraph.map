@@ -1,9 +1,11 @@
 <map id="unit_Model_systemIterators" name="unit_Model_systemIterators">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,209,80"/>
-<area shape="rect" id="Node000002" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Contract for managing System entities inside the simulation model." alt="" coords="287,5,382,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,52,273,28,274,34,167,57"/>
-<area shape="rect" id="Node000003" href="$classModel.html#ae87a460b5f8bc4e01c2c4c2413f4df47" title=" " alt="" coords="257,55,412,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,65,244,65,244,70,210,70"/>
-<area shape="rect" id="Node000004" href="$classModel.html#ac381f929e44c3a1f04ed8d393a0c7bbc" title=" " alt="" coords="263,104,406,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,77,263,98,261,104,166,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,209,105"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a00c079afde61f16d15d6cf67a01cf831" title=" " alt="" coords="262,5,413,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,77,257,39,280,32,281,37,258,45,146,82"/>
+<area shape="rect" id="Node000003" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title=" " alt="" coords="257,55,417,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,79,243,75,244,80,210,84"/>
+<area shape="rect" id="Node000004" href="$classModel.html#ae87a460b5f8bc4e01c2c4c2413f4df47" title=" " alt="" coords="260,104,415,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,101,247,105,246,110,209,106"/>
+<area shape="rect" id="Node000005" href="$classModel.html#ac381f929e44c3a1f04ed8d393a0c7bbc" title=" " alt="" coords="266,153,409,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="149,103,258,138,284,146,282,152,257,143,148,108"/>
 </map>

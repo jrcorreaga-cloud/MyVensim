@@ -1,7 +1,5 @@
 <map id="ExponentialFlow" name="ExponentialFlow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,552,152,637"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html" title=" " alt="" coords="21,259,136,504"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,518,81,552,76,552,76,518"/>
-<area shape="rect" id="Node000003" href="$classFlow.html" title=" " alt="" coords="21,5,136,211"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,224,81,258,76,258,76,224"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,259,163,504"/>
+<area shape="rect" id="Node000002" href="$classFlow.html" title=" " alt="" coords="27,5,141,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,224,87,258,81,258,81,224"/>
 </map>

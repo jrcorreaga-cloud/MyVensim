@@ -12,29 +12,42 @@ protected:
     std::vector<System*> systems;
     std::vector<Flow*> flows;
 
-public:
-    static Model* createModel(const std::string& name = "", double time = 0.0);
-    System* createSystem(const std::string& name = "", double value = 0.0) override;
+    /**
+     * @brief Adds a System to the internal container.
+     */
+    void add(System* system) override;
 
+    /**
+     * @brief Adds a Flow to the internal container.
+     */
+    void add(Flow* flow) override;
+
+public:
     ModelImpl(const std::string& name = "", double time = 0.0);
     virtual ~ModelImpl();
 
-        void add(System* system) override;
+    System* createSystem(const std::string& name = "", double value = 0.0) override;
+
     systemIterator systemBegin() override;
     systemIterator systemEnd() override;
-
-        void add(Flow* flow) override;
     flowIterator flowBegin() override;
     flowIterator flowEnd() override;
 
-        void run(double startTime, double endTime, double step) override;
+    void run(double startTime, double endTime, double step) override;
 
-        void setName(const std::string& name) override;
+    void setName(const std::string& name) override;
     std::string getName() const override;
     
     void setTime(double time) override;
     double getTime() const override;
-    void incrementTime(double step) override;
+
+private:
+    /**
+     * @brief Copy constructor and assignment operator are private to prevent cloning,
+     * maintaining the singleton/factory lifecycle control.
+     */
+    ModelImpl(const ModelImpl& other);
+    ModelImpl& operator=(const ModelImpl& other);
 };
 
 #endif // MODELIMPL_H

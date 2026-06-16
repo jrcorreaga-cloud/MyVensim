@@ -34,6 +34,10 @@ typedef std::\+vector$<$ \doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classModel_ac93c89eab007f7f15634eb77352866ef}{create\+System}} (const std::\+string \&name="{}"{}, double value=0.\+0)=0
+\item 
+{\footnotesize template$<$typename T\+\_\+\+FLOW$>$ }\\\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}{create\+Flow}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
+\item 
 virtual \doxymbox{\hyperlink{classModel_af032d8433c87a0a3a431faf6563a1f03}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
 \item 
 virtual void \doxymbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system)=0
@@ -60,6 +64,11 @@ virtual double \doxymbox{\hyperlink{classModel_a41569269c162962571a791c0fe737bca
 \item 
 virtual void \doxymbox{\hyperlink{classModel_a27981fdb221eef87b2d441a576ca6747}{increment\+Time}} (double step)=0
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classModel_a00c079afde61f16d15d6cf67a01cf831}{create\+Model}} (const std::\+string \&name="{}"{}, double time=0.\+0)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -80,7 +89,7 @@ typedef std::\+vector$<$\doxymbox{\hyperlink{classFlow}{Flow}}\texorpdfstring{$\
 
 
 
-Definition at line \doxymbox{\hyperlink{model_8h_source_l00016}{16}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00026}{26}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
 
 \Hypertarget{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}\index{Model@{Model}!systemIterator@{systemIterator}}
 \index{systemIterator@{systemIterator}!Model@{Model}}
@@ -94,7 +103,7 @@ Exposes iterators without revealing the underlying data structures, ensuring enc
 
 
 
-Definition at line \doxymbox{\hyperlink{model_8h_source_l00015}{15}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00025}{25}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
 
 
 
@@ -109,7 +118,7 @@ virtual Model::\+\texorpdfstring{$\sim$}{\string~}\+Model (\begin{DoxyParamCapti
 
 
 
-Definition at line \doxymbox{\hyperlink{model_8h_source_l00018}{18}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00028}{28}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
 
 
 
@@ -152,6 +161,69 @@ Here is the caller graph for this function:\+
 \includegraphics[width=350pt]{classModel_afde6c25ab942f2eec7aedeaf8eec53fd_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4}\index{Model@{Model}!createFlow@{createFlow}}
+\index{createFlow@{createFlow}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createFlow()}{createFlow()}}
+{\footnotesize\ttfamily \label{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4} 
+template$<$typename T\+\_\+\+FLOW$>$ \\
+\doxymbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} Model::\+create\+Flow (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{ = {\ttfamily nullptr}, }\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{model_8h_source_l00015}{15}} of file \doxymbox{\hyperlink{model_8h_source}{model.\+h}}.
+
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_a0b6b290db3600d4fc7a7f5ffa31103f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_a00c079afde61f16d15d6cf67a01cf831}\index{Model@{Model}!createModel@{createModel}}
+\index{createModel@{createModel}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \label{classModel_a00c079afde61f16d15d6cf67a01cf831} 
+\doxymbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} Model::\+create\+Model (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{ = {\ttfamily "{}"{}}, }\item[{double}]{time}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{modelImpl_8cpp_source_l00004}{4}} of file \doxymbox{\hyperlink{modelImpl_8cpp_source}{model\+Impl.\+cpp}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classModel_a00c079afde61f16d15d6cf67a01cf831_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModel_ac93c89eab007f7f15634eb77352866ef}\index{Model@{Model}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \label{classModel_ac93c89eab007f7f15634eb77352866ef} 
+virtual \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Model::\+create\+System (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{ = {\ttfamily "{}"{}}, }\item[{double}]{value}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{classModelImpl_a98e153c59919e45c8403bef1e7bf3539}{Model\+Impl}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_ac93c89eab007f7f15634eb77352866ef_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classModel_ac3cbad7c7be9a1176b71f689590f5e13}\index{Model@{Model}!flowBegin@{flowBegin}}
 \index{flowBegin@{flowBegin}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{flowBegin()}{flowBegin()}}
@@ -162,8 +234,7 @@ virtual \doxymbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flow\
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_a47b7434a49e79c2b648b5db575a23d35}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -180,8 +251,7 @@ virtual \doxymbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flow\
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_acc758ca09a6781e6fb204166365dabbb}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -198,8 +268,7 @@ virtual std::\+string Model::\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyP
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_a6d6ef8f72413650749d9ca9850226a6b}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -216,8 +285,7 @@ virtual double Model::\+get\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCap
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_a9233d23b2fa19917f314cf286749a924}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -234,8 +302,7 @@ virtual void Model::\+increment\+Time (\begin{DoxyParamCaption}\item[{double}]{s
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_ac35b905745e42c2623bf431609b9f09c}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -256,8 +323,7 @@ Core simulation lifecycle manager. Executes the operational loop.
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_aea9f737fee60153508e6bd734022b3e0}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -278,8 +344,7 @@ Metadata tracking methods.
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_a0d4dc3b77ac3007091760dda1a1dfa8b}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -296,8 +361,7 @@ virtual void Model::\+set\+Time (\begin{DoxyParamCaption}\item[{double}]{time}{}
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_a1071f515e45c86e9295b193b7d28cc98}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -314,8 +378,7 @@ virtual \doxymbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{syste
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_ae133e78b100032b9aaf28d6a0cf0fadc}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -332,8 +395,7 @@ virtual \doxymbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{syste
 
 Implemented in \doxymbox{\hyperlink{classModelImpl_aa502f29742a6c1390f44d899720b4454}{Model\+Impl}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -342,6 +404,7 @@ Here is the caller graph for this function:\+
 \end{figure}
 
 
-The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-src/\+\doxymbox{\hyperlink{model_8h}{model.\+h}}\end{DoxyCompactItemize}
+src/\+\doxymbox{\hyperlink{model_8h}{model.\+h}}\item 
+src/\+\doxymbox{\hyperlink{modelImpl_8cpp}{model\+Impl.\+cpp}}\end{DoxyCompactItemize}

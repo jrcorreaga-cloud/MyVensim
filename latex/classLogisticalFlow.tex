@@ -11,7 +11,7 @@ Inheritance diagram for Logistical\+Flow:\+
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classLogisticalFlow__inherit__graph}
+\includegraphics[width=187pt]{classLogisticalFlow__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,7 +21,7 @@ Collaboration diagram for Logistical\+Flow:\+
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classLogisticalFlow__coll__graph}
+\includegraphics[width=258pt]{classLogisticalFlow__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -29,46 +29,40 @@ Collaboration diagram for Logistical\+Flow:\+
 \item 
 \doxymbox{\hyperlink{classLogisticalFlow_ac7dfde25774348ee138a9a0f0ab15f9e}{Logistical\+Flow}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
 \item 
+\doxymbox{\hyperlink{classLogisticalFlow_a8454718726630213858e821f38b570e4}{\texorpdfstring{$\sim$}{\string~}\+Logistical\+Flow}} ()
+\item 
+void \doxymbox{\hyperlink{classLogisticalFlow_a8389bc790c0d4f213298d67f7b4ccebd}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classLogisticalFlow_afad837f6ea43b7daafc1f76231ab8199}{get\+Source}} () const override
+\item 
+void \doxymbox{\hyperlink{classLogisticalFlow_a18d91637593b54a71a20579919f3b86b}{clear\+Source}} () override
+\item 
+void \doxymbox{\hyperlink{classLogisticalFlow_ad7aca93d3001ce30b9f23bab004a9a22}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
+\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classLogisticalFlow_ac200638ea75ab0bf6a0a1cfc0d7f7ef6}{get\+Target}} () const override
+\item 
+void \doxymbox{\hyperlink{classLogisticalFlow_a8f32ec0a9c8f120373791f84498ce1d5}{clear\+Target}} () override
+\item 
 double \doxymbox{\hyperlink{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69}{execute}} () override
 \begin{DoxyCompactList}\small\item\em Executes the numerical simulation operation for this specific flow. Subclasses must implement their specific behavioral equations here. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
-\begin{DoxyCompactItemize}
-\item 
-\doxymbox{\hyperlink{classFlowImpl_a4a88f4376cdaf1c0e62a900f507d4295}{Flow\+Impl}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target=nullptr)
-\item 
-virtual \doxymbox{\hyperlink{classFlowImpl_a2d91539593b336aee4a19048f8a82e8c}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Impl}} ()
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_aa48ab1dd4effd57c55c1434ccfce3ac3}{set\+Source}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source) override
-\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_a06c8ffdcfd36b04ddad091d2c043f5d0}{get\+Source}} () const override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_acf4fc570ead9b0421638d428f44305c1}{clear\+Source}} () override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_a48b3e6939aec2694d412760149164622}{set\+Target}} (\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}target) override
-\begin{DoxyCompactList}\small\item\em Defines the connection to the flow\textquotesingle{}s destination system. \end{DoxyCompactList}\item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_adb35e3574470e91207c631fda3cdc9bd}{get\+Target}} () const override
-\item 
-void \doxymbox{\hyperlink{classFlowImpl_acf255f5bb33cdc0a09f486f2bab20d99}{clear\+Target}} () override
-\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classFlow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual \doxymbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
 \begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic resolution. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
+\doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}}
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classLogisticalFlow_aecaa21fd22f4b330b2fc8718de3b9f49}{source}}
 \item 
-\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}}
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classLogisticalFlow_a2971d0fb037e7881b052d56b8a420be6}{target}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00012}{12}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00022}{22}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
 
 
 
@@ -83,21 +77,51 @@ Logistical\+Flow::\+\+Logistical\+Flow (\begin{DoxyParamCaption}\item[{\doxymbox
 
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00014}{14}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00027}{27}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
 
-Here is the call graph for this function:\+
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classLogisticalFlow_ac7dfde25774348ee138a9a0f0ab15f9e_cgraph}
-\end{center}
-\end{figure}
+\Hypertarget{classLogisticalFlow_a8454718726630213858e821f38b570e4}\index{LogisticalFlow@{LogisticalFlow}!````~LogisticalFlow@{\texorpdfstring{$\sim$}{\string~}LogisticalFlow}}
+\index{````~LogisticalFlow@{\texorpdfstring{$\sim$}{\string~}LogisticalFlow}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LogisticalFlow()}{\string~LogisticalFlow()}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_a8454718726630213858e821f38b570e4} 
+Logistical\+Flow::\+\texorpdfstring{$\sim$}{\string~}\+Logistical\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00028}{28}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 
 
 \label{classLogisticalFlow_doc-func-members}
 \Hypertarget{classLogisticalFlow_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{classLogisticalFlow_a18d91637593b54a71a20579919f3b86b}\index{LogisticalFlow@{LogisticalFlow}!clearSource@{clearSource}}
+\index{clearSource@{clearSource}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{clearSource()}{clearSource()}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_a18d91637593b54a71a20579919f3b86b} 
+void Logistical\+Flow::\+clear\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a98e7aafb65699a9645a22f215b49c8b0}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00031}{31}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classLogisticalFlow_a8f32ec0a9c8f120373791f84498ce1d5}\index{LogisticalFlow@{LogisticalFlow}!clearTarget@{clearTarget}}
+\index{clearTarget@{clearTarget}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{clearTarget()}{clearTarget()}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_a8f32ec0a9c8f120373791f84498ce1d5} 
+void Logistical\+Flow::\+clear\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a52f8ab7ff430f5d2e87aa0fdb12ad64b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00034}{34}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 \Hypertarget{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69}\index{LogisticalFlow@{LogisticalFlow}!execute@{execute}}
 \index{execute@{execute}!LogisticalFlow@{LogisticalFlow}}
 \doxysubsubsection{\texorpdfstring{execute()}{execute()}}
@@ -110,11 +134,11 @@ Executes the numerical simulation operation for this specific flow. Subclasses m
 
 
 
-Implements \doxymbox{\hyperlink{classFlowImpl_a88d14f759988f1dcf393b83a93aea1f1}{Flow\+Impl}}.
+Implements \doxymbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
 
 
 
-Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00018}{18}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{funcional__tests_8cpp_source_l00017}{17}} of file \doxymbox{\hyperlink{funcional__tests_8cpp_source}{funcional\+\_\+tests.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
@@ -124,6 +148,103 @@ Here is the call graph for this function:\+
 \includegraphics[width=350pt]{classLogisticalFlow_ace31969e5f4979cc6048aa2a7c795e69_cgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classLogisticalFlow_afad837f6ea43b7daafc1f76231ab8199}\index{LogisticalFlow@{LogisticalFlow}!getSource@{getSource}}
+\index{getSource@{getSource}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_afad837f6ea43b7daafc1f76231ab8199} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Logistical\+Flow::\+get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00030}{30}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classLogisticalFlow_ac200638ea75ab0bf6a0a1cfc0d7f7ef6}\index{LogisticalFlow@{LogisticalFlow}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_ac200638ea75ab0bf6a0a1cfc0d7f7ef6} 
+\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Logistical\+Flow::\+get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00033}{33}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLogisticalFlow_ac200638ea75ab0bf6a0a1cfc0d7f7ef6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLogisticalFlow_a8389bc790c0d4f213298d67f7b4ccebd}\index{LogisticalFlow@{LogisticalFlow}!setSource@{setSource}}
+\index{setSource@{setSource}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_a8389bc790c0d4f213298d67f7b4ccebd} 
+void Logistical\+Flow::\+set\+Source (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s origin system. Follows the Single Responsibility Principle by confining source operations. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a42ce99a961622788ae59bb73abad3bb3}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00029}{29}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classLogisticalFlow_ad7aca93d3001ce30b9f23bab004a9a22}\index{LogisticalFlow@{LogisticalFlow}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_ad7aca93d3001ce30b9f23bab004a9a22} 
+void Logistical\+Flow::\+set\+Target (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Defines the connection to the flow\textquotesingle{}s destination system. 
+
+
+
+Implements \doxymbox{\hyperlink{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{Flow}}.
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00032}{32}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+
+
+\label{classLogisticalFlow_doc-variable-members}
+\Hypertarget{classLogisticalFlow_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classLogisticalFlow_aecaa21fd22f4b330b2fc8718de3b9f49}\index{LogisticalFlow@{LogisticalFlow}!source@{source}}
+\index{source@{source}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_aecaa21fd22f4b330b2fc8718de3b9f49} 
+\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*} Logistical\+Flow::\+source\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00024}{24}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
+\Hypertarget{classLogisticalFlow_a2971d0fb037e7881b052d56b8a420be6}\index{LogisticalFlow@{LogisticalFlow}!target@{target}}
+\index{target@{target}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \label{classLogisticalFlow_a2971d0fb037e7881b052d56b8a420be6} 
+\doxymbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*} Logistical\+Flow::\+target\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{funcional__tests_8h_source_l00025}{25}} of file \doxymbox{\hyperlink{funcional__tests_8h_source}{funcional\+\_\+tests.\+h}}.
+
 
 
 The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exponentialflow_0',['ExponentialFlow',['../classExponentialFlow.html',1,'']]]
+  ['dummyflow_0',['DummyFlow',['../classDummyFlow.html',1,'']]]
 ];

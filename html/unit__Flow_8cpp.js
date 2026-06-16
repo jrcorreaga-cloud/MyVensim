@@ -1,6 +1,6 @@
 var unit__Flow_8cpp =
 [
-    [ "TestFlow", "classTestFlow.html", "classTestFlow" ],
+    [ "DummyFlow", "classDummyFlow.html", "classDummyFlow" ],
     [ "run_unit_tests_Flow", "unit__Flow_8cpp.html#a31fe372f712944be1d93f7c5b01fbb3e", null ],
     [ "unit_Flow_clearSource", "unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838", null ],
     [ "unit_Flow_clearTarget", "unit__Flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6", null ],

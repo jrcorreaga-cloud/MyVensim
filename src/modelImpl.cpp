@@ -1,10 +1,6 @@
 #include "modelImpl.h"
 #include "systemImpl.h"
 
-Model* Model::createModel(const std::string& name, double time) {
-    return new ModelImpl(name, time);
-}
-
 System* ModelImpl::createSystem(const std::string& name, double value) {
     System* s = new SystemImpl(name, value);
     add(s);
@@ -16,10 +12,17 @@ ModelImpl::ModelImpl(const std::string& name, double time) : name(name), time(ti
 
 // Destructor
 ModelImpl::~ModelImpl() {
-    /** 
-     * Architectural Note: Following aggregation semantics, the Model refrains from
-     * destroying System and Flow instances directly. Responsibility lies with the client.
-     */
+    // Clean up systems
+    for (System* s : systems) {
+        delete s;
+    }
+    systems.clear();
+
+    // Clean up flows
+    for (Flow* f : flows) {
+        delete f;
+    }
+    flows.clear();
 }
 
 void ModelImpl::add(System* system) {
@@ -62,33 +65,27 @@ double ModelImpl::getTime() const {
     return time;
 }
 
-void ModelImpl::incrementTime(double step) {
-    this->time += step;
-}
-
 void ModelImpl::run(double startTime, double endTime, double step) {
-        this->time = startTime;
+    this->time = startTime;
 
-        for (double t = startTime; t < endTime; t += step) {
-        
-                std::vector<double> flowResults(flows.size());
-
-                for (size_t i = 0; i < flows.size(); ++i) {
-            flowResults[i] = flows[i]->execute();
+    for (double t = startTime; t < endTime; t += step) {
+        std::vector<double> flowResults;
+        for (auto f : flows) {
+            flowResults.push_back(f->execute());
         }
 
-                for (size_t i = 0; i < flows.size(); ++i) {
-            System* source = flows[i]->getSource();
-            System* target = flows[i]->getTarget();
+        auto itFlow = flows.begin();
+        for (double result : flowResults) {
+            Flow* f = *itFlow;
+            System* source = f->getSource();
+            System* target = f->getTarget();
 
-            if (source != nullptr) {
-                source->setValue(source->getValue() - flowResults[i]);
-            }
-            if (target != nullptr) {
-                target->setValue(target->getValue() + flowResults[i]);
-            }
+            if (source) source->setValue(source->getValue() - result);
+            if (target) target->setValue(target->getValue() + result);
+            
+            ++itFlow;
         }
         
-                incrementTime(step);
+        this->time += step;
     }
 }

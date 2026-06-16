@@ -2,10 +2,8 @@
 \hypertarget{unit__Flow_8cpp}{}\label{unit__Flow_8cpp}\index{test/unit/unit\_Flow.cpp@{test/unit/unit\_Flow.cpp}}
 {\ttfamily \+\#include "{}unit\+\_\+\+Flow.\+h"{}}\newline
 {\ttfamily \+\#include $<$cassert$>$}\newline
-{\ttfamily \+\#include "{}../\+../\+src/\+flow.\+h"{}}\newline
-{\ttfamily \+\#include "{}../\+../\+src/\+flow\+Impl.\+h"{}}\newline
-{\ttfamily \+\#include "{}../\+../\+src/\+system.\+h"{}}\newline
-{\ttfamily \+\#include "{}../\+../\+src/\+system\+Impl.\+h"{}}\newline
+{\ttfamily \+\#include $<$cmath$>$}\newline
+{\ttfamily \+\#include "{}../\+../\+src/\+model.\+h"{}}\newline
 Include dependency graph for unit\+\_\+\+Flow.\+cpp:\+
 \nopagebreak
 \begin{figure}[H]
@@ -17,7 +15,7 @@ Include dependency graph for unit\+\_\+\+Flow.\+cpp:\+
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \doxymbox{\hyperlink{classTestFlow}{Test\+Flow}}
+class \doxymbox{\hyperlink{classDummyFlow}{Dummy\+Flow}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -55,7 +53,7 @@ void run\+\_\+unit\+\_\+tests\+\_\+\+Flow (\begin{DoxyParamCaption}{}{}\end{Doxy
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00123}{123}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00144}{144}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
@@ -65,8 +63,7 @@ Here is the call graph for this function:\+
 \includegraphics[width=350pt]{unit__Flow_8cpp_a31fe372f712944be1d93f7c5b01fbb3e_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -81,18 +78,17 @@ void unit\+\_\+\+Flow\+\_\+clear\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyP
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00068}{68}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00079}{79}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=344pt]{unit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838_cgraph}
+\includegraphics[width=350pt]{unit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -107,18 +103,17 @@ void unit\+\_\+\+Flow\+\_\+clear\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyP
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00100}{100}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00117}{117}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=338pt]{unit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6_cgraph}
+\includegraphics[width=350pt]{unit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -133,18 +128,17 @@ void unit\+\_\+\+Flow\+\_\+constructor (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00022}{22}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00027}{27}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=334pt]{unit__Flow_8cpp_abae010d669044ac8e9f87914b6cbeafe_cgraph}
+\includegraphics[width=350pt]{unit__Flow_8cpp_abae010d669044ac8e9f87914b6cbeafe_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -159,10 +153,9 @@ void unit\+\_\+\+Flow\+\_\+destructor (\begin{DoxyParamCaption}{}{}\end{DoxyPara
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00041}{41}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00048}{48}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -177,18 +170,17 @@ void unit\+\_\+\+Flow\+\_\+execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCa
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00111}{111}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00130}{130}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=306pt]{unit__Flow_8cpp_a2192b5fd3c44d606126dbba6a21f8fc9_cgraph}
+\includegraphics[width=343pt]{unit__Flow_8cpp_a2192b5fd3c44d606126dbba6a21f8fc9_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -203,18 +195,17 @@ void unit\+\_\+\+Flow\+\_\+get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00058}{58}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00067}{67}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=328pt]{unit__Flow_8cpp_a0dc76658e06597697628386d69327367_cgraph}
+\includegraphics[width=350pt]{unit__Flow_8cpp_a0dc76658e06597697628386d69327367_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -229,18 +220,17 @@ void unit\+\_\+\+Flow\+\_\+get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00090}{90}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00105}{105}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=322pt]{unit__Flow_8cpp_a89661cef89f6beb434f6097691c03538_cgraph}
+\includegraphics[width=350pt]{unit__Flow_8cpp_a89661cef89f6beb434f6097691c03538_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -255,18 +245,17 @@ void unit\+\_\+\+Flow\+\_\+set\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00047}{47}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00054}{54}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=327pt]{unit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4_cgraph}
+\includegraphics[width=350pt]{unit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -281,18 +270,17 @@ void unit\+\_\+\+Flow\+\_\+set\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 
 
 
-Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00079}{79}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{unit__Flow_8cpp_source_l00092}{92}} of file \doxymbox{\hyperlink{unit__Flow_8cpp_source}{unit\+\_\+\+Flow.\+cpp}}.
 
 Here is the call graph for this function:\+
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=321pt]{unit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654_cgraph}
+\includegraphics[width=350pt]{unit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function:\+
-\nopagebreak
+Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

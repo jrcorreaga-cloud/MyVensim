@@ -1,6 +1,6 @@
 var unit__Model_8cpp =
 [
-    [ "TestFlowModel", "classTestFlowModel.html", "classTestFlowModel" ],
+    [ "DummyFlow", "classDummyFlow.html", "classDummyFlow" ],
     [ "run_unit_tests_Model", "unit__Model_8cpp.html#a8a49913008ee3aede79ca904bcb8cd51", null ],
     [ "unit_Model_addFlow", "unit__Model_8cpp.html#a742a3cf3113b9b5828bf0dfe22abc6a3", null ],
     [ "unit_Model_addSystem", "unit__Model_8cpp.html#a06390bb362065cf4ccf41ddfa0c33693", null ],
