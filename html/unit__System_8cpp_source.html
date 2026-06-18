@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__System_8
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="unit__System_8cpp.html#a6a39fd054412469cd77649218d3ecceb">    6</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__System_8cpp.html#a6a39fd054412469cd77649218d3ecceb">unit_System_constructor</a>() {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = <a class="code hl_function" href="classModel.html#a00c079afde61f16d15d6cf67a01cf831">Model::createModel</a>();</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = Model::createModel();</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="comment">// Default constructor test</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classSystem.html">System</a>* s1 = m-&gt;<a class="code hl_function" href="classModel.html#ac93c89eab007f7f15634eb77352866ef">createSystem</a>();</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    assert(s1-&gt;<a class="code hl_function" href="classSystem.html#a3bc2509274e6c346e07b0bf1151378c5">getName</a>() == <span class="stringliteral">&quot;&quot;</span>);</div>
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__System_8
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="unit__System_8cpp.html#a021603784a12638ed34bc8690c832dfc">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__System_8cpp.html#a021603784a12638ed34bc8690c832dfc">unit_System_destructor</a>() {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = <a class="code hl_function" href="classModel.html#a00c079afde61f16d15d6cf67a01cf831">Model::createModel</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = Model::createModel();</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="classSystem.html">System</a>* s1 = m-&gt;<a class="code hl_function" href="classModel.html#ac93c89eab007f7f15634eb77352866ef">createSystem</a>(<span class="stringliteral">&quot;TestDestructor&quot;</span>, 0.0);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">delete</span> s1; </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">delete</span> m;</div>
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__System_8
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="unit__System_8cpp.html#a672a51794472bbde676a33115e003b15">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__System_8cpp.html#a672a51794472bbde676a33115e003b15">unit_System_getName</a>() {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = <a class="code hl_function" href="classModel.html#a00c079afde61f16d15d6cf67a01cf831">Model::createModel</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = Model::createModel();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="classSystem.html">System</a>* s1 = m-&gt;<a class="code hl_function" href="classModel.html#ac93c89eab007f7f15634eb77352866ef">createSystem</a>(<span class="stringliteral">&quot;SistName&quot;</span>, 5.0);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    assert(s1-&gt;<a class="code hl_function" href="classSystem.html#a3bc2509274e6c346e07b0bf1151378c5">getName</a>() == <span class="stringliteral">&quot;SistName&quot;</span>);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">delete</span> s1;</div>
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__System_8
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="unit__System_8cpp.html#a470f565c55f643e387d5cc7005cab1ea">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__System_8cpp.html#a470f565c55f643e387d5cc7005cab1ea">unit_System_setName</a>() {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = <a class="code hl_function" href="classModel.html#a00c079afde61f16d15d6cf67a01cf831">Model::createModel</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = Model::createModel();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_class" href="classSystem.html">System</a>* s1 = m-&gt;<a class="code hl_function" href="classModel.html#ac93c89eab007f7f15634eb77352866ef">createSystem</a>();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    s1-&gt;<a class="code hl_function" href="classSystem.html#a2c84980e017370987a25548b13ea9578">setName</a>(<span class="stringliteral">&quot;NewName&quot;</span>);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    assert(s1-&gt;<a class="code hl_function" href="classSystem.html#a3bc2509274e6c346e07b0bf1151378c5">getName</a>() == <span class="stringliteral">&quot;NewName&quot;</span>);</div>
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__System_8
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="unit__System_8cpp.html#ab320622db511f54344c510a9cfdbff94">   46</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__System_8cpp.html#ab320622db511f54344c510a9cfdbff94">unit_System_getValue</a>() {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = <a class="code hl_function" href="classModel.html#a00c079afde61f16d15d6cf67a01cf831">Model::createModel</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = Model::createModel();</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="classSystem.html">System</a>* s1 = m-&gt;<a class="code hl_function" href="classModel.html#ac93c89eab007f7f15634eb77352866ef">createSystem</a>(<span class="stringliteral">&quot;SistValue&quot;</span>, 100.0);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    assert(std::fabs(s1-&gt;<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() - 100.0) &lt; 0.0001);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">delete</span> s1;</div>
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__System_8
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="unit__System_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="unit__System_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6">unit_System_setValue</a>() {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = <a class="code hl_function" href="classModel.html#a00c079afde61f16d15d6cf67a01cf831">Model::createModel</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_class" href="classModel.html">Model</a>* m = Model::createModel();</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_class" href="classSystem.html">System</a>* s1 = m-&gt;<a class="code hl_function" href="classModel.html#ac93c89eab007f7f15634eb77352866ef">createSystem</a>();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    s1-&gt;<a class="code hl_function" href="classSystem.html#a7421d2e6970a0c4169a2febe254f2060">setValue</a>(50.5);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    assert(std::fabs(s1-&gt;<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() - 50.5) &lt; 0.0001);</div>
@@ -204,8 +204,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('unit__System_8
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
 </div>
 <div class="ttc" id="aclassModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdef"><b>Definition</b> <a href="model_8h_source.html#l00009">model.h:9</a></div></div>
-<div class="ttc" id="aclassModel_html_a00c079afde61f16d15d6cf67a01cf831"><div class="ttname"><a href="classModel.html#a00c079afde61f16d15d6cf67a01cf831">Model::createModel</a></div><div class="ttdeci">static Model * createModel(const std::string &amp;name=&quot;&quot;, double time=0.0)</div><div class="ttdef"><b>Definition</b> <a href="modelImpl_8cpp_source.html#l00004">modelImpl.cpp:4</a></div></div>
-<div class="ttc" id="aclassModel_html_ac93c89eab007f7f15634eb77352866ef"><div class="ttname"><a href="classModel.html#ac93c89eab007f7f15634eb77352866ef">Model::createSystem</a></div><div class="ttdeci">virtual System * createSystem(const std::string &amp;name=&quot;&quot;, double value=0.0)=0</div></div>
+<div class="ttc" id="aclassModel_html_ac93c89eab007f7f15634eb77352866ef"><div class="ttname"><a href="classModel.html#ac93c89eab007f7f15634eb77352866ef">Model::createSystem</a></div><div class="ttdeci">virtual System * createSystem(const std::string &amp;name=&quot;&quot;, double value=0.0)=0</div><div class="ttdoc">Crea un nuevo sistema dentro del modelo.</div></div>
 <div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdef"><b>Definition</b> <a href="system_8h_source.html#l00006">system.h:6</a></div></div>
 <div class="ttc" id="aclassSystem_html_a2c84980e017370987a25548b13ea9578"><div class="ttname"><a href="classSystem.html#a2c84980e017370987a25548b13ea9578">System::setName</a></div><div class="ttdeci">virtual void setName(const std::string &amp;name)=0</div></div>
 <div class="ttc" id="aclassSystem_html_a3bc2509274e6c346e07b0bf1151378c5"><div class="ttname"><a href="classSystem.html#a3bc2509274e6c346e07b0bf1151378c5">System::getName</a></div><div class="ttdeci">virtual std::string getName() const =0</div></div>

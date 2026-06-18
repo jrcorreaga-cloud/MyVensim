@@ -5,8 +5,11 @@ var searchData=
   ['main_2ecpp_2eo_2ed_2',['main.cpp.o.d',['../simulador_8dir_2src_2main_8cpp_8o_8d.html',1,'(Global Namespace)'],['../test__funcional_8dir_2test_2funcional_2main_8cpp_8o_8d.html',1,'(Global Namespace)'],['../test__unit_8dir_2test_2unit_2main_8cpp_8o_8d.html',1,'(Global Namespace)']]],
   ['model_3',['Model',['../classModel.html',1,'']]],
   ['model_2eh_4',['model.h',['../model_8h.html',1,'']]],
-  ['modelimpl_5',['ModelImpl',['../classModelImpl.html',1,'ModelImpl'],['../classModelImpl.html#a3a336f08431e278c004244ab4252d555',1,'ModelImpl::ModelImpl()']]],
-  ['modelimpl_2ecpp_6',['modelImpl.cpp',['../modelImpl_8cpp.html',1,'']]],
-  ['modelimpl_2ecpp_2eo_2ed_7',['modelImpl.cpp.o.d',['../modelImpl_8cpp_8o_8d.html',1,'']]],
-  ['modelimpl_2eh_8',['modelImpl.h',['../modelImpl_8h.html',1,'']]]
+  ['modelfactory_5',['ModelFactory',['../classModelFactory.html',1,'']]],
+  ['modelfactory_2ecpp_6',['modelFactory.cpp',['../modelFactory_8cpp.html',1,'']]],
+  ['modelfactory_2eh_7',['modelFactory.h',['../modelFactory_8h.html',1,'']]],
+  ['modelimpl_8',['ModelImpl',['../classModelImpl.html',1,'ModelImpl'],['../classModelImpl.html#a3a336f08431e278c004244ab4252d555',1,'ModelImpl::ModelImpl(const std::string &amp;name=&quot;&quot;, double time=0.0)'],['../classModelImpl.html#a71036194d088aeb1830feea80c986c3a',1,'ModelImpl::ModelImpl(const ModelImpl &amp;other)']]],
+  ['modelimpl_2ecpp_9',['modelImpl.cpp',['../modelImpl_8cpp.html',1,'']]],
+  ['modelimpl_2ecpp_2eo_2ed_10',['modelImpl.cpp.o.d',['../modelImpl_8cpp_8o_8d.html',1,'']]],
+  ['modelimpl_2eh_11',['modelImpl.h',['../modelImpl_8h.html',1,'']]]
 ];

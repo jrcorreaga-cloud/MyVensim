@@ -1,5 +1,5 @@
 <map id="Model::createFlow" name="Model::createFlow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="552,129,695,155"/>
+<area shape="rect" id="Node000001" title="Template para la creación de flujos. Declarado en la interfaz pero implementado fuera." alt="" coords="552,129,695,155"/>
 <area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="327,5,494,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="599,121,557,81,503,44,475,33,477,28,505,40,560,77,603,117"/>
 <area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="317,55,504,80"/>

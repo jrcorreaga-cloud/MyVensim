@@ -11,6 +11,7 @@ var hierarchy =
     [ "Model", "classModel.html", [
       [ "ModelImpl", "classModelImpl.html", null ]
     ] ],
+    [ "ModelFactory", "classModelFactory.html", null ],
     [ "System", "classSystem.html", [
       [ "SystemImpl", "classSystemImpl.html", null ]
     ] ]

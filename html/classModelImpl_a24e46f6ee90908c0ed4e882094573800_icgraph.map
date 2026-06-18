@@ -1,5 +1,5 @@
 <map id="ModelImpl::add" name="ModelImpl::add">
-<area shape="rect" id="Node000001" title="Contract for managing System entities inside the simulation model." alt="" coords="243,5,365,31"/>
-<area shape="rect" id="Node000002" href="$classModelImpl.html#a98e153c59919e45c8403bef1e7bf3539" title=" " alt="" coords="5,5,195,31"/>
+<area shape="rect" id="Node000001" title="Adds a System to the internal container." alt="" coords="243,5,365,31"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html#a98e153c59919e45c8403bef1e7bf3539" title="Crea un nuevo sistema dentro del modelo." alt="" coords="5,5,195,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,21,195,21,195,15,229,15"/>
 </map>

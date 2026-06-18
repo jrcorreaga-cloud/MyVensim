@@ -2,5 +2,7 @@
 #include "modelImpl.h"
 
 Model* ModelFactory::createModel(const std::string& name, double time) {
-    return new ModelImpl(name, time);
+    Model* m = new ModelHandle(name);
+    m->setTime(time);
+    return m;
 }

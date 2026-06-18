@@ -12,7 +12,7 @@
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="562,251,475,231,476,225,564,246"/>
 <area shape="rect" id="Node000008" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="336,252,505,277"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="549,267,505,267,505,262,549,262"/>
-<area shape="rect" id="Node000009" href="$classModelImpl.html#aea9f737fee60153508e6bd734022b3e0" title="Core simulation lifecycle manager. Executes the operational loop." alt="" coords="361,301,481,327"/>
+<area shape="rect" id="Node000009" href="$classModelImpl.html#aea9f737fee60153508e6bd734022b3e0" title="Ejecuta la simulación." alt="" coords="361,301,481,327"/>
 <area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="564,283,476,304,475,299,562,278"/>
 <area shape="rect" id="Node000010" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title=" " alt="" coords="359,351,482,376"/>
 <area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="603,288,563,315,516,340,480,353,478,348,514,336,560,311,600,284"/>

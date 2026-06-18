@@ -4,20 +4,12 @@
 #include "../../src/model.h"
 #include "../../src/system.h"
 #include "../../src/flow.h"
+#include "../../src/flowImpl.h"
 
-class DummyFlow : public Flow {
-protected:
-    System* source;
-    System* target;
+class DummyFlow : public FlowBody {
 public:
-    DummyFlow(System* source = nullptr, System* target = nullptr) : source(source), target(target) {}
+    DummyFlow(System* source = nullptr, System* target = nullptr) : FlowBody(source, target) {}
     ~DummyFlow() {}
-    void setSource(System* source) override { this->source = source; }
-    System* getSource() const override { return source; }
-    void clearSource() override { source = nullptr; }
-    void setTarget(System* target) override { this->target = target; }
-    System* getTarget() const override { return target; }
-    void clearTarget() override { target = nullptr; }
     
     // Predictable equation: Always transfers a constant value of 10.0
     double execute() override {
@@ -53,7 +45,8 @@ void unit_Model_addSystem() {
     
     assert(*(m1->systemBegin()) == s1); 
     
-    delete s1;
+    // delete s1; // System is managed by Model in this version? 
+    // Wait, ModelBody destructor deletes systems.
     delete m1;
 }
 
@@ -68,8 +61,6 @@ void unit_Model_systemIterators() {
     }
     assert(count == 2);
     
-    delete s1;
-    delete s2;
     delete m1;
 }
 
@@ -79,7 +70,6 @@ void unit_Model_addFlow() {
     
     assert(*(m1->flowBegin()) == f1);
     
-    delete f1;
     delete m1;
 }
 
@@ -93,7 +83,6 @@ void unit_Model_flowIterators() {
     }
     assert(count == 1);
     
-    delete f1;
     delete m1;
 }
 
@@ -144,9 +133,6 @@ void unit_Model_run() {
     assert(std::fabs(s1->getValue() - 70.0) < 0.0001); // 100.0 - 30.0 = 70.0
     assert(std::fabs(s2->getValue() - 30.0) < 0.0001); // 0.0 + 30.0 = 30.0
     
-    delete f1;
-    delete s2;
-    delete s1;
     delete m1;
 }
 

@@ -1,59 +1,50 @@
 <map id="run_unit_tests_Flow" name="run_unit_tests_Flow">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,203,157,228"/>
-<area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title=" " alt="" coords="205,5,373,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,201,101,169,127,125,161,79,204,40,213,34,216,39,207,44,165,83,131,128,106,171,90,204"/>
-<area shape="rect" id="Node000007" href="$unit__Flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6" title=" " alt="" coords="207,301,371,327"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="102,226,149,256,206,286,228,295,226,299,204,291,146,260,100,230"/>
-<area shape="rect" id="Node000010" href="$unit__Flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title=" " alt="" coords="207,153,372,179"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="135,200,221,179,222,185,136,205"/>
-<area shape="rect" id="Node000011" href="$unit__Flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a" title=" " alt="" coords="210,400,369,425"/>
-<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="91,227,106,259,132,302,165,347,207,385,218,392,215,397,204,389,161,350,127,305,102,262,86,230"/>
-<area shape="rect" id="Node000012" href="$unit__Flow_8cpp.html#a2192b5fd3c44d606126dbba6a21f8fc9" title=" " alt="" coords="218,203,361,228"/>
-<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="157,213,204,213,204,218,157,218"/>
-<area shape="rect" id="Node000014" href="$unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title=" " alt="" coords="211,104,368,129"/>
-<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="99,200,145,170,204,138,222,131,224,136,206,143,148,174,102,205"/>
-<area shape="rect" id="Node000015" href="$unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title=" " alt="" coords="213,252,366,277"/>
-<area shape="poly" id="edge25_Node000001_Node000015" title=" " alt="" coords="136,225,222,246,221,251,135,231"/>
-<area shape="rect" id="Node000016" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title=" " alt="" coords="211,55,367,80"/>
-<area shape="poly" id="edge29_Node000001_Node000016" title=" " alt="" coords="90,201,135,147,167,116,204,89,216,83,218,88,207,94,171,120,139,150,94,204"/>
-<area shape="rect" id="Node000018" href="$unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title=" " alt="" coords="213,351,365,376"/>
-<area shape="poly" id="edge34_Node000001_Node000018" title=" " alt="" coords="94,226,139,279,171,310,207,336,222,343,219,348,204,340,167,314,135,283,90,230"/>
-<area shape="rect" id="Node000003" href="$classFlow.html#a98e7aafb65699a9645a22f215b49c8b0" title=" " alt="" coords="433,5,569,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,15,420,15,420,21,373,21"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a00c079afde61f16d15d6cf67a01cf831" title=" " alt="" coords="426,153,577,179"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="357,29,375,40,387,52,394,65,400,91,406,115,412,127,423,139,431,145,428,149,420,143,408,130,401,117,395,92,389,67,382,56,372,44,354,33"/>
-<area shape="rect" id="Node000005" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title=" " alt="" coords="421,203,581,228"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="359,29,375,40,390,59,397,78,400,116,403,152,410,170,423,188,429,193,426,197,419,192,405,173,398,154,395,116,392,79,385,62,372,44,356,33"/>
-<area shape="rect" id="Node000006" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="439,104,564,129"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="350,28,375,40,390,52,400,65,408,77,423,89,437,96,434,101,420,94,405,81,395,68,386,56,372,44,348,33"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="351,299,372,287,382,275,389,263,395,239,401,213,408,200,420,188,425,183,429,188,423,192,412,204,406,215,400,240,394,265,387,278,375,291,354,304"/>
-<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="345,299,372,286,386,275,395,262,405,250,420,237,432,231,434,235,423,242,408,253,399,266,390,278,375,291,347,304"/>
-<area shape="rect" id="Node000008" href="$classFlow.html#a52f8ab7ff430f5d2e87aa0fdb12ad64b" title=" " alt="" coords="435,351,567,376"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="345,324,433,345,432,350,344,329"/>
-<area shape="rect" id="Node000009" href="$classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title=" " alt="" coords="441,301,562,327"/>
-<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="372,311,426,311,426,317,372,317"/>
-<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="372,163,412,163,412,169,372,169"/>
-<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="345,176,433,197,432,202,344,181"/>
-<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="344,151,432,130,433,135,345,156"/>
-<area shape="poly" id="edge15_Node000010_Node000009" title=" " alt="" coords="357,177,375,188,387,200,394,213,400,239,406,263,412,275,423,287,431,293,428,297,420,291,408,278,401,265,395,240,389,215,382,204,372,192,354,181"/>
-<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="344,200,432,179,433,184,345,205"/>
-<area shape="poly" id="edge19_Node000012_Node000005" title=" " alt="" coords="361,213,408,213,408,218,361,218"/>
-<area shape="rect" id="Node000013" href="$classFlow.html#a619be0b590c78202127bc6ac7fb04029" title="Executes the numerical simulation operation for this specific flow. Subclasses must implement their s..." alt="" coords="446,252,557,277"/>
-<area shape="poly" id="edge20_Node000012_Node000013" title=" " alt="" coords="345,225,433,246,432,251,344,231"/>
-<area shape="poly" id="edge22_Node000014_Node000004" title=" " alt="" coords="345,127,433,148,432,153,344,132"/>
-<area shape="poly" id="edge23_Node000014_Node000005" title=" " alt="" coords="350,127,375,138,390,151,400,164,408,176,423,188,437,195,434,200,420,192,405,180,395,167,386,155,372,143,348,132"/>
-<area shape="poly" id="edge24_Node000014_Node000006" title=" " alt="" coords="368,114,425,114,425,119,368,119"/>
-<area shape="poly" id="edge26_Node000015_Node000004" title=" " alt="" coords="345,249,372,237,386,225,395,213,405,200,420,188,432,181,434,186,423,192,408,204,399,216,390,229,375,242,347,254"/>
-<area shape="poly" id="edge27_Node000015_Node000005" title=" " alt="" coords="344,249,432,229,433,234,345,255"/>
-<area shape="poly" id="edge28_Node000015_Node000009" title=" " alt="" coords="345,275,433,296,432,301,344,280"/>
-<area shape="poly" id="edge30_Node000016_Node000004" title=" " alt="" coords="350,78,375,89,390,102,400,114,408,127,423,138,437,146,434,151,420,143,405,130,395,117,386,105,372,94,348,82"/>
-<area shape="poly" id="edge31_Node000016_Node000005" title=" " alt="" coords="357,78,375,89,387,102,394,115,400,140,406,165,412,176,423,188,431,194,428,198,420,192,408,179,401,166,395,141,389,116,382,105,372,93,354,82"/>
-<area shape="poly" id="edge32_Node000016_Node000006" title=" " alt="" coords="345,77,433,98,432,103,344,83"/>
-<area shape="rect" id="Node000017" href="$classFlow.html#a42ce99a961622788ae59bb73abad3bb3" title="Defines the connection to the flow&#39;s origin system. Follows the Single Responsibility Principle by co..." alt="" coords="439,55,563,80"/>
-<area shape="poly" id="edge33_Node000016_Node000017" title=" " alt="" coords="367,65,426,65,426,70,367,70"/>
-<area shape="poly" id="edge35_Node000018_Node000004" title=" " alt="" coords="354,348,372,336,385,318,392,301,395,264,397,226,405,207,419,188,424,184,428,188,423,192,409,210,403,227,400,264,397,302,390,321,375,340,357,353"/>
-<area shape="poly" id="edge36_Node000018_Node000005" title=" " alt="" coords="351,348,372,336,382,324,389,313,395,288,401,263,408,250,420,237,425,233,429,237,423,241,412,253,406,265,400,289,394,315,387,328,375,340,354,353"/>
-<area shape="poly" id="edge37_Node000018_Node000009" title=" " alt="" coords="344,348,432,327,433,332,345,353"/>
-<area shape="rect" id="Node000019" href="$classFlow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b" title="Defines the connection to the flow&#39;s destination system." alt="" coords="441,400,561,425"/>
-<area shape="poly" id="edge38_Node000018_Node000019" title=" " alt="" coords="345,373,433,394,432,399,344,379"/>
+<area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title=" " alt="" coords="205,252,373,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,225,222,246,221,251,135,231"/>
+<area shape="rect" id="Node000006" href="$unit__Flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6" title=" " alt="" coords="207,5,371,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="86,201,101,169,127,125,161,79,204,40,213,34,216,39,207,44,165,83,131,128,106,171,90,204"/>
+<area shape="rect" id="Node000009" href="$unit__Flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe" title=" " alt="" coords="207,153,372,179"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="135,200,221,179,222,185,136,205"/>
+<area shape="rect" id="Node000010" href="$unit__Flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a" title=" " alt="" coords="210,400,369,425"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="90,227,106,259,131,302,165,348,207,387,216,392,213,396,204,391,161,351,127,305,101,262,86,229"/>
+<area shape="rect" id="Node000011" href="$unit__Flow_8cpp.html#a2192b5fd3c44d606126dbba6a21f8fc9" title=" " alt="" coords="218,351,361,376"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="94,226,139,279,171,310,207,336,222,343,219,348,204,340,167,314,135,283,90,230"/>
+<area shape="rect" id="Node000013" href="$unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title=" " alt="" coords="211,203,368,228"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="157,213,197,213,197,218,157,218"/>
+<area shape="rect" id="Node000014" href="$unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title=" " alt="" coords="213,104,366,129"/>
+<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="99,200,145,170,204,138,222,131,224,136,206,143,148,174,102,205"/>
+<area shape="rect" id="Node000015" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title=" " alt="" coords="211,301,367,327"/>
+<area shape="poly" id="edge23_Node000001_Node000015" title=" " alt="" coords="102,226,149,256,206,286,228,295,226,299,204,291,146,260,100,230"/>
+<area shape="rect" id="Node000017" href="$unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title=" " alt="" coords="213,55,365,80"/>
+<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="90,201,135,147,167,116,204,89,216,83,218,88,207,94,171,120,139,150,94,204"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a98e7aafb65699a9645a22f215b49c8b0" title=" " alt="" coords="433,252,569,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,262,420,262,420,267,373,267"/>
+<area shape="rect" id="Node000004" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title="Crea un nuevo sistema dentro del modelo." alt="" coords="421,153,581,179"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="345,249,372,237,386,225,395,213,405,200,420,188,432,181,434,186,423,192,408,204,399,216,390,229,375,242,347,254"/>
+<area shape="rect" id="Node000005" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="439,203,564,228"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="344,249,432,229,433,234,345,255"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="357,29,375,40,387,52,394,65,400,91,406,115,412,127,423,139,431,145,428,149,420,143,408,130,401,117,395,92,389,67,382,56,372,44,354,33"/>
+<area shape="rect" id="Node000007" href="$classFlow.html#a52f8ab7ff430f5d2e87aa0fdb12ad64b" title=" " alt="" coords="435,5,567,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="372,15,421,15,421,21,372,21"/>
+<area shape="rect" id="Node000008" href="$classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title=" " alt="" coords="441,104,562,129"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="350,28,375,40,390,52,400,65,408,77,423,89,437,96,434,101,420,94,405,81,395,68,386,56,372,44,348,33"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="372,163,407,163,407,169,372,169"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="345,176,433,197,432,202,344,181"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="344,151,432,130,433,135,345,156"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="354,348,372,336,385,318,392,301,395,264,397,226,405,207,419,188,424,184,428,188,423,192,409,210,403,227,400,264,397,302,390,321,375,340,357,353"/>
+<area shape="rect" id="Node000012" href="$classFlow.html#a619be0b590c78202127bc6ac7fb04029" title="Executes the numerical simulation operation for this specific flow. Subclasses must implement their s..." alt="" coords="446,351,557,376"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="361,361,432,361,432,366,361,366"/>
+<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="344,200,432,179,433,184,345,205"/>
+<area shape="poly" id="edge19_Node000013_Node000005" title=" " alt="" coords="368,213,425,213,425,218,368,218"/>
+<area shape="poly" id="edge21_Node000014_Node000004" title=" " alt="" coords="345,127,433,148,432,153,344,132"/>
+<area shape="poly" id="edge22_Node000014_Node000008" title=" " alt="" coords="366,114,426,114,426,119,366,119"/>
+<area shape="poly" id="edge24_Node000015_Node000004" title=" " alt="" coords="351,299,372,287,382,275,389,263,395,239,401,213,408,200,420,188,425,183,429,188,423,192,412,204,406,215,400,240,394,265,387,278,375,291,354,304"/>
+<area shape="poly" id="edge25_Node000015_Node000005" title=" " alt="" coords="345,299,372,286,386,275,395,262,405,250,420,237,432,231,434,235,423,242,408,253,399,266,390,278,375,291,347,304"/>
+<area shape="rect" id="Node000016" href="$classFlow.html#a42ce99a961622788ae59bb73abad3bb3" title="Defines the connection to the flow&#39;s origin system. Follows the Single Responsibility Principle by co..." alt="" coords="439,301,563,327"/>
+<area shape="poly" id="edge26_Node000015_Node000016" title=" " alt="" coords="367,311,426,311,426,317,367,317"/>
+<area shape="poly" id="edge28_Node000017_Node000004" title=" " alt="" coords="350,78,375,89,390,102,400,114,408,127,423,138,437,146,434,151,420,143,405,130,395,117,386,105,372,94,348,82"/>
+<area shape="poly" id="edge29_Node000017_Node000008" title=" " alt="" coords="345,77,433,98,432,103,344,83"/>
+<area shape="rect" id="Node000018" href="$classFlow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b" title="Defines the connection to the flow&#39;s destination system." alt="" coords="441,55,561,80"/>
+<area shape="poly" id="edge30_Node000017_Node000018" title=" " alt="" coords="366,65,428,65,428,70,366,70"/>
 </map>

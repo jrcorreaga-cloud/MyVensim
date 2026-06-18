@@ -1,15 +1,13 @@
 <map id="complexFuncionalTest" name="complexFuncionalTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,172,129"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a0b6b290db3600d4fc7a7f5ffa31103f4" title=" " alt="" coords="229,5,371,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,102,157,71,219,40,237,33,238,38,221,44,160,76,111,106"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a00c079afde61f16d15d6cf67a01cf831" title=" " alt="" coords="225,55,375,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,101,231,81,232,86,144,107"/>
-<area shape="rect" id="Node000005" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title=" " alt="" coords="220,104,380,129"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="172,114,206,114,206,119,172,119"/>
-<area shape="rect" id="Node000006" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title=" " alt="" coords="232,153,368,179"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="144,127,232,148,231,153,143,132"/>
-<area shape="rect" id="Node000007" href="$classModel.html#a299939795a2d298025372ab5173020c6" title="Core simulation lifecycle manager. Executes the operational loop." alt="" coords="255,203,345,228"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="111,127,160,157,221,188,242,196,240,201,219,192,158,161,108,132"/>
-<area shape="rect" id="Node000003" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Contract for managing System entities inside the simulation model." alt="" coords="428,5,523,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,172,105"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a0b6b290db3600d4fc7a7f5ffa31103f4" title="Template para la creación de flujos. Declarado en la interfaz pero implementado fuera." alt="" coords="229,5,371,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,77,219,39,241,32,243,37,221,45,122,82"/>
+<area shape="rect" id="Node000004" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title="Crea un nuevo sistema dentro del modelo." alt="" coords="220,55,380,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,80,206,76,207,81,173,85"/>
+<area shape="rect" id="Node000005" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title=" " alt="" coords="232,104,368,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="173,100,218,105,218,110,172,105"/>
+<area shape="rect" id="Node000006" href="$classModel.html#a299939795a2d298025372ab5173020c6" title="Ejecuta la simulación." alt="" coords="255,153,345,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="124,103,221,138,246,147,244,152,219,143,123,108"/>
+<area shape="rect" id="Node000003" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="Añade un sistema/flujo al modelo." alt="" coords="428,5,523,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,15,414,15,414,21,372,21"/>
 </map>

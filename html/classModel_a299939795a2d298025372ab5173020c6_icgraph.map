@@ -1,5 +1,5 @@
 <map id="Model::run" name="Model::run">
-<area shape="rect" id="Node000001" title="Core simulation lifecycle manager. Executes the operational loop." alt="" coords="552,80,643,105"/>
+<area shape="rect" id="Node000001" title="Ejecuta la simulación." alt="" coords="552,80,643,105"/>
 <area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="327,5,494,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="563,75,503,44,469,33,470,28,505,40,566,70"/>
 <area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="317,55,504,80"/>

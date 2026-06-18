@@ -1,0 +1,76 @@
+\doxysection{Model\+Factory Class Reference}
+\hypertarget{classModelFactory}{}\label{classModelFactory}\index{ModelFactory@{ModelFactory}}
+
+
+The \doxylink{classModelFactory}{Model\+Factory} class is responsible for creating instances of \doxylink{classModel}{Model}. It follows the Factory Method pattern to decouple the client from concrete implementations.  
+
+
+
+
+{\ttfamily \+\#include $<$model\+Factory.\+h$>$}
+
+
+
+Collaboration diagram for Model\+Factory:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classModelFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classModelFactory_afeba1e1450af6ca6985d65b019cb599f}{create\+Model}} (const std::\+string \&name="{}"{}, double time=0.\+0)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{classModel}{Model} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classModelFactory}{Model\+Factory} class is responsible for creating instances of \doxylink{classModel}{Model}. It follows the Factory Method pattern to decouple the client from concrete implementations. 
+
+Definition at line \doxymbox{\hyperlink{modelFactory_8h_source_l00011}{11}} of file \doxymbox{\hyperlink{modelFactory_8h_source}{model\+Factory.\+h}}.
+
+
+
+\label{classModelFactory_doc-func-members}
+\Hypertarget{classModelFactory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classModelFactory_afeba1e1450af6ca6985d65b019cb599f}\index{ModelFactory@{ModelFactory}!createModel@{createModel}}
+\index{createModel@{createModel}!ModelFactory@{ModelFactory}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \label{classModelFactory_afeba1e1450af6ca6985d65b019cb599f} 
+\doxymbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} Model\+Factory::\+create\+Model (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{ = {\ttfamily "{}"{}}, }\item[{double}]{time}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \doxylink{classModel}{Model} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the model. \\
+\hline
+{\em time} & Initial time of the model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created \doxylink{classModel}{Model}. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{modelFactory_8cpp_source_l00004}{4}} of file \doxymbox{\hyperlink{modelFactory_8cpp_source}{model\+Factory.\+cpp}}.
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classModelFactory_afeba1e1450af6ca6985d65b019cb599f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{modelFactory_8h}{model\+Factory.\+h}}\item 
+src/\+\doxymbox{\hyperlink{modelFactory_8cpp}{model\+Factory.\+cpp}}\end{DoxyCompactItemize}

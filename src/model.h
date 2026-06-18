@@ -14,6 +14,11 @@ public:
     virtual ~Model() {}
 
     /**
+     * @brief Factory method to create a new Model.
+     */
+    static Model* createModel(const std::string& name = "", double time = 0.0);
+
+    /**
      * @brief Crea un nuevo sistema dentro del modelo.
      */
     virtual System* createSystem(const std::string& name = "", double value = 0.0) = 0;
@@ -42,6 +47,7 @@ public:
     
     virtual void setTime(double time) = 0;
     virtual double getTime() const = 0;
+    virtual void incrementTime(double step) = 0;
 
     /**
      * @brief Template para la creación de flujos. Declarado en la interfaz pero implementado fuera.
@@ -57,9 +63,11 @@ protected:
     virtual void add(Flow* flow) = 0;
 };
 
+#include "flowImpl.h"
+
 template <typename T_FLOW>
 Flow* Model::createFlow(System* source, System* target) {
-    Flow* flow = new T_FLOW(source, target);
+    Flow* flow = new FlowHandle(new T_FLOW(source, target));
     add(flow);
     return flow;
 }

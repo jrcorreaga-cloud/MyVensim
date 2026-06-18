@@ -1,9 +1,7 @@
 <map id="unit_Flow_execute" name="unit_Flow_execute">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,148,80"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a00c079afde61f16d15d6cf67a01cf831" title=" " alt="" coords="201,5,351,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,52,210,31,211,37,129,57"/>
-<area shape="rect" id="Node000003" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title=" " alt="" coords="196,55,356,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,65,182,65,182,70,148,70"/>
-<area shape="rect" id="Node000004" href="$classFlow.html#a619be0b590c78202127bc6ac7fb04029" title="Executes the numerical simulation operation for this specific flow. Subclasses must implement their s..." alt="" coords="221,104,331,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,77,211,98,210,103,128,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,148,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title="Crea un nuevo sistema dentro del modelo." alt="" coords="196,5,356,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,32,182,27,183,33,149,37"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a619be0b590c78202127bc6ac7fb04029" title="Executes the numerical simulation operation for this specific flow. Subclasses must implement their s..." alt="" coords="221,55,331,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,49,207,56,206,62,148,55"/>
 </map>

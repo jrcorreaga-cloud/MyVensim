@@ -13,6 +13,7 @@ set(CORE_SRC
     src/systemImpl.cpp
     src/flowImpl.cpp
     src/modelImpl.cpp
+    src/modelFactory.cpp
 )
 
 # Core simulator shared library
@@ -36,5 +37,6 @@ add_executable(test_unit
     test/unit/unit_System.cpp 
     test/unit/unit_Flow.cpp 
     test/unit/unit_Model.cpp 
+    test/unit/unit_HandleBody.cpp 
 )
 target_link_libraries(test_unit myvensim)

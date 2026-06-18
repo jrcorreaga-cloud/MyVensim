@@ -1,11 +1,9 @@
 <map id="unit_Flow_setSource" name="unit_Flow_setSource">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,161,105"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a00c079afde61f16d15d6cf67a01cf831" title=" " alt="" coords="214,5,365,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,77,208,39,230,32,232,37,210,45,115,82"/>
-<area shape="rect" id="Node000003" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title=" " alt="" coords="209,55,369,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,80,196,76,196,81,162,86"/>
-<area shape="rect" id="Node000004" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="227,104,352,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,99,213,105,212,110,161,104"/>
-<area shape="rect" id="Node000005" href="$classFlow.html#a42ce99a961622788ae59bb73abad3bb3" title="Defines the connection to the flow&#39;s origin system. Follows the Single Responsibility Principle by co..." alt="" coords="227,153,351,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="117,103,210,138,235,147,233,152,208,143,115,108"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,161,80"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title="Crea un nuevo sistema dentro del modelo." alt="" coords="209,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,52,222,31,223,37,138,57"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="227,55,352,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,65,213,65,213,70,162,70"/>
+<area shape="rect" id="Node000004" href="$classFlow.html#a42ce99a961622788ae59bb73abad3bb3" title="Defines the connection to the flow&#39;s origin system. Follows the Single Responsibility Principle by co..." alt="" coords="227,104,351,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,77,223,98,222,103,136,83"/>
 </map>

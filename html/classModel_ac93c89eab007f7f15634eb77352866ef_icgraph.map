@@ -1,5 +1,5 @@
 <map id="Model::createSystem" name="Model::createSystem">
-<area shape="rect" id="Node000001" title=" " alt="" coords="579,499,739,524"/>
+<area shape="rect" id="Node000001" title="Crea un nuevo sistema dentro del modelo." alt="" coords="579,499,739,524"/>
 <area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="345,5,512,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="651,486,636,388,609,255,593,187,573,126,552,77,529,44,511,31,514,27,533,40,557,74,578,125,598,186,615,253,641,387,656,485"/>
 <area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="335,55,522,80"/>

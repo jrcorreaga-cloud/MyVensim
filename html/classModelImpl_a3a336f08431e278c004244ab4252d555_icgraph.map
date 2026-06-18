@@ -1,0 +1,7 @@
+<map id="ModelImpl::ModelImpl" name="ModelImpl::ModelImpl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,31,389,56"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html#a71036194d088aeb1830feea80c986c3a" title="Copy constructor and assignment operator are private to prevent cloning, maintaining the singleton/fa..." alt="" coords="5,5,173,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,35,173,30,174,25,208,29"/>
+<area shape="rect" id="Node000003" href="$classModelImpl.html#aebfc947e745a94b9610aba097cd1d6f7" title=" " alt="" coords="7,55,172,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,57,172,61,172,56,207,52"/>
+</map>

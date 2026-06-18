@@ -1,31 +1,67 @@
 #include "flowImpl.h"
 
-// Constructor
-FlowImpl::FlowImpl(System* source, System* target) : source(source), target(target) {}
+// FlowBody Implementation
+FlowBody::FlowBody(System* source, System* target) : source(source), target(target) {}
 
-// Destructor
-FlowImpl::~FlowImpl() {}
+FlowBody::~FlowBody() {}
 
-void FlowImpl::setSource(System* source) {
+void FlowBody::setSource(System* source) {
     this->source = source;
 }
 
-System* FlowImpl::getSource() const {
+System* FlowBody::getSource() const {
     return source;
 }
 
-void FlowImpl::clearSource() {
-    this->source = nullptr;
+void FlowBody::clearSource() {
+    source = nullptr;
 }
 
-void FlowImpl::setTarget(System* target) {
+void FlowBody::setTarget(System* target) {
     this->target = target;
 }
 
-System* FlowImpl::getTarget() const {
+System* FlowBody::getTarget() const {
     return target;
 }
 
-void FlowImpl::clearTarget() {
-    this->target = nullptr;
+void FlowBody::clearTarget() {
+    target = nullptr;
+}
+
+double FlowBody::execute() {
+    return 0.0; // Default implementation
+}
+
+// FlowHandle Implementation
+FlowHandle::FlowHandle(FlowBody* body) : Handle<FlowBody>(body) {}
+
+FlowHandle::~FlowHandle() {}
+
+void FlowHandle::setSource(System* source) {
+    pImpl_->setSource(source);
+}
+
+System* FlowHandle::getSource() const {
+    return pImpl_->getSource();
+}
+
+void FlowHandle::clearSource() {
+    pImpl_->clearSource();
+}
+
+void FlowHandle::setTarget(System* target) {
+    pImpl_->setTarget(target);
+}
+
+System* FlowHandle::getTarget() const {
+    return pImpl_->getTarget();
+}
+
+void FlowHandle::clearTarget() {
+    pImpl_->clearTarget();
+}
+
+double FlowHandle::execute() {
+    return pImpl_->execute();
 }

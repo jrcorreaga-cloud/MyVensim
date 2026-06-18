@@ -1,53 +1,26 @@
 #ifndef FUNCIONAL_TESTS_H
 #define FUNCIONAL_TESTS_H
 
-#include "../../src/flow.h"
+#include "../../src/flowImpl.h"
 
-class ExponentialFlow : public Flow {
-protected:
-    System* source;
-    System* target;
+class ExponentialFlow : public FlowBody {
 public:
-    ExponentialFlow(System* source = nullptr, System* target = nullptr) : source(source), target(target) {}
+    ExponentialFlow(System* source = nullptr, System* target = nullptr) : FlowBody(source, target) {}
     ~ExponentialFlow() {}
-    void setSource(System* source) override { this->source = source; }
-    System* getSource() const override { return source; }
-    void clearSource() override { source = nullptr; }
-    void setTarget(System* target) override { this->target = target; }
-    System* getTarget() const override { return target; }
-    void clearTarget() override { target = nullptr; }
     double execute() override;
 };
 
-class LogisticalFlow : public Flow {
-protected:
-    System* source;
-    System* target;
+class LogisticalFlow : public FlowBody {
 public:
-    LogisticalFlow(System* source = nullptr, System* target = nullptr) : source(source), target(target) {}
+    LogisticalFlow(System* source = nullptr, System* target = nullptr) : FlowBody(source, target) {}
     ~LogisticalFlow() {}
-    void setSource(System* source) override { this->source = source; }
-    System* getSource() const override { return source; }
-    void clearSource() override { source = nullptr; }
-    void setTarget(System* target) override { this->target = target; }
-    System* getTarget() const override { return target; }
-    void clearTarget() override { target = nullptr; }
     double execute() override;
 };
 
-class ComplexFlow : public Flow {
-protected:
-    System* source;
-    System* target;
+class ComplexFlow : public FlowBody {
 public:
-    ComplexFlow(System* source = nullptr, System* target = nullptr) : source(source), target(target) {}
+    ComplexFlow(System* source = nullptr, System* target = nullptr) : FlowBody(source, target) {}
     ~ComplexFlow() {}
-    void setSource(System* source) override { this->source = source; }
-    System* getSource() const override { return source; }
-    void clearSource() override { source = nullptr; }
-    void setTarget(System* target) override { this->target = target; }
-    System* getTarget() const override { return target; }
-    void clearTarget() override { target = nullptr; }
     double execute() override;
 };
 

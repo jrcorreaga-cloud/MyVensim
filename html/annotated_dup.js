@@ -7,6 +7,7 @@ var annotated_dup =
     [ "FlowImpl", "classFlowImpl.html", "classFlowImpl" ],
     [ "LogisticalFlow", "classLogisticalFlow.html", "classLogisticalFlow" ],
     [ "Model", "classModel.html", "classModel" ],
+    [ "ModelFactory", "classModelFactory.html", "classModelFactory" ],
     [ "ModelImpl", "classModelImpl.html", "classModelImpl" ],
     [ "System", "classSystem.html", "classSystem" ],
     [ "SystemImpl", "classSystemImpl.html", "classSystemImpl" ]

@@ -1,9 +1,7 @@
 <map id="unit_Flow_getSource" name="unit_Flow_getSource">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,163,80"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a00c079afde61f16d15d6cf67a01cf831" title=" " alt="" coords="215,5,366,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,52,223,31,224,37,138,57"/>
-<area shape="rect" id="Node000003" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title=" " alt="" coords="211,55,371,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,65,197,65,197,70,163,70"/>
-<area shape="rect" id="Node000004" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="228,104,353,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,77,224,98,223,103,137,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,163,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ac93c89eab007f7f15634eb77352866ef" title="Crea un nuevo sistema dentro del modelo." alt="" coords="211,5,371,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,31,197,27,198,32,163,36"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="228,55,353,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,50,214,56,214,61,163,55"/>
 </map>

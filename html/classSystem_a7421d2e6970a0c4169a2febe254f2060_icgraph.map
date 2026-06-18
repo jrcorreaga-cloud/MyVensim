@@ -1,6 +1,6 @@
 <map id="System::setValue" name="System::setValue">
 <area shape="rect" id="Node000001" title=" " alt="" coords="541,31,676,56"/>
-<area shape="rect" id="Node000002" href="$classModelImpl.html#aea9f737fee60153508e6bd734022b3e0" title="Core simulation lifecycle manager. Executes the operational loop." alt="" coords="350,5,470,31"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html#aea9f737fee60153508e6bd734022b3e0" title="Ejecuta la simulación." alt="" coords="350,5,470,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="527,36,470,28,471,23,528,30"/>
 <area shape="rect" id="Node000003" href="$unit__System_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6" title=" " alt="" coords="327,55,493,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="528,56,494,60,493,55,527,50"/>
